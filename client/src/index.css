@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color:#e9edef;
+}
+
+#head {
+  display:flex; 
+  align-items:center;
+  justify-content:space-between;
+  background-color:#e9edef;
+  height: 250px;
+  padding: 0 10% 0 10%;
+}
+
+#logo {
+  /* height: 50%; */
+}
+
+
+#head li a { 
+  color: #223138;
+  text-decoration:none;
+  text-decoration: 'none';
+}
+
+#head li {
+  display: inline;
+  padding: 5px 15px 5px 15px;
+  font-family: 'bebas neue';
+  text-decoration: none;
+  color: #223138;
+  font-size: 1.6em;
+}
+
+#container {
+  padding: 0 5em 0 5em;
+}
+
+#head p {
+  font-family: 'quicksand', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.15em;
+  line-height: 2.4em;
+  color:#223138;
+  margin: 0;
+  padding-top: 5px;
+  height: auto;
+}
+
+#workContainer {
+  display:flex;
+  flex-wrap: wrap;
+  /* font-size:0; */
+}
+
+#workCard {
+  width: 50%; 
+  overflow: hidden;
+  position: relative;
+  line-height:0;
+}
+
+#workText {
+  width: 50%; 
+  overflow: hidden;
+  position: relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  /* line-height:0; */
+}
+
+#workText h2 {
+  font-family: quicksand;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color:rgba(0, 0, 0, .75);
+  mix-blend-mode: overlay;
+  padding:3em;
+}
+
+#workText p {
+  font-family: quicksand;
+  font-weight: normal;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color:rgba(0, 0, 0, .8);
+  mix-blend-mode: multiply;
+  padding:3em;
+}
+
+#workCard img {
+  width: 100%;
+  height: 25em;
+  object-fit: cover;
+  filter: opacity(100%);
+  transition: filter ease .5s;
+}
+
+#workCard img:hover {
+
+  filter: opacity(100%);
+  transition: filter ease .5s;
+}
+
+#contain {
+  object-fit: cover;
+}
+
+.label {
+  background-color: rgba(0, 0, 0, .3);;
+  /* filter: opacity(20%); */
+  /* height: 30px; */
+  padding: 5px;
+  width: 40%;
+  z-index:5;
+  position: absolute;
+}
+
+.label h1 {
+  font-family:'bebas neue';
+  font-size:1.25em;
+  text-align: center;
+  letter-spacing:.2em;
+  color: #eee;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1150px) {
+  #head {
+    justify-content: center;
+    flex-direction: column;
+  }
+  #logoContainer {
+    justify-content: center;
+    flex-direction: column;
+  }
+  #workContainer {
+    display:flex;
+    flex-direction: column;
+  }
+
+  #workCard {
+    width: 100%; 
+  }
+
+  #workText {
+    width: 100%; 
+  }
+
+  .label {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #head p {
+    /* line-height: 1.4em; */
+    /* border: 1px solid pink; */
+    text-align: center;
+  }
+  .label {
+    width: 100%;
+  }
+}
