@@ -53,6 +53,7 @@ export default function WorkDetail() {
                     <img id='contain' src={workState.work.img}/>
                 </div>
             </div>
+
             <div id="workText" style={{background:`${workState.work.color}`}}>
             {/* <h2>{workState.work.title}</h2> */}
             {/* <ul>
@@ -61,6 +62,15 @@ export default function WorkDetail() {
                 <li>Photoshop</li>
             </ul> */}
             <p>{workState.work.desc}</p>
+            </div>
+
+            <div>
+                {workState.work.challenge !== undefined &&
+                    <>
+                    <h2>Challenge</h2>
+                    <p>{workState.work.challenge}</p>
+                    </>
+                }
             </div>
 
         </div>
