@@ -23,6 +23,7 @@ export default function WorkDetail() {
         setWorkState ({
             ...workState,
             workIndex: id
+            
         });
         work.forEach(item=>{
             if (item.title === id) {
@@ -73,7 +74,7 @@ const work =
     [
         {
             title:'Step One',
-            color: '#f1a4c6',
+            color: 'white',
             desc:'Step One Dance Company is a modern dance group which combines exciting choreography with state-of-the-art stage technology. My role was to create an exciting logo and a set of posters that would match the energy of the performances. ',
             challenge: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel odio eget metus molestie luctus et nec metus. In eget maximus lorem. Integer mollis pretium aliquet. Quisque convallis nec tellus consequat interdum. Praesent mattis eros in sapien facilisis pharetra. Aenean ac sem eget tortor laoreet condimentum. Donec vel maximus quam. Integer vulputate imperdiet nunc, ac mattis ipsum efficitur quis. Curabitur interdum leo eget est luctus, vitae tempor arcu semper. Nam consequat euismod metus vel gravida.',
             img: {StepOne}.StepOne,

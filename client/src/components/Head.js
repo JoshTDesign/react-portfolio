@@ -18,7 +18,7 @@ export default function Head() {
                 <ul style={{padding:0}}>
                     <li><a href="/work">Work</a></li>
                     <li><a href="/about">About</a></li>
-                    <li><a href="/writing">Writing</a></li>
+                    <li><a href="/resume">Resume</a></li>
                 </ul>
             </div>
         // </div>

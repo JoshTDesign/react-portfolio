@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color:#e9edef;
+  /* background-color:#e9edef; */
+  background-color:#FAFAFA;
 }
 
 #head {
@@ -38,6 +39,8 @@ body {
   padding: 0 5em 0 5em;
 }
 
+
+/*--------Header Page-----------*/
 #head p {
   font-family: 'quicksand', sans-serif;
   font-weight: 400;
@@ -50,6 +53,65 @@ body {
   height: auto;
 }
 
+
+/*-------Profile Page-----------*/
+#profile {
+  display: flex;
+}
+
+.about {
+  padding: 80px 10% 80px 10%;
+  background-color: white;
+}
+
+.about li {
+  font-family: 'quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  background-color: #f0f0f0;
+  color: #b6b6b6;
+  text-transform: uppercase;
+  list-style: none;
+  display: inline;
+  padding: 13px 20px 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  line-height: 1.5em;
+}
+
+#profile p {
+  font-family: 'quicksand', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+#techStack {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.about h3 {
+  font-family:'Quicksand';
+  font-weight: 400;
+  font-size:2em;
+  margin-top:0;
+}
+
+#profilePic {
+  border: red;
+  height: 150px;
+  width: 150px;
+  overflow:hidden;
+  border-radius:100%;
+  object-fit:cover;
+  min-width: 150px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+/*----------Work Page----------*/
 #workContainer {
   display:flex;
   flex-wrap: wrap;
@@ -129,6 +191,43 @@ body {
   font-weight: 500;
 }
 
+
+/*----------Resume Page---------*/
+.resume {
+  padding: 80px 10% 80px 10%;
+  background-color: white;
+}
+
+.resume h3 {
+  font-family:'Quicksand';
+  font-weight: 400;
+  font-size:2em;
+  margin-top:0;
+}
+
+.resume p {
+  font-family:'Quicksand';
+  font-weight: 400;
+  font-size:1em;
+  line-height:1.4em;
+}
+
+.resume div {
+  margin-bottom:50px;
+}
+
+.resume li {
+  font-family:'Quicksand';
+  font-weight: 400;
+  font-size:1em;
+  line-height:1.2em;
+  margin-bottom:10px;
+  padding-left:0px;
+}
+
+.resume ul {
+  padding-left:15px;
+}
 
 
 

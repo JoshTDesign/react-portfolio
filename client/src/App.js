@@ -11,6 +11,7 @@ import Home from "./components/Home.js"
 import Work from "./components/Work.js"
 import About from "./components/About.js"
 import Writing from "./components/Writing.js"
+import Resume from "./components/Resume.js"
 import Head from "./components/Head.js"
 import WorkDetail from "./components/WorkDetail.js"
 
@@ -28,9 +29,9 @@ function App() {
               <Head />
               <About />
             </Route>
-            <Route exact path="/writing">
+            <Route exact path="/resume">
               <Head />
-              <Writing />
+              <Resume />
             </Route>
             <Route exact path="/work/:id">
               <Head />
