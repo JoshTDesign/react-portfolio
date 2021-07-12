@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import CardFull from './CardFull.js';
 import StepOne from '../assets/Images/StepOne-Poster-Woman - Large.png';
 import Gelato from '../assets/Images/gelato.png';
+import Circle from '../assets/Images/circle.png';
+import PawPair from '../assets/Images/pawpair.png';
 import ClubHAL from '../assets/Images/ClubHAL.jpg';
 import HAL from '../assets/Images/HAL.jpg';
 import { Link, useHistory, useParams } from 'react-router-dom'
@@ -103,9 +105,69 @@ const work =
 
         },
         {
+            title:'Circle Community Bulletin',
+            color: 'white',
+            desc:'Circle Community Bulletin is a web application that can connect you to people in your community. Circle lets you create, edit and delete public announcements, and uses your geodata to show it to people in your area.',
+            challenge: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel odio eget metus molestie luctus et nec metus. In eget maximus lorem. Integer mollis pretium aliquet. Quisque convallis nec tellus consequat interdum. Praesent mattis eros in sapien facilisis pharetra. Aenean ac sem eget tortor laoreet condimentum. Donec vel maximus quam. Integer vulputate imperdiet nunc, ac mattis ipsum efficitur quis. Curabitur interdum leo eget est luctus, vitae tempor arcu semper. Nam consequat euismod metus vel gravida.',
+            img: {Circle}.Circle,
+            tech: [
+                'Blender 3D',
+                'Photoshop',
+                'Illustrator'
+            ],
+            detail:[
+                {
+                    title:'detail title',
+                    desc:'detail description',
+                    img:''
+                },
+                {
+                    title:'detail title',
+                    desc:'detail description',
+                    img:''
+                },
+                {
+                    title:'detail title',
+                    desc:'detail description',
+                    img:''
+                },
+            ]
+
+        },
+        {
+            title:'Paw Pair',
+            color: 'white',
+            desc:'Paw Pair is a simple, fun tool for getting matched with your perfect pet companion. Skip the busy, hard to use pet finding websites and try this simple, delightful quiz tool instead.',
+            challenge: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel odio eget metus molestie luctus et nec metus. In eget maximus lorem. Integer mollis pretium aliquet. Quisque convallis nec tellus consequat interdum. Praesent mattis eros in sapien facilisis pharetra. Aenean ac sem eget tortor laoreet condimentum. Donec vel maximus quam. Integer vulputate imperdiet nunc, ac mattis ipsum efficitur quis. Curabitur interdum leo eget est luctus, vitae tempor arcu semper. Nam consequat euismod metus vel gravida.',
+            img: {PawPair}.PawPair,
+            tech: [
+                'Blender 3D',
+                'Photoshop',
+                'Illustrator'
+            ],
+            detail:[
+                {
+                    title:'detail title',
+                    desc:'detail description',
+                    img:''
+                },
+                {
+                    title:'detail title',
+                    desc:'detail description',
+                    img:''
+                },
+                {
+                    title:'detail title',
+                    desc:'detail description',
+                    img:''
+                },
+            ]
+
+        },
+        {
             title:'Gelato',
             desc:'Gelato lorem ipsum dolor',
-            img: {Gelato}.Gelato,
+            img: {Circle}.Circle,
         }
     ]
 
