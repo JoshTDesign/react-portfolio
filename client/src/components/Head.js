@@ -19,6 +19,8 @@ export default function Head() {
                     <li><a href="/work">Work</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/resume">Resume</a></li>
+                    <li><a href="/resume">Contact</a></li>
+
                 </ul>
             </div>
         // </div>
