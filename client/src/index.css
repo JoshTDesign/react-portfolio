@@ -191,6 +191,68 @@ body {
   font-weight: 500;
 }
 
+.label h2 {
+  font-family:'quicksand';
+  font-size:.8em;
+  text-align: center;
+  color: #eee;
+}
+
+#footer {
+  background-color:#303436;
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 10;
+  color:#b6b6b6
+}
+
+#contact h1 {
+  font-family:'bebas neue';
+  font-size:2.5em;
+  text-align: center;
+  color: #223138;
+  font-weight: 500;
+}
+
+#contact h2 {
+  font-family:'quicksand';
+  font-size:1.5em;
+  text-align: center;
+  color: #223138;
+  font-weight: 500;
+}
+
+#contact a {
+  /* color: #223138; */
+  color: pink;
+  text-decoration: none;
+  display: inline;
+  list-style-type: none;
+}
+
+#contact p {
+  font-family:'quicksand';
+  font-size:1.25em;
+  text-align: center;
+  color: #223138;
+  font-weight: 500;
+}
+
+#contact {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+
+#footer p {
+  font-family: 'quicksand';
+  font-size:1.2em;
+  text-align: center;
+}
+
 
 /*----------Resume Page---------*/
 .resume {

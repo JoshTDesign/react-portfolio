@@ -29,6 +29,7 @@ export default function Work() {
                     title="Holland America Line"
                 />
             </div>
+
         </div>
     )
 }

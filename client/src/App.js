@@ -14,6 +14,8 @@ import Writing from "./components/Writing.js"
 import Resume from "./components/Resume.js"
 import Head from "./components/Head.js"
 import WorkDetail from "./components/WorkDetail.js"
+import Footer from "./components/Footer.js"
+import Contact from "./components/Contact.js"
 
 function App() {
   return (
@@ -24,26 +26,37 @@ function App() {
             <Route exact path="/work">
               <Head />
               <Work />
+              <Footer />
             </Route>
             <Route exact path="/about">
               <Head />
               <About />
+              <Footer />
             </Route>
             <Route exact path="/resume">
               <Head />
               <Resume />
+              <Footer />
             </Route>
             <Route exact path="/work/:id">
               <Head />
               <WorkDetail />
+              <Footer />
+            </Route>
+            <Route exact path="/contact">
+              <Head />
+              <Contact />
+              <Footer />
             </Route>
             <Route exact path="/">
               <Head />
               <Home />
+              <Footer />
             </Route>
             <Route exact path="*">
               <Head />
               <Home />
+              <Footer />
             </Route>
           </Switch>
         </div>
