@@ -17,10 +17,10 @@ export default function Head() {
                 
                 <ul style={{padding:0}}>
                     <li><a href="/work">Work</a></li>
+                    <li><a href="/projects">Projects</a></li>
                     <li><a href="/about">About</a></li>
-                    <li><a href="/resume">Resume</a></li>
-                    <li><a href="/resume">Contact</a></li>
-
+                    {/* <li><a href="/resume">Resume</a></li> */}
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </div>
         // </div>
