@@ -71,9 +71,8 @@ export default function WorkDetail() {
                 <p>{workState.work.challenge}</p>
             </div>
 
-            <div id="workDetail" >
-                <p>{workState.work.tech}</p>
-            </div>
+            {
+            test.map((workState.work.tech}
 
         </div>
     );
