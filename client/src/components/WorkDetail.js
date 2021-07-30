@@ -71,8 +71,12 @@ export default function WorkDetail() {
                 <p>{workState.work.challenge}</p>
             </div>
 
-            {
-            test.map((workState.work.tech}
+            <div id="workDetail" >
+                <img id='contain' src={workState.work.img}/>
+                <p>{workState.work.challenge}</p>
+            </div>
+
+            
 
         </div>
     );
