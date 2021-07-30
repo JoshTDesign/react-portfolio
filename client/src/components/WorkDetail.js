@@ -5,7 +5,7 @@ import StepOne from '../assets/Images/StepOne-Poster-Woman - Large.png';
 import Gelato from '../assets/Images/gelato.png';
 import Circle from '../assets/Images/circle.png';
 import PawPair from '../assets/Images/pawpair.png';
-import StepOneDetail1 from '../assets/Images/StepOne-Poster-Woman.png';
+import StepOne1 from '../assets/Images/StepOneDetail1.png';
 import ClubHAL from '../assets/Images/ClubHAL.jpg';
 import HAL from '../assets/Images/HAL.jpg';
 import { useHistory, useParams } from 'react-router-dom'
@@ -14,6 +14,8 @@ import { useHistory, useParams } from 'react-router-dom'
 export default function WorkDetail() {
 
     const history = useHistory();
+
+    //const 'id' is derived from the URL using useParams method
     const { id } = useParams();
 
 
@@ -23,11 +25,15 @@ export default function WorkDetail() {
     })
 
     useEffect(()=>{
+
+        //workIndex is assigned the id derived from 'useParams'
         setWorkState ({
             ...workState,
             workIndex: id
             
         });
+
+        //forEach loop finds par of work object that matches the 'id' state and assigns that data to the 'work' state.
         work.forEach(item=>{
             if (item.title === id) {
             setWorkState ({
@@ -66,14 +72,19 @@ export default function WorkDetail() {
             <p>{workState.work.desc}</p>
             </div>
 
-            <div id="workDetail" >
-                <h2>Challenge</h2>
-                <p>{workState.work.challenge}</p>
-            </div>
+
 
             <div id="workDetail" >
+                <img id='contain' src={workState.work.detail1}/>
+                <p>{workState.work.detailDesc1}</p>
+            </div>
+            <div id="workDetail" >
                 <img id='contain' src={workState.work.img}/>
-                <p>{workState.work.challenge}</p>
+                <p>{workState.work.detailDesc2}</p>
+            </div>
+            <div id="workDetail" >
+                <img id='contain' src={workState.work.img}/>
+                <p>{workState.work.detailDesc3}</p>
             </div>
 
             
@@ -99,24 +110,12 @@ const work =
                 'Photoshop',
                 'Illustrator'
             ],
-            detail:[
-                {
-                    title:'detail title',
-                    desc:'detail description',
-                    img:{StepOne}.StepOneDetail1
-                },
-                {
-                    title:'detail title',
-                    desc:'detail description',
-                    img:''
-                },
-                {
-                    title:'detail title',
-                    desc:'detail description',
-                    img:''
-                },
-            ]
-
+            detail1: {StepOne1}.StepOne1,
+            detailDesc1: 'detail desc 1',
+            detail2: {StepOne}.StepOne2,
+            detailDesc2: 'detail desc 2',
+            detail3: {StepOne}.StepOne3,
+            detailDesc3: 'detail desc 3'
         },
         {
             title:'Circle Community Bulletin',

@@ -135,6 +135,44 @@ body {
   /* line-height:0; */
 }
 
+#workDetail {
+  width: 100%; 
+  overflow: hidden;
+  position: relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  /* line-height:0; */
+}
+
+#workDetail h2 {
+  font-family: quicksand;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color:rgba(0, 0, 0, .75);
+  mix-blend-mode: overlay;
+  padding:3em;
+}
+
+#workDetail p {
+  font-family: quicksand;
+  font-weight: normal;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color:rgba(0, 0, 0, .8);
+  mix-blend-mode: multiply;
+  margin-top:50px;
+}
+
+#workDetail img {
+  width: calc(100% - 100px);
+  max-width: 800px;
+  height: 100%;
+  margin: 50px;
+
+}
+
 #workText h2 {
   font-family: quicksand;
   text-transform: uppercase;
