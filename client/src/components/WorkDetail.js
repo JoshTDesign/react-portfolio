@@ -6,6 +6,8 @@ import Gelato from '../assets/Images/gelato.png';
 import Circle from '../assets/Images/circle.png';
 import PawPair from '../assets/Images/pawpair.png';
 import StepOne1 from '../assets/Images/StepOneDetail1.png';
+import StepOne2 from '../assets/Images/StepOneDetail2.png';
+import StepOne3 from '../assets/Images/StepOneDetail3.png';
 import ClubHAL from '../assets/Images/ClubHAL.jpg';
 import HAL from '../assets/Images/HAL.jpg';
 import { useHistory, useParams } from 'react-router-dom'
@@ -70,6 +72,7 @@ export default function WorkDetail() {
                 <li>Photoshop</li>
             </ul> */}
             <p>{workState.work.desc}</p>
+                <div id="arrow"/>
             </div>
 
 
@@ -79,11 +82,11 @@ export default function WorkDetail() {
                 <p>{workState.work.detailDesc1}</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={workState.work.img}/>
+                <img id='contain' src={workState.work.detail2}/>
                 <p>{workState.work.detailDesc2}</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={workState.work.img}/>
+                <img id='contain' src={workState.work.detail3}/>
                 <p>{workState.work.detailDesc3}</p>
             </div>
 
@@ -101,7 +104,7 @@ const work =
     [
         {
             title:'Step One',
-            color: 'white',
+            color: '#0c0c0c',
             desc:'Step One Dance Company is a modern dance group which combines exciting choreography with state-of-the-art stage technology. My role was to create an exciting logo and a set of posters that would match the energy of the performances. ',
             challenge: 'Holland America Line was launching a new show, focusing on modern dance and supported by exciting stage design. They needed a new logo and brand to support the dance troupe. The challenge was to create a logo that could be used for low fidelity print advertisements as well as high definition digital screens. Not only that, the logo would appear primarily on digital posters advertising a variety of shows. Each show would have its own character, color-scheme, and design. Finally, the identity had to reflect a modern, exciting look that would appeal to a younger audience.',
             img: {StepOne}.StepOne,
@@ -111,10 +114,10 @@ const work =
                 'Illustrator'
             ],
             detail1: {StepOne1}.StepOne1,
-            detailDesc1: 'detail desc 1',
-            detail2: {StepOne}.StepOne2,
+            detailDesc1: 'Early experiments really featured a lot of concepts with simple shapes. I knew the final application of this logo was going to appear on a lot of creative layouts with a wide variety of artistic styles and colors, so the solution had to be simple and direct enough to stand up to almost any use situation. Early poster designs were featuring explosions of color over dark background, so I almost started thinking of this as stencil art - simple shapes layered over bright colors and textures.',
+            detail2: {StepOne2}.StepOne2,
             detailDesc2: 'detail desc 2',
-            detail3: {StepOne}.StepOne3,
+            detail3: {StepOne3}.StepOne3,
             detailDesc3: 'detail desc 3'
         },
         {
