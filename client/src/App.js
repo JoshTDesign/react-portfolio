@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home.js"
 import Work from "./components/Work.js"
+import Projects from "./components/Projects.js"
 import About from "./components/About.js"
 import Writing from "./components/Writing.js"
 import Resume from "./components/Resume.js"
@@ -24,6 +25,10 @@ function App() {
             <Route exact path="/work">
               <Head />
               <Work />
+            </Route>
+            <Route exact path="/projects">
+              <Head />
+              <Projects />
             </Route>
             <Route exact path="/about">
               <Head />

@@ -17,16 +17,6 @@ export default function Work() {
                 />
             </div>
             <div id="workCard">
-                <CardFull image={Circle}
-                    title="Circle"
-                />
-            </div>
-            <div id="workCard">
-                <CardFull image={PawPair}
-                    title="Paw Pair"
-                />
-            </div>
-            <div id="workCard">
                 <CardFull image={Gelato}
                     title="Gelato"
                 />

@@ -7,40 +7,22 @@ import PawPair from '../assets/Images/pawpair.png';
 import ClubHAL from '../assets/Images/ClubHAL.jpg';
 import HAL from '../assets/Images/HAL.jpg';
 
-export default function Work() {
+export default function Projects() {
     return (
-        <div id="workContainer">
+        <div id="projectContainer">
 
-            <div id="workCard">
-                <CardFull image={StepOne}
-                    title="Step One"
-                />
-            </div>
-            <div id="workCard">
+            <div id="projectCard">
                 <CardFull image={Circle}
                     title="Circle"
                 />
             </div>
-            <div id="workCard">
+            <div id="projectCard">
                 <CardFull image={PawPair}
                     title="Paw Pair"
                 />
             </div>
-            <div id="workCard">
-                <CardFull image={Gelato}
-                    title="Gelato"
-                />
-            </div>
-            <div id="workCard">
-                <CardFull image={ClubHAL}
-                    title="Club HAL"
-                />
-            </div>
-            <div id="workCard">
-                <CardFull image={HAL}
-                    title="Holland America Line"
-                />
-            </div>
+
+
         </div>
     )
 }
