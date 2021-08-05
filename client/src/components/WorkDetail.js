@@ -9,6 +9,9 @@ import StepOne1 from '../assets/Images/StepOneDetail1.png';
 import StepOne2 from '../assets/Images/StepOneDetail2.png';
 import StepOne3 from '../assets/Images/StepOneDetail3.png';
 import ClubHAL from '../assets/Images/ClubHAL.jpg';
+import ClubHAL1 from '../assets/Images/ClubHALDetail1.png';
+import ClubHAL2 from '../assets/Images/ClubHALDetail2.png';
+import ClubHAL3 from '../assets/Images/ClubHALDetail3.png';
 import HAL from '../assets/Images/HAL.jpg';
 import { useHistory, useParams } from 'react-router-dom'
 
@@ -118,6 +121,24 @@ const work =
             detail2: {StepOne2}.StepOne2,
             detailDesc2: 'detail desc 2',
             detail3: {StepOne3}.StepOne3,
+            detailDesc3: 'detail desc 3'
+        },
+        {
+            title:'Club HAL',
+            color: '#2e1547',
+            desc:'Step One Dance Company is a modern dance group which combines exciting choreography with state-of-the-art stage technology. My role was to create an exciting logo and a set of posters that would match the energy of the performances. ',
+            challenge: 'Holland America Line was launching a new show, focusing on modern dance and supported by exciting stage design. They needed a new logo and brand to support the dance troupe. The challenge was to create a logo that could be used for low fidelity print advertisements as well as high definition digital screens. Not only that, the logo would appear primarily on digital posters advertising a variety of shows. Each show would have its own character, color-scheme, and design. Finally, the identity had to reflect a modern, exciting look that would appeal to a younger audience.',
+            img: {ClubHAL}.ClubHAL,
+            tech: [
+                'Blender 3D',
+                'Photoshop',
+                'Illustrator'
+            ],
+            detail1: {ClubHAL1}.ClubHAL1,
+            detailDesc1: 'Early experiments really featured a lot of concepts with simple shapes. I knew the final application of this logo was going to appear on a lot of creative layouts with a wide variety of artistic styles and colors, so the solution had to be simple and direct enough to stand up to almost any use situation. Early poster designs were featuring explosions of color over dark background, so I almost started thinking of this as stencil art - simple shapes layered over bright colors and textures.',
+            detail2: {ClubHAL2}.ClubHAL2,
+            detailDesc2: 'detail desc 2',
+            detail3: {ClubHAL3}.ClubHAL3,
             detailDesc3: 'detail desc 3'
         },
         {
