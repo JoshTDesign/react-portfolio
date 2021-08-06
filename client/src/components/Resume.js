@@ -5,21 +5,14 @@ export default function Resume() {
         <div className='resume'>
             <div>
                 <h3>Summary</h3>
-                <p>Senior designer and front-end developer with eight years experience as an independent design contractor for companies large and small. A self-directed worker experienced in translating business goals into successful design strategies. Passionate about the design process with a love for life-long learning.</p>
-            </div>
-            <div>
-                <h3>Accomplishments</h3>
-                <ul>
-                    <li>Worked on a major rebrand for Holland America Line’s graphic identity.</li>
-                    <li>Twice awarded ‘Best UX/UI’ for UW Full-Stack Development Bootcamp group project.</li>
-                    <li>Created new logo guidelines for multiple identities.</li>
-                </ul>            
+                <p>A creative UX/UI designer and developer with deep experience in branding and design. Self-directed and comfortable in every stage of project development, and able to deliver effective, user-first experiences. After earning a certificate in full-stack web development from the University of Washington, well-positioned to leverage latest technologies with timeless principles of branding and design.</p>
             </div>
             <div>
                 <h3>Technical Skills</h3>
                 <p>Photoshop, InDesign, Illustrator, Adobe XD, Figma, Node.js, GitHub, Bootstrap, Javascript, Handlebars, 
 CSS, Blender 3D, HTML, Color Theory, Branding</p>
             </div>
+
             <div>
                 <h3>Projects</h3>
                 <p>
@@ -66,6 +59,14 @@ CSS, Blender 3D, HTML, Color Theory, Branding</p>
                         Created a dynamic port information publication. Oversaw the rollout for ports across the world.
                     </li>
                 </ul>
+            </div>
+            <div>
+                <h3>Accomplishments</h3>
+                <ul>
+                    <li>Worked on a major rebrand for Holland America Line’s graphic identity.</li>
+                    <li>Twice awarded ‘Best UX/UI’ for UW Full-Stack Development Bootcamp group project.</li>
+                    <li>Created new logo guidelines for multiple identities.</li>
+                </ul>            
             </div>
             <div>
                 <h3>Education</h3>

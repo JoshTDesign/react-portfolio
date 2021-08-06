@@ -17,6 +17,9 @@ import Head from "./components/Head.js"
 import WorkDetail from "./components/WorkDetail.js"
 import CircleDetail from "./components/CircleDetail.js"
 import PawPairDetail from "./components/PawPairDetail.js"
+import WorkFooter from "./components/WorkFooter.js"
+import ProjectFooter from "./components/ProjectFooter.js"
+import ContactMe from "./components/ContactMe.js"
 
 function App() {
   return (
@@ -27,38 +30,51 @@ function App() {
             <Route exact path="/work">
               <Head />
               <Work />
+              <ContactMe />
             </Route>
             <Route exact path="/projects">
               <Head />
               <Projects />
+              <ContactMe />
             </Route>
             <Route exact path="/about">
               <Head />
               <About />
+              <ContactMe />
             </Route>
+
             <Route exact path="/resume">
               <Head />
               <Resume />
+              <ContactMe />
             </Route>
             <Route exact path="/work/:id">
               <Head />
               <WorkDetail />
+              <WorkFooter />
+              <ContactMe />
             </Route>
             <Route exact path="/projects/circle">
               <Head />
               <CircleDetail />
+              <ProjectFooter />
+              <ContactMe />
             </Route>
             <Route exact path="/projects/pawpair">
               <Head />
               <PawPairDetail />
+              <ProjectFooter />
+              <ContactMe />
             </Route>
             <Route exact path="/">
               <Head />
               <Home />
+              <ContactMe />
             </Route>
             <Route exact path="*">
               <Head />
               <Home />
+              <ContactMe />
             </Route>
           </Switch>
         </div>

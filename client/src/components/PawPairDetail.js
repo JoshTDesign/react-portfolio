@@ -73,9 +73,7 @@ export default function PawPairDetail() {
             </div>
             
             <div id="workText" style={{background:`#333333`}}>
-            <p>Paw Pair is a simple, fun tool for getting matched with your perfect pet companion. Skip the busy, hard to use pet finding websites and try this simple, delightful quiz tool instead.
-
-CSS.</p>
+            <p>Paw Pair is a simple, fun tool for getting matched with your perfect pet companion. Skip the busy, hard to use pet finding websites and try this simple, delightful quiz tool instead.</p>
                 <div id="arrow"/>
             </div>
 
