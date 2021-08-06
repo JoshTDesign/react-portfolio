@@ -1,5 +1,5 @@
 import React from 'react';
-import CardFull from './CardFull.js';
+import ProjectCardFull from './ProjectCardFull.js';
 import StepOne from '../assets/Images/StepOne-Poster-Woman - Large.png';
 import Gelato from '../assets/Images/gelato.png';
 import Circle from '../assets/Images/circle.png';
@@ -12,13 +12,13 @@ export default function Projects() {
         <div id="projectContainer">
 
             <div id="projectCard">
-                <CardFull image={Circle}
+                <ProjectCardFull image={Circle}
                     title="Circle"
                 />
             </div>
             <div id="projectCard">
-                <CardFull image={PawPair}
-                    title="Paw Pair"
+                <ProjectCardFull image={PawPair}
+                    title="PawPair"
                 />
             </div>
 

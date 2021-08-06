@@ -20,7 +20,7 @@ import HAL3 from '../assets/Images/HALDetail3.png';
 import { useHistory, useParams } from 'react-router-dom'
 
 
-export default function WorkDetail() {
+export default function CircleDetail() {
 
     const history = useHistory();
 
@@ -68,34 +68,35 @@ export default function WorkDetail() {
                     {/* <div className="label" onClick={handleClick}>
                         <h1>Back to work</h1>
                     </div> */}
-                    <img id='contain' src={workState.work.img}/>
+                    <img id='contain' src={Circle}/>
                 </div>
             </div>
-            <div id="workText" style={{background:`${workState.work.color}`}}>
-            {/* <h2>{workState.work.title}</h2> */}
-            {/* <ul>
-                <li>Blender 3D</li>
-                <li>Illustrator</li>
-                <li>Photoshop</li>
-            </ul> */}
-            <p>{workState.work.desc}</p>
+            
+            <div id="workText" style={{background:`#5b1212`}}>
+            <p>Circle is a web application that uses your geospatial properties to view and create local events and ask/offer services within your general area, or community.</p>
                 <div id="arrow"/>
             </div>
 
 
+            <div id="projectLinkDiv" >
+                <a className="link" target="blank" href="https://github.com/JoshTDesign/Circle-Community-Bulletin">Project on GitHub</a>
+                <a className="link" target="blank" href="http://oui-circle-app.herokuapp.com/">Deployed project</a>
+            </div>
+            <div id="workDetail">
+                <div id="projectRole" >
+                    <h3>My Role</h3>
+                    <p>Project Manager, Front-End Lead Developer</p>
+                </div>
+            </div>
+            <div id="workDetail">
+                <div id="technology" >
+                    <h3>Technology Used</h3>
+                    <p>Express.js, Sequelize, mysql2, Node.js, cloudinary, geoip-lite, bcrypt</p>
+                </div>
+            </div>
 
-            <div id="workDetail" >
-                <img id='contain' src={workState.work.detail1}/>
-                <p>{workState.work.detailDesc1}</p>
-            </div>
-            <div id="workDetail" >
-                <img id='contain' src={workState.work.detail2}/>
-                <p>{workState.work.detailDesc2}</p>
-            </div>
-            <div id="workDetail" >
-                <img id='contain' src={workState.work.detail3}/>
-                <p>{workState.work.detailDesc3}</p>
-            </div>
+
+
 
             
 

@@ -22,16 +22,17 @@ export default function Work() {
                 />
             </div>
             <div id="workCard">
+                <CardFull image={HAL}
+                    title="Holland America Line"
+                />
+            </div>
+            <div id="workCard">
                 <CardFull image={Gelato}
                     title="Gelato"
                 />
             </div>
 
-            <div id="workCard">
-                <CardFull image={HAL}
-                    title="Holland America Line"
-                />
-            </div>
+
         </div>
     )
 }

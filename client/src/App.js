@@ -15,6 +15,8 @@ import Writing from "./components/Writing.js"
 import Resume from "./components/Resume.js"
 import Head from "./components/Head.js"
 import WorkDetail from "./components/WorkDetail.js"
+import CircleDetail from "./components/CircleDetail.js"
+import PawPairDetail from "./components/PawPairDetail.js"
 
 function App() {
   return (
@@ -41,6 +43,14 @@ function App() {
             <Route exact path="/work/:id">
               <Head />
               <WorkDetail />
+            </Route>
+            <Route exact path="/projects/circle">
+              <Head />
+              <CircleDetail />
+            </Route>
+            <Route exact path="/projects/pawpair">
+              <Head />
+              <PawPairDetail />
             </Route>
             <Route exact path="/">
               <Head />

@@ -145,6 +145,7 @@ body {
   align-items:center;
   flex-direction:column;
   /* line-height:0; */
+
 }
 
 #workDetail h2 {
@@ -154,6 +155,15 @@ body {
   color:rgba(0, 0, 0, .75);
   mix-blend-mode: overlay;
   padding:3em;
+}
+#workDetail h3 {
+  font-family: quicksand;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color:rgba(0, 0, 0, .8);
+  width:800px;
+  padding-top: 30px;
+  border-top: 2px solid rgb(216, 216, 216);
 }
 
 #workDetail p {
@@ -165,6 +175,7 @@ body {
   mix-blend-mode: multiply;
   width: calc(100% - 100px);
   max-width: 800px;
+  width:800px;
 }
 
 #workDetail img {
@@ -307,6 +318,10 @@ body {
   transition: filter ease .5s;
 }
 
+#projectDetailContainer {
+  /* width: 800px; */
+}
+
 /* ---------------------------------------------------------*/
 
 
@@ -372,6 +387,35 @@ body {
   transition: color ease .3s;
 }
 
+/*----------Project Page----------*/
+#projectLinkDiv {
+  width:100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.link {
+  border: 2px solid rgb(202, 202, 202);
+  padding: 20px 40px 20px 40px;
+  margin: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: quicksand;
+  color:rgb(125, 125, 125);
+  transition: all ease .7s;
+}
+
+.link:hover {
+  background:rgba(236, 236, 236);
+  border: 2px solid rgb(154, 154, 154);
+  transition: all ease .7s;
+}
+
+
 
 /*----------Resume Page---------*/
 .resume {
@@ -427,6 +471,7 @@ body {
   #workContainer {
     display:flex;
     flex-direction: column;
+    align-items:center;
   }
 
   #workCard {
