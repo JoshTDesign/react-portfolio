@@ -123,9 +123,9 @@ const work =
             detail1: {StepOne1}.StepOne1,
             detailDesc1: 'Early experiments really featured a lot of concepts with simple shapes. I knew the final application of this logo was going to appear on a lot of creative layouts with a wide variety of artistic styles and colors, so the solution had to be simple and direct enough to stand up to almost any use situation. Early poster designs were featuring explosions of color over dark background, so I almost started thinking of this as stencil art - simple shapes layered over bright colors and textures.',
             detail2: {StepOne2}.StepOne2,
-            detailDesc2: 'detail desc 2',
+            detailDesc2: 'For the final logo, I created a custom type using simple shapes combined together with an overlay effect. My feeling was that this would be a logo that could be used at a variety of sizes and colors without losing its effectiveness.',
             detail3: {StepOne3}.StepOne3,
-            detailDesc3: 'detail desc 3'
+            detailDesc3: ''
         },
         {
             title:'Club HAL',
@@ -141,9 +141,9 @@ const work =
             detail1: {ClubHAL1}.ClubHAL1,
             detailDesc1: 'Early experiments really featured a lot of concepts with simple shapes. I knew the final application of this logo was going to appear on a lot of creative layouts with a wide variety of artistic styles and colors, so the solution had to be simple and direct enough to stand up to almost any use situation. Early poster designs were featuring explosions of color over dark background, so I almost started thinking of this as stencil art - simple shapes layered over bright colors and textures.',
             detail2: {ClubHAL2}.ClubHAL2,
-            detailDesc2: 'detail desc 2',
+            detailDesc2: '',
             detail3: {ClubHAL3}.ClubHAL3,
-            detailDesc3: 'detail desc 3'
+            detailDesc3: ''
         },
         {
             title:'Holland America Line',
@@ -161,7 +161,7 @@ const work =
             detail2: {HAL2}.HAL2,
             detailDesc2: 'One of the first tasks was to create a set of in-room stationery. The use of restraint here was very intentional. We asked the printer to use a high-quality uncoated paper that had enough tooth to feel textural - a nice choice for the bright white and deep blue color combination. The result was a set of cards, letterhead and other pieces that felt clean, luxurious, and modern.',
             detail3: {HAL3}.HAL3,
-            detailDesc3: 'detail desc 3'
+            detailDesc3: ''
         },
         {
             title:'Circle Community Bulletin',
@@ -177,7 +177,7 @@ const work =
             detail:[
                 {
                     title:'detail title',
-                    desc:'detail description',
+                    desc:'',
                     img:''
                 },
                 {

@@ -10,7 +10,7 @@ export default function WorkFooter() {
     return (
             <div id="footer">
                 <div id="footerLinkDiv">
-                    <a href="/work">Return to Work</a>
+                    <a href="/">Home</a>
                 </div>
             </div>
     )

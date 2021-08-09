@@ -10,7 +10,7 @@ export default function ProjectFooter() {
     return (
         <div id="footer">
         <div id="footerLinkDiv">
-            <a href="/projects">Return to Projects</a>
+            <a href="/projects">Bring me home</a>
         </div>
     </div>
     )

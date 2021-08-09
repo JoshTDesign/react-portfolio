@@ -68,12 +68,12 @@ function App() {
             </Route>
             <Route exact path="/">
               <Head />
-              <Work />
+              <About />
               <ContactMe />
             </Route>
             <Route exact path="*">
               <Head />
-              <Work />
+              <About />
               <ContactMe />
             </Route>
           </Switch>
