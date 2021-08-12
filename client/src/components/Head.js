@@ -16,11 +16,11 @@ export default function Head() {
                 <p>Josh Taylor is a designer and developer based in Seattle.</p>
                 
                 <ul style={{padding:0}}>
-                    <li><a href="/work">Work</a></li>
-                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/work">Design</a></li>
+                    <li><a href="/projects">Web Apps</a></li>
                     <li><a href="/about">About</a></li>
                     {/* <li><a href="/resume">Resume</a></li> */}
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/resume">Resume</a></li>
                 </ul>
             </div>
         // </div>

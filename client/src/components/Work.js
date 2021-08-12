@@ -17,21 +17,6 @@ export default function Work() {
                 />
             </div>
             <div id="workCard">
-                <CardFull image={Circle}
-                    title="Circle"
-                />
-            </div>
-            <div id="workCard">
-                <CardFull image={PawPair}
-                    title="Paw Pair"
-                />
-            </div>
-            <div id="workCard">
-                <CardFull image={Gelato}
-                    title="Gelato"
-                />
-            </div>
-            <div id="workCard">
                 <CardFull image={ClubHAL}
                     title="Club HAL"
                 />
@@ -39,6 +24,11 @@ export default function Work() {
             <div id="workCard">
                 <CardFull image={HAL}
                     title="Holland America Line"
+                />
+            </div>
+            <div id="workCard">
+                <CardFull image={Gelato}
+                    title="Gelato"
                 />
             </div>
 
