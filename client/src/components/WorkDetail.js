@@ -17,6 +17,7 @@ import HAL0 from '../assets/Images/HALDetail0.png';
 import HAL1 from '../assets/Images/HALDetail1.png';
 import HAL2 from '../assets/Images/HALDetail2.png';
 import HAL3 from '../assets/Images/HALDetail3.png';
+import Blank from '../assets/Images/blank.gif';
 import { useHistory, useParams } from 'react-router-dom'
 
 
@@ -96,6 +97,18 @@ export default function WorkDetail() {
                 <img id='contain' src={workState.work.detail3}/>
                 <p>{workState.work.detailDesc3}</p>
             </div>
+            <div id="workDetail" >
+                <img id='contain' src={workState.work.detail4}/>
+                <p>{workState.work.detailDesc4}</p>
+            </div>
+            <div id="workDetail" >
+                <img id='contain' src={workState.work.detail5}/>
+                <p>{workState.work.detailDesc5}</p>
+            </div>
+            <div id="workDetail" >
+                <img id='contain' src={workState.work.detail6}/>
+                <p>{workState.work.detailDesc6}</p>
+            </div>
 
             
 
@@ -125,7 +138,13 @@ const work =
             detail2: {StepOne2}.StepOne2,
             detailDesc2: 'For the final logo, I created a custom type using simple shapes combined together with an overlay effect. My feeling was that this would be a logo that could be used at a variety of sizes and colors without losing its effectiveness.',
             detail3: {StepOne3}.StepOne3,
-            detailDesc3: ''
+            detailDesc3: '',
+            detail4:  {Blank}.Blank,
+            detailDesc4: '',
+            detail5:  {Blank}.Blank,
+            detailDesc5: '',
+            detail6: {Blank}.Blank,
+            detailDesc6: '',
         },
         {
             title:'Club HAL',
@@ -143,7 +162,13 @@ const work =
             detail2: {ClubHAL2}.ClubHAL2,
             detailDesc2: '',
             detail3: {ClubHAL3}.ClubHAL3,
-            detailDesc3: ''
+            detailDesc3: '',
+            detail4:  '',
+            detailDesc4: '',
+            detail5:  '',
+            detailDesc5: '',
+            detail6: '',
+            detailDesc6: '',
         },
         {
             title:'Holland America Line',
@@ -161,36 +186,21 @@ const work =
             detail2: {HAL2}.HAL2,
             detailDesc2: 'One of the first tasks was to create a set of in-room stationery. The use of restraint here was very intentional. We asked the printer to use a high-quality uncoated paper that had enough tooth to feel textural - a nice choice for the bright white and deep blue color combination. The result was a set of cards, letterhead and other pieces that felt clean, luxurious, and modern.',
             detail3: {HAL3}.HAL3,
-            detailDesc3: ''
+            detailDesc3: '',
+            detail4:  '',
+            detailDesc4: '',
+            detail5:  '',
+            detailDesc5: '',
+            detail6: '',
+            detailDesc6: '',
         },
         {
             title:'Circle Community Bulletin',
             color: 'white',
             desc:'Circle Community Bulletin is a web application that can connect you to people in your community. Circle lets you create, edit and delete public announcements, and uses your geodata to show it to people in your area.',
             challenge: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel odio eget metus molestie luctus et nec metus. In eget maximus lorem. Integer mollis pretium aliquet. Quisque convallis nec tellus consequat interdum. Praesent mattis eros in sapien facilisis pharetra. Aenean ac sem eget tortor laoreet condimentum. Donec vel maximus quam. Integer vulputate imperdiet nunc, ac mattis ipsum efficitur quis. Curabitur interdum leo eget est luctus, vitae tempor arcu semper. Nam consequat euismod metus vel gravida.',
-            img: {Circle}.Circle,
-            tech: [
-                'Blender 3D',
-                'Photoshop',
-                'Illustrator'
-            ],
-            detail:[
-                {
-                    title:'detail title',
-                    desc:'',
-                    img:''
-                },
-                {
-                    title:'detail title',
-                    desc:'detail description',
-                    img:''
-                },
-                {
-                    title:'detail title',
-                    desc:'detail description',
-                    img:''
-                },
-            ]
+            img: {Circle}.Circle
+            
 
         },
         {
