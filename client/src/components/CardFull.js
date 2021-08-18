@@ -14,5 +14,7 @@ export default function CardFull(props) {
         <div className="card" onClick={handleClick}>
             <div className="label" id={props.id}>
                 <h1>{props.title}</h1>
+            </div>
+        </div>
     );
-}
+    }
