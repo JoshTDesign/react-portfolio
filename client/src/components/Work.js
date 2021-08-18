@@ -6,11 +6,17 @@ import Circle from '../assets/Images/circle.png';
 import PawPair from '../assets/Images/pawpair.png';
 import ClubHAL from '../assets/Images/ClubHAL.jpg';
 import HAL from '../assets/Images/HAL.jpg';
+import Exc from '../assets/Images/Exc.png';
 
 export default function Work() {
     return (
         <div id="workContainer">
 
+            <div id="workCard">
+                <CardFull image={Exc}
+                    title="EXC"
+                />
+            </div>
             <div id="workCard">
                 <CardFull image={StepOne}
                     title="Step One"
@@ -26,11 +32,7 @@ export default function Work() {
                     title="Holland America Line"
                 />
             </div>
-            <div id="workCard">
-                <CardFull image={Gelato}
-                    title="Gelato"
-                />
-            </div>
+
 
 
         </div>

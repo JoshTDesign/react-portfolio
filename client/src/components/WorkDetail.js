@@ -12,6 +12,13 @@ import ClubHAL from '../assets/Images/ClubHAL.jpg';
 import ClubHAL1 from '../assets/Images/ClubHALDetail1.png';
 import ClubHAL2 from '../assets/Images/ClubHALDetail2.png';
 import ClubHAL3 from '../assets/Images/ClubHALDetail3.png';
+import Exc from '../assets/Images/Exc.png';
+import ExcDetail1 from '../assets/Images/ExcDetail1.png';
+import ExcDetail2 from '../assets/Images/ExcDetail2.png';
+import ExcDetail3 from '../assets/Images/ExcDetail3.png';
+import ExcDetail4 from '../assets/Images/ExcDetail4.png';
+import ExcDetail5 from '../assets/Images/ExcDetail5.png';
+import ExcDetail6 from '../assets/Images/ExcDetail6.png';
 import HAL from '../assets/Images/HAL.jpg';
 import HAL0 from '../assets/Images/HALDetail0.png';
 import HAL1 from '../assets/Images/HALDetail1.png';
@@ -123,6 +130,30 @@ export default function WorkDetail() {
 const work = 
     [
         {
+            title:'EXC',
+            color: '#00205c',
+            desc:'Holland America Line needed a simple logo to represent a growing program for port information and enrichment. Originally developed for the physical space called Explorations Cafe, the concept soon grew to encompass all of the ships port offerings under one umbrella.',
+            challenge: 'exc challenge text',
+            img: {Exc}.Exc,
+            tech: [
+                'Blender 3D',
+                'Photoshop',
+                'Illustrator'
+            ],
+            detail1: {ExcDetail1}.ExcDetail1,
+            detailDesc1: 'My role was to create a logo and guidelines for a growing design system. In the end, it included logo files, palettes, digital and printed templates and posters.',
+            detail2: {ExcDetail2}.ExcDetail2,
+            detailDesc2: 'With so many programs falling under the EXC umbrella, it was important to plan for this mark to be adaptable. While Explorations Central refers to the ship’s port information library - a physical space, the wider EXC program came to encompass much more than that. EXC tours, EXC talks and EXC channel were just a few of the ship programs that benefited from the connection to EXC identity.',
+            detail3: {ExcDetail3}.ExcDetail3,
+            detailDesc3: 'A wide palette of bright colors was needed to accent and bring balance to a library of location photography that would be used throughout the program to amplify a sense of place.',
+            detail4:  {ExcDetail4}.ExcDetail4,
+            detailDesc4: 'Once the logo family was created, we went about applying the identity to a variety of posters and products. We made sure the logo could be reproduced at a variety of sizes and media. This sample shows a few examples of digital posters that were created for the EXC Talks lecture series.',
+            detail5:  {ExcDetail5}.ExcDetail5,
+            detailDesc5: 'Part of role was to help architects and signage suppliers adapt the logo for custom signage. I also worked with suppliers to create things like custom hats, jackets, and other items for staff to wear.',
+            detail6: {ExcDetail6}.ExcDetail6,
+            detailDesc6: '',
+        },
+        {
             title:'Step One',
             color: '#0c0c0c',
             desc:'Step One Dance Company is a modern dance group which combines exciting choreography with state-of-the-art stage technology. My role was to create an exciting logo and a set of posters that would match the energy of the performances. ',
@@ -173,7 +204,7 @@ const work =
         {
             title:'Holland America Line',
             color: '#1c2b57',
-            desc:'Holland America Line is an iconic brand in the cruise ship industry, with over 140 years as a company. I was hired to assist the design agency in refreshing the brand. Specifically my role was in leading the effort to establish onboard brand standards.',
+            desc:'Holland America Line is an iconic brand in the cruise ship industry, with over 140 years as a company. I was hired to assist a design agency in refreshing the brand. Specifically my role was in leading the effort to establish onboard brand standards.',
             challenge: '',
             img: {HAL0}.HAL0,
             tech: [
@@ -232,11 +263,6 @@ const work =
                 },
             ]
 
-        },
-        {
-            title:'Gelato',
-            desc:'Gelato lorem ipsum dolor',
-            img: {Circle}.Circle,
         }
     ]
 
