@@ -185,7 +185,14 @@ body {
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 50px;
-
+}
+#workDetail p {
+  width: calc(100% - 100px);
+  max-width: 800px;
+  height: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
 }
 
 #workText h2 {
@@ -537,7 +544,7 @@ body {
 }
 
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1200px) {
   #head {
     justify-content: center;
     flex-direction: column;
@@ -558,6 +565,10 @@ body {
 
   #workText {
     width: 100%; 
+  }
+
+  #workDetail {
+    width: 100%;
   }
 
   #projectContainer {
@@ -589,7 +600,60 @@ body {
   #head p {
     /* line-height: 1.4em; */
     /* border: 1px solid pink; */
+    min-width: 650px;
+    text-align: center;
+    visibility: hidden;
+    height: 0;
+  }
+
+
+  #head ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  #head img {
+    margin: 20px;
+  }
+
+  #head li {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #head {
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about div {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
+  #profile p {
+
+    text-align: left;
+  }
+
+  #profilePic {
+    padding:0;
+    margin: 0;
+  }
+
+  .about 
+
+  html, body {
+    overflow-x: hidden;
+  }
 }
