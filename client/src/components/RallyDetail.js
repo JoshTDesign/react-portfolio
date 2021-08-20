@@ -5,6 +5,7 @@ import StepOne from '../assets/Images/StepOne-Poster-Woman - Large.png';
 import Gelato from '../assets/Images/gelato.png';
 import Circle from '../assets/Images/circle.png';
 import PawPair from '../assets/Images/pawpair.png';
+import Rally from '../assets/Images/rally.png';
 import StepOne1 from '../assets/Images/StepOneDetail1.png';
 import StepOne2 from '../assets/Images/StepOneDetail2.png';
 import StepOne3 from '../assets/Images/StepOneDetail3.png';
@@ -20,7 +21,7 @@ import HAL3 from '../assets/Images/HALDetail3.png';
 import { useHistory, useParams } from 'react-router-dom'
 
 
-export default function PawPairDetail() {
+export default function RallyDetail() {
 
     const history = useHistory();
 
@@ -68,28 +69,28 @@ export default function PawPairDetail() {
                     {/* <div className="label" onClick={handleClick}>
                         <h1>Back to work</h1>
                     </div> */}
-                    <img id='contain' src={PawPair}/>
+                    <img id='contain' src={Rally}/>
                 </div>
             </div>
             
-            <div id="workText" style={{background:`#333333`}}>
-            <p>Paw Pair is a simple, fun tool for getting matched with your perfect pet companion. Skip the busy, hard to use pet finding websites and try this simple, delightful quiz tool instead.</p>
+            <div id="workText" style={{background:`#20484e`}}>
+            <p>Rally provides users and friends an all-in-one application where you are able to track your travel group's itinerary, find new activities to add to an agenda, and keep track of your budget.</p>
                 <div id="arrow"/>
             </div>
 
 
             <div id="projectLinkDiv" >
-                <a className="link" target="blank" href="https://github.com/JoshTDesign/Paw-Pair">Project on GitHub</a>
-                <a className="link" target="blank" href="https://joshtdesign.github.io/Paw-Pair/">Deployed project</a>
+                <a className="link" target="blank" href="https://github.com/JoshTDesign/Project-3">Project on GitHub</a>
+                <a className="link" target="blank" href="https://rally-travel.herokuapp.com/">Deployed project</a>
             </div>
             <div id="workDetail">
                 <div id="projectRole" >
                     <h3>My Role</h3>
-                    <p>Project Manager, Front-End Lead Developer</p>
+                    <p>Gitmaster, Front-End Lead Developer</p>
                 </div>
                 <div id="technology" >
                     <h3>Technology Used</h3>
-                    <p>Express.js, Sequelize, mysql2, Node.js, cloudinary, geoip-lite, bcrypt</p>
+                    <p>Reactjs, Express.js, Sequelize, mysql2, Node.js, cloudinary, geoip-lite, bcrypt, Material.ui, Mapbox, Amadeus API</p>
                 </div>
             </div>
 

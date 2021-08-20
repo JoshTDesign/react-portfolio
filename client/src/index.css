@@ -1,16 +1,23 @@
+:root {
+  --dark-gray: #242D32;
+  --med-gray: #9faab1;
+  --light-gray: #E9EDEF;
+  --white: #FAFAFA;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   /* background-color:#e9edef; */
-  background-color:#FAFAFA;
+  background-color:var(--white);
 }
 
 #head {
   display:flex; 
   align-items:center;
   justify-content:space-between;
-  background-color:#e9edef;
+  background-color:var(--light-gray);
   height: 250px;
   padding: 0 10% 0 10%;
 }
@@ -21,7 +28,7 @@ body {
 
 
 #head li a { 
-  color: #223138;
+  color: var(--med-gray);
   text-decoration:none;
   text-decoration: 'none';
 }
@@ -30,7 +37,7 @@ body {
   display: inline;
   font-family: 'bebas neue';
   text-decoration: none;
-  color: #223138;
+  color: var(--med-gray);
   font-size: 1.6em;
 }
 
@@ -46,50 +53,56 @@ body {
   font-style: normal;
   font-size: 1.15em;
   line-height: 2.4em;
-  color:#223138;
+  color:var(--dark-gray);
   margin: 0;
   padding-top: 5px;
   height: auto;
 }
 
-.react-tabs__tab--selected {
-  /* background-color: rgba( 255, 255, 255, .5); */
-  border-bottom: 3px solid black;
-  padding:0;
+#head .react-tabs__tab--selected {
+  border-bottom: 3px solid var(--dark-gray);
+  color: var(--dark-gray);
+}
+
+.react-tabs__tab--selected li {
+  color: var(--dark-gray);
 }
 
 .react-tabs__tab-list {
   cursor: pointer;
-  margin:0;
+  margin:10px 0 0 0;
   padding:0;
 }
 
 .react-tabs__tab {
   margin: 0px 10px 0px 10px;
-  padding: 10px 0 5px 0;
+  padding: 5px 5px 0 5px;
   /* transition: all ease 200ms; */
 }
 
-.react-tabs__tab:hover {
-  background-color:rgba(255, 255, 255, .5);
-  border-radius:4px 4px 0 0;
-}
+
 
 /*-------Profile Page-----------*/
 #profile {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about {
-  padding: 80px 10% 80px 10%;
-  background-color: white;
+  padding: 50px 10% 50px 10%;
+  background-color: var(--white);
+  border-bottom: 1px solid rgb(218, 218, 218);
 }
 
 .about li {
   font-family: 'quicksand', sans-serif;
   font-weight: 400;
   font-size: 1.3em;
-  background-color: #f0f0f0;
+  background-color:  var(--white);
   color: #b6b6b6;
   text-transform: uppercase;
   list-style: none;
@@ -120,23 +133,88 @@ body {
   margin-top:0;
 }
 
+.about ul {
+  padding: 0;
+  margin: 50px auto 50px auto;
+  max-width: 900px;
+
+}
+
 #profilePic {
-  border: red;
   height: 150px;
   width: 150px;
   overflow:hidden;
   border-radius:100%;
   object-fit:cover;
   min-width: 150px;
-  margin-right: 40px;
-  margin-top: 20px;
+  padding: 50px;
 }
+
+/*----------Home Page----------*/
+#home {
+  font-family: 'Quicksand';
+  margin: 50px auto 50px auto;
+  width: 100%;
+  max-width: 500px;
+  /* height: 300px; */
+}
+
+#home h1 {
+  font-weight: 400;
+}
+
+#home h2 {
+  font-weight: 400;
+}
+
+#home div {
+  /* height: 100%; */
+  margin-bottom: 200px;
+}
+
+#fileDownload {
+  border: 1px solid var(--med-gray);
+  width: 150px;
+  height: 20px;
+  border-radius: 5px;
+  display: flex;
+  padding: 20px;
+  transition: all 0.5s;
+  margin: 50px auto 20px auto;
+  align-items:center;
+  justify-content: center;
+}
+
+#fileDownload:hover {
+  border: 1px solid var(--dark-gray);
+}
+
+#fileDownload:hover > a {
+  color: var(--dark-gray);
+}
+
+#fileDownload:hover {
+  background-color: var(--light-gray);
+}
+
+#fileDownload a:link {
+  /* color: pink; */
+  color: var(--med-gray);
+  text-decoration: none;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+#fileDownload a:link:hover {
+  /* color: pink; */
+  color: var(--dark-gray);
+}
+
 
 /*----------Work Page----------*/
 #workContainer {
   display:flex;
   flex-wrap: wrap;
-  /* font-size:0; */
 }
 
 #workCard {
@@ -154,37 +232,44 @@ body {
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  /* line-height:0; */
 }
 
 #workDetail {
   width: 100%; 
-  overflow: hidden;
-  position: relative;
+  /* overflow: hidden; */
+  /* position: relative; */
   display:flex;
-  justify-content:center;
-  align-items:center;
+  /* justify-content:center; */
+  /* align-items:center; */
   flex-direction:column;
-  /* line-height:0; */
-
+  margin: 50 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--light-gray);
 }
 
 #workDetail h2 {
-  font-family: quicksand;
+  font-family:'bebas neue';
   text-transform: uppercase;
   letter-spacing: .04em;
-  color:rgba(0, 0, 0, .75);
+  color:var(--dark-gray);
   mix-blend-mode: overlay;
-  padding:3em;
+  width: 900px;
+  margin: 0 auto;
+
 }
 #workDetail h3 {
-  font-family: quicksand;
+  font-family:'bebas neue';
   text-transform: uppercase;
-  letter-spacing: .04em;
-  color:rgba(0, 0, 0, .8);
-  width:800px;
+  letter-spacing: .1em;
+  font-size: 1.6em;
+  font-weight: normal;
+  color:var(--dark-gray);
+  /* width: 900px; */
+  max-width: 900px;
+  width: calc(100% - 100px);
+  margin: 25px auto;
   padding-top: 30px;
-  border-top: 2px solid rgb(216, 216, 216);
 }
 
 #workDetail p {
@@ -192,35 +277,31 @@ body {
   font-weight: normal;
   font-size: 1.2em;
   line-height: 1.4em;
-  color:rgba(0, 0, 0, .8);
+  color:var(--dark-gray);
   mix-blend-mode: multiply;
   width: calc(100% - 100px);
-  max-width: 800px;
-  width:800px;
+  margin: 0 auto;
+  max-width: 900px;
+
 }
+
+
 
 #workDetail img {
   width: calc(100% - 100px);
-  max-width: 800px;
+  max-width: 900px;
   height: 100%;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 50px;
 }
-#workDetail p {
-  width: calc(100% - 100px);
-  max-width: 800px;
-  height: 100%;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 50px;
-}
+
 
 #workText h2 {
   font-family: quicksand;
   text-transform: uppercase;
   letter-spacing: .04em;
-  color:rgba(0, 0, 0, .75);
+  color:var(--dark-gray);
   mix-blend-mode: overlay;
   padding:3em;
 }
@@ -230,7 +311,7 @@ body {
   font-weight: lighter;
   font-size: 1.2em;
   line-height: 1.6em;
-  color:#cccbcb;
+  color:var(--light-gray);
   padding:3em;
 }
 
@@ -427,7 +508,7 @@ body {
 }
 
 .link {
-  border: 2px solid rgb(202, 202, 202);
+  border: 1px solid rgb(218, 218, 218);
   padding: 20px 40px 20px 40px;
   margin: 20px;
   border-radius: 8px;
@@ -439,7 +520,7 @@ body {
 
 .link:hover {
   background:rgba(236, 236, 236);
-  border: 2px solid rgb(154, 154, 154);
+  border: 1px solid rgb(154, 154, 154);
   transition: all ease .7s;
 }
 
@@ -485,13 +566,12 @@ body {
 /*-------------Footer-----------*/
 #footer {
   text-align: center;
-  height: 200px;
   display:flex;
   justify-content: center;
   align-items:center;
-  background-color: white;
   flex-direction: column;
-  margin-top: 50px;
+  padding: 75px 0;
+  background-color: var(--light-gray);
 }
 
 #footerLinkDiv {
@@ -505,13 +585,13 @@ body {
 }
 
 #footerLinkDiv a {
-  border: 2px solid rgb(202, 202, 202);
+  border: 1px solid rgb(218, 218, 218);
   padding: 20px 40px 20px 40px;
   margin: 20px;
   border-radius: 8px;
   text-decoration: none;
   font-family: quicksand;
-  color:rgb(208, 208, 208);
+  color:var(--med-gray);
   transition: all ease .7s;
 }
 
@@ -527,7 +607,7 @@ body {
 }
 
 #footer a {
-  color: rgb(202, 202, 202);
+  color: var(--med-gray);
   text-decoration: none;
   transition: all ease .7s;
 }
@@ -537,7 +617,7 @@ body {
 }
 
 #footer h1 {
-  color: rgba(208, 208, 208);
+  color: var(--dark-gray);
   font-family:'bebas neue';
   font-size:1.5em;
   text-align: center;
@@ -588,9 +668,9 @@ body {
     width: 100%; 
   }
 
-  #workDetail {
+  /* #workDetail {
     width: 100%;
-  }
+  } */
 
   #projectContainer {
     display:flex;
@@ -646,6 +726,13 @@ body {
     padding: 10px;
   }
 
+  #head .react-tabs__tab--selected {
+    /* background-color: rgba( 255, 255, 255, .5); */
+    border-bottom: none;
+    /* padding:0; */
+    color: black;
+  }
+
   #head {
     height: 100%;
     padding-top: 25px;
@@ -653,6 +740,14 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
+
+  #home h1, h2{
+    padding: 25px;
+  }
+
+
+  
+
 
   .about div {
     display: flex;
@@ -669,8 +764,6 @@ body {
     padding:0;
     margin: 0;
   }
-
-  .about 
 
   html, body {
     overflow-x: hidden;

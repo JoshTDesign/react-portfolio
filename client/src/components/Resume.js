@@ -9,8 +9,9 @@ export default function Resume() {
             </div>
             <div>
                 <h3>Technical Skills</h3>
-                <p>Photoshop, InDesign, Illustrator, Adobe XD, Figma, Node.js, GitHub, Bootstrap, Javascript, Handlebars, 
-CSS, Blender 3D, HTML, Color Theory, Branding</p>
+                <p><strong>Languages:</strong> Javascript, HTML, CSS, MySQL</p>
+                <p><strong>Applications:</strong> Github, Figma, Illustrator, Photoshop, InDesign, AdobeXD, Blender3D</p>
+                <p><strong>Frameworks:</strong> TailwindCSS, Express.js, Node.js, UIKit, Materialize, ReactJS, Sequelize</p>
             </div>
 
             <div>

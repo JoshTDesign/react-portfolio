@@ -11,26 +11,27 @@ export default function Head() {
 
     const history = useHistory();
 
-    const [tabIndex, setTabIndex] = useState(null);
+    const [tabIndex, setTabIndex] = useState(0);
 
 
 const testFunction = (n) => {
-    // console.log(n);
+    console.log(n);
     switch(n) {
         case 0:
-          history.push(`/work`)
+          history.push(`/`)
           break;
         case 1:
-            history.push(`/projects`)
+            history.push(`/work`)
             break;
         case 2:
-            history.push(`/about`)
+            history.push(`/projects`)
             break;
         case 3:
-            history.push(`/resume`)
+            history.push(`/about`)
             break;
         default:
-          console.log('default');
+
+          break;
       }
       setTabIndex(n);
 }
@@ -44,10 +45,11 @@ const testFunction = (n) => {
                 
                 <Tabs selectedIndex={tabIndex} onSelect={testFunction}>
                     <TabList>
+                    <Tab>Home</Tab>
                     <Tab>Design</Tab>
                     <Tab>Web Apps</Tab>
                     <Tab>About</Tab>
-                    <Tab>Resum&#xC9;</Tab>
+                    {/* <Tab>Resum&#xC9;</Tab> */}
                     </TabList>
                 </Tabs>
             </div>

@@ -17,6 +17,7 @@ import Head from "./components/Head.js"
 import WorkDetail from "./components/WorkDetail.js"
 import CircleDetail from "./components/CircleDetail.js"
 import PawPairDetail from "./components/PawPairDetail.js"
+import RallyDetail from "./components/RallyDetail.js"
 import WorkFooter from "./components/WorkFooter.js"
 import ProjectFooter from "./components/ProjectFooter.js"
 import ContactMe from "./components/ContactMe.js"
@@ -40,6 +41,7 @@ function App() {
             <Route exact path="/about">
               <Head />
               <About />
+              {/* <Resume /> */}
               <ContactMe />
             </Route>
 
@@ -57,13 +59,16 @@ function App() {
             <Route exact path="/projects/circle">
               <Head />
               <CircleDetail />
-              <ProjectFooter />
               <ContactMe />
             </Route>
             <Route exact path="/projects/pawpair">
               <Head />
               <PawPairDetail />
-              <ProjectFooter />
+              <ContactMe />
+            </Route>
+            <Route exact path="/projects/rally">
+              <Head />
+              <RallyDetail />
               <ContactMe />
             </Route>
             <Route exact path="/">
