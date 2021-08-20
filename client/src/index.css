@@ -3,6 +3,8 @@
   --med-gray: #9faab1;
   --light-gray: #E9EDEF;
   --white: #FAFAFA;
+  --purple: rgb(156, 66, 197);
+  --dark-purple: rgb(79, 20, 106);
 }
 
 body {
@@ -161,19 +163,21 @@ body {
 
 #home h1 {
   font-weight: 400;
+
 }
 
 #home h2 {
   font-weight: 400;
+
 }
 
 #home div {
   /* height: 100%; */
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 }
 
 #fileDownload {
-  border: 1px solid var(--med-gray);
+  border: 1px solid var(--dark-purple);
   width: 150px;
   height: 20px;
   border-radius: 5px;
@@ -183,6 +187,7 @@ body {
   margin: 50px auto 20px auto;
   align-items:center;
   justify-content: center;
+  background-color: var(--dark-purple);
 }
 
 #fileDownload:hover {
@@ -190,16 +195,16 @@ body {
 }
 
 #fileDownload:hover > a {
-  color: var(--dark-gray);
+  color: var(--white);
 }
 
 #fileDownload:hover {
-  background-color: var(--light-gray);
+  background-color: var(--purple);
 }
 
 #fileDownload a:link {
   /* color: pink; */
-  color: var(--med-gray);
+  color: var(--white);
   text-decoration: none;
   transition: all 0.5s;
   text-align: center;
@@ -207,9 +212,12 @@ body {
 
 #fileDownload a:link:hover {
   /* color: pink; */
-  color: var(--dark-gray);
+  color: var(--white);
 }
 
+#purple {
+  color:rgb(156, 66, 197);
+}
 
 /*----------Work Page----------*/
 #workContainer {
@@ -440,6 +448,25 @@ body {
   background-image: url(assets/Images/arrow.svg);
   background-repeat: no-repeat;
 }
+
+#homeArt {
+  /* width:600px; */
+  width:750px;
+  height: 300px;
+  background-image: url(assets/Images/HomeArt.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  /* top:100px; */
+  transform: translate(-50%, 0%);
+  margin: 0 auto;
+}
+
+/* #homeArt:hover {
+  background-image: url(assets/Images/HomeArt2.svg);
+  transition: all 1.5s;
+} */
 
 #contain {
   object-fit: cover;
@@ -708,6 +735,7 @@ body {
   }
 
 
+  
   #head ul {
     display: flex;
     flex-direction: column;
@@ -745,7 +773,19 @@ body {
     padding: 25px;
   }
 
-
+  #homeArt {
+    /* width:600px; */
+    /* width:200px; */
+    height: 600px;
+    background-image: url(assets/Images/HomeArt2.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    /* top:100px; */
+    transform: translate(-30%, 0%);
+    margin: 0 auto;
+  }
   
 
 
