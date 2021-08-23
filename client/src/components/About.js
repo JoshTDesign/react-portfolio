@@ -14,14 +14,14 @@ export default function About() {
 
             <div id='techStack'>
                 <ul style={{display:'flex', flexWrap:'wrap', justifyContent:'center'}}>
-                    <li>React</li>
-                    <li>Express</li>
-                    <li>MongoDB</li> 
-                    <li>Node.js</li>
-                    <li>Illustrator</li>
-                    <li>Photoshop</li>
-                    <li>Figma</li>
-                    <li>InDesign</li>
+                    <li id="code">React</li>
+                    <li id="code">Express</li>
+                    <li id="code">MongoDB</li> 
+                    <li id="code">Node.js</li>
+                    <li id="design">Illustrator</li>
+                    <li id="design">Photoshop</li>
+                    <li id="design">Figma</li>
+                    <li id="design">InDesign</li>
                 </ul>
             </div>
         </div>
