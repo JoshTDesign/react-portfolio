@@ -1,5 +1,5 @@
 import React from 'react'
-import MyPic from '../assets/Images/myPicCropped.png';
+import MyPic from '../assets/Images/profilePic_cropped2.svg';
 
 
 export default function About() {
@@ -10,6 +10,8 @@ export default function About() {
                 <img id="profilePic" src={MyPic}/>
                 <p>I am a graphic designer and web developer with years of experience working for companies large and small. I love learning and working with others to create cool stuff. Check out some of my recent work. I'll be <a href="mailto:josh@joshtaylordesign.com">here</a> if you have any questions.</p>
             </div>
+
+
             <div id='techStack'>
                 <ul style={{display:'flex', flexWrap:'wrap', justifyContent:'center'}}>
                     <li>React</li>
