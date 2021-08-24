@@ -275,6 +275,23 @@ body {
   align-items:center;
 }
 
+#workText h3 {
+  color: var(--light-gray);
+  font-family: quicksand;
+  font-size: 1.2em;
+  letter-spacing: .2em;
+  margin:0;
+}
+
+#workText p3 {
+  color: var(--light-gray);
+  font-family: quicksand;
+  font-size: 1.2em;
+  font-family: quicksand;
+  font-weight: lighter;
+  line-height: 1.6em; 
+}
+
 #workDetail {
   width: 100%; 
   /* overflow: hidden; */

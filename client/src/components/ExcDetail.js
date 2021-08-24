@@ -86,36 +86,35 @@ export default function ExcDetail() {
                 <li>Illustrator</li>
                 <li>Photoshop</li>
             </ul> */}
-            <h3 style={{color:'#0650ba'}}>ROLE</h3>
+            <h3>ROLE</h3>
             <p3>Lead Designer</p3>
             <p>Holland America Line needed a simple logo to represent a growing program for port information and enrichment. Originally developed for the physical space called Explorations Cafe, the concept soon grew to encompass all of the ships port offerings under one umbrella.</p>
-                <div id="arrow"/>
             </div>
 
 
 
             <div id="workDetail" >
-                <img id='contain' src={Exc}/>
-                <p>{workState.work.detailDesc1}</p>
+                <img id='contain' src={ExcDetail1}/>
+                <p>My role was to create a logo and guidelines for a growing design system. In the end, it included logo files, palettes, digital and printed templates and posters.</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={workState.work.detail2}/>
+                <img id='contain' src={ExcDetail2}/>
                 <p>{workState.work.detailDesc2}</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={workState.work.detail3}/>
+                <img id='contain' src={ExcDetail3}/>
                 <p>{workState.work.detailDesc3}</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={workState.work.detail4}/>
+                <img id='contain' src={ExcDetail4}/>
                 <p>{workState.work.detailDesc4}</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={workState.work.detail5}/>
+                <img id='contain' src={ExcDetail5}/>
                 <p>{workState.work.detailDesc5}</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={workState.work.detail6}/>
+                <img id='contain' src={ExcDetail6}/>
                 <p>{workState.work.detailDesc6}</p>
             </div>
 
