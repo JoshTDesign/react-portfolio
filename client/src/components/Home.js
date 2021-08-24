@@ -23,7 +23,7 @@ export default function Home() {
                 <img src={icon2} width="200"/>
                 <img src={icon3} width="200"/>
             </div>
-            <h1>A designer with 10+ years of experience in <span id='yellow'>visual design</span> and <span id='purple'>brand management</span>. With the <span id='green'>coding skills</span> to bring your project to the next level.</h1>
+            <h1>Are you looking for a front-end designer who can connect the dots? I have 10+ years of experience in <span id='yellow'>graphic design</span> and <span id='purple'>brand management</span>. With the <span id='green'>coding skills</span> to bring your project to the next level.</h1>
             <div id="fileDownload">
                 <a href='/JoshTaylor_resume2021.pdf' download>Download Resum&eacute;</a>
             </div>

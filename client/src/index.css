@@ -177,6 +177,7 @@ body {
 #home h1 {
   font-weight: 400;
   line-height: 1.4em;
+  text-align: center;
 }
 
 #home h2 {

@@ -28,7 +28,7 @@ import Blank from '../assets/Images/blank.gif';
 import { useHistory, useParams } from 'react-router-dom'
 
 
-export default function ExcDetail() {
+export default function ClubHalDetail() {
 
     const history = useHistory();
 
@@ -76,26 +76,24 @@ export default function ExcDetail() {
                     {/* <div className="label" onClick={handleClick}>
                         <h1>Back to work</h1>
                     </div> */}
-                    <img id='contain' src={Exc}/>
+                    <img id='contain' src={workState.work.img}/>
                 </div>
             </div>
-            <div id="workText" style={{background:'#00173d'}}>
+            <div id="workText" style={{background:`${workState.work.color}`}}>
             {/* <h2>{workState.work.title}</h2> */}
             {/* <ul>
                 <li>Blender 3D</li>
                 <li>Illustrator</li>
                 <li>Photoshop</li>
             </ul> */}
-            <h3 style={{color:'#0650ba'}}>ROLE</h3>
-            <p3>Lead Designer</p3>
-            <p>Holland America Line needed a simple logo to represent a growing program for port information and enrichment. Originally developed for the physical space called Explorations Cafe, the concept soon grew to encompass all of the ships port offerings under one umbrella.</p>
+            <p>{workState.work.desc}</p>
                 <div id="arrow"/>
             </div>
 
 
 
             <div id="workDetail" >
-                <img id='contain' src={Exc}/>
+                <img id='contain' src={workState.work.detail1}/>
                 <p>{workState.work.detailDesc1}</p>
             </div>
             <div id="workDetail" >

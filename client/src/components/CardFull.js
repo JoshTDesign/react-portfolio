@@ -7,7 +7,7 @@ export default function CardFull(props) {
     const history = useHistory();
     
     const handleClick = (e) => {
-        history.push(`/work/`+ props.title);
+        history.push(`/work/`+ props.link);
     }
     return (
         <div className="card" onClick={handleClick}>

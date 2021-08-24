@@ -15,21 +15,25 @@ export default function Work() {
             <div id="workCard">
                 <CardFull image={Exc}
                     title="EXC"
+                    link="exc"
                 />
             </div>
             <div id="workCard">
                 <CardFull image={StepOne}
                     title="Step One"
+                    link="stepone"
                 />
             </div>
             <div id="workCard">
                 <CardFull image={ClubHAL}
                     title="Club HAL"
+                    link="clubhal"
                 />
             </div>
             <div id="workCard">
                 <CardFull image={HAL}
                     title="Holland America Line"
+                    link="hollandamerica"
                 />
             </div>
 

@@ -18,6 +18,10 @@ import WorkDetail from "./components/WorkDetail.js"
 import CircleDetail from "./components/CircleDetail.js"
 import PawPairDetail from "./components/PawPairDetail.js"
 import RallyDetail from "./components/RallyDetail.js"
+import ExcDetail from "./components/ExcDetail.js"
+import StepOneDetail from "./components/StepOneDetail.js"
+import ClubHalDetail from "./components/ClubHalDetail.js"
+import HollandAmericaDetail from "./components/HollandAmericaDetail.js"
 import WorkFooter from "./components/WorkFooter.js"
 import ProjectFooter from "./components/ProjectFooter.js"
 import ContactMe from "./components/ContactMe.js"
@@ -50,9 +54,27 @@ function App() {
               <Resume />
               <ContactMe />
             </Route>
-            <Route exact path="/work/:id">
+            <Route exact path="/work/exc">
               <Head />
-              <WorkDetail />
+              <ExcDetail />
+              <WorkFooter />
+              <ContactMe />
+            </Route>
+            <Route exact path="/work/stepone">
+              <Head />
+              <StepOneDetail />
+              <WorkFooter />
+              <ContactMe />
+            </Route>
+            <Route exact path="/work/clubhal">
+              <Head />
+              <ClubHalDetail />
+              <WorkFooter />
+              <ContactMe />
+            </Route>
+            <Route exact path="/work/hollandamerica">
+              <Head />
+              <HollandAmericaDetail />
               <WorkFooter />
               <ContactMe />
             </Route>
