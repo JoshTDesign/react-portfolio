@@ -99,19 +99,19 @@ export default function ExcDetail() {
             </div>
             <div id="workDetail" >
                 <img id='contain' src={ExcDetail2}/>
-                <p>{workState.work.detailDesc2}</p>
+                <p>With so many programs falling under the EXC umbrella, it was important to plan for this mark to be adaptable. While Explorations Central refers to the ship’s port information library - a physical space, the wider EXC program came to encompass much more than that. EXC tours, EXC talks and EXC channel were just a few of the ship programs that benefited from the connection to EXC identity.</p>
             </div>
             <div id="workDetail" >
                 <img id='contain' src={ExcDetail3}/>
-                <p>{workState.work.detailDesc3}</p>
+                <p>A wide palette of bright colors was needed to accent and bring balance to a library of location photography that would be used throughout the program to amplify a sense of place.</p>
             </div>
             <div id="workDetail" >
                 <img id='contain' src={ExcDetail4}/>
-                <p>{workState.work.detailDesc4}</p>
+                <p>Once the logo family was created, we went about applying the identity to a variety of posters and products. We made sure the logo could be reproduced at a variety of sizes and media. This sample shows a few examples of digital posters that were created for the EXC Talks lecture series.</p>
             </div>
             <div id="workDetail" >
                 <img id='contain' src={ExcDetail5}/>
-                <p>{workState.work.detailDesc5}</p>
+                <p>Part of role was to help architects and signage suppliers adapt the logo for custom signage. I also worked with suppliers to create things like custom hats, jackets, and other items for staff to wear.</p>
             </div>
             <div id="workDetail" >
                 <img id='contain' src={ExcDetail6}/>

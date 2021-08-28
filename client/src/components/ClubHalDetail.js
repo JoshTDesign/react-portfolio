@@ -76,46 +76,37 @@ export default function ClubHalDetail() {
                     {/* <div className="label" onClick={handleClick}>
                         <h1>Back to work</h1>
                     </div> */}
-                    <img id='contain' src={workState.work.img}/>
+                    <img id='contain' src={ClubHAL}/>
                 </div>
             </div>
-            <div id="workText" style={{background:`${workState.work.color}`}}>
+            <div id="workText" style={{background:'#2e1547'}}>
             {/* <h2>{workState.work.title}</h2> */}
             {/* <ul>
                 <li>Blender 3D</li>
                 <li>Illustrator</li>
                 <li>Photoshop</li>
             </ul> */}
-            <p>{workState.work.desc}</p>
+            <h3>ROLE</h3>
+            <p3>Lead Designer</p3>
+            <p>Step One Dance Company is a modern dance group which combines exciting choreography with state-of-the-art stage technology. My role was to create an exciting logo and a set of posters that would match the energy of the performances.</p>
                 <div id="arrow"/>
             </div>
 
 
 
             <div id="workDetail" >
-                <img id='contain' src={workState.work.detail1}/>
+                <img id='contain' src={ClubHAL1}/>
                 <p>{workState.work.detailDesc1}</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={workState.work.detail2}/>
+                <img id='contain' src={ClubHAL2}/>
                 <p>{workState.work.detailDesc2}</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={workState.work.detail3}/>
+                <img id='contain' src={ClubHAL3}/>
                 <p>{workState.work.detailDesc3}</p>
             </div>
-            <div id="workDetail" >
-                <img id='contain' src={workState.work.detail4}/>
-                <p>{workState.work.detailDesc4}</p>
-            </div>
-            <div id="workDetail" >
-                <img id='contain' src={workState.work.detail5}/>
-                <p>{workState.work.detailDesc5}</p>
-            </div>
-            <div id="workDetail" >
-                <img id='contain' src={workState.work.detail6}/>
-                <p>{workState.work.detailDesc6}</p>
-            </div>
+            
 
             
 

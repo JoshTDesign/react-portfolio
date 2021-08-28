@@ -76,46 +76,37 @@ export default function HollandAmericaDetail() {
                     {/* <div className="label" onClick={handleClick}>
                         <h1>Back to work</h1>
                     </div> */}
-                    <img id='contain' src={workState.work.img}/>
+                    <img id='contain' src={HAL0}/>
                 </div>
             </div>
-            <div id="workText" style={{background:`${workState.work.color}`}}>
+            <div id="workText" style={{background:'#1c2b57'}}>
             {/* <h2>{workState.work.title}</h2> */}
             {/* <ul>
                 <li>Blender 3D</li>
                 <li>Illustrator</li>
                 <li>Photoshop</li>
             </ul> */}
-            <p>{workState.work.desc}</p>
+            <h3>ROLE</h3>
+            <p3>Print Designer</p3>
+            <p>Holland America Line is an iconic brand in the cruise ship industry, with over 140 years as a company. I was hired to assist a design agency in refreshing the brand. Specifically my role was in leading the effort to establish onboard brand standards.</p>
                 <div id="arrow"/>
             </div>
 
 
 
             <div id="workDetail" >
-                <img id='contain' src={workState.work.detail1}/>
+                <img id='contain' src={HAL1}/>
                 <p>{workState.work.detailDesc1}</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={workState.work.detail2}/>
+                <img id='contain' src={HAL2}/>
                 <p>{workState.work.detailDesc2}</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={workState.work.detail3}/>
+                <img id='contain' src={HAL3}/>
                 <p>{workState.work.detailDesc3}</p>
             </div>
-            <div id="workDetail" >
-                <img id='contain' src={workState.work.detail4}/>
-                <p>{workState.work.detailDesc4}</p>
-            </div>
-            <div id="workDetail" >
-                <img id='contain' src={workState.work.detail5}/>
-                <p>{workState.work.detailDesc5}</p>
-            </div>
-            <div id="workDetail" >
-                <img id='contain' src={workState.work.detail6}/>
-                <p>{workState.work.detailDesc6}</p>
-            </div>
+
 
             
 

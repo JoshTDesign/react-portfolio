@@ -76,46 +76,33 @@ export default function StepOneDetail() {
                     {/* <div className="label" onClick={handleClick}>
                         <h1>Back to work</h1>
                     </div> */}
-                    <img id='contain' src={workState.work.img}/>
+                    <img id='contain' src={StepOne}/>
                 </div>
             </div>
-            <div id="workText" style={{background:`${workState.work.color}`}}>
+            <div id="workText" style={{background:'#0c0c0c'}}>
             {/* <h2>{workState.work.title}</h2> */}
             {/* <ul>
                 <li>Blender 3D</li>
                 <li>Illustrator</li>
                 <li>Photoshop</li>
             </ul> */}
-            <p>{workState.work.desc}</p>
+            <h3>ROLE</h3>
+            <p3>Lead Designer</p3>
+            <p>Step One Dance Company is a modern dance group which combines exciting choreography with state-of-the-art stage technology. My role was to create an exciting logo and a set of posters that would match the energy of the performances.</p>
                 <div id="arrow"/>
             </div>
 
 
 
             <div id="workDetail" >
-                <img id='contain' src={workState.work.detail1}/>
-                <p>{workState.work.detailDesc1}</p>
+                <img id='contain' src={StepOne1}/>
+                <p>Early experiments really featured a lot of concepts with simple shapes. I knew the final application of this logo was going to appear on a lot of creative layouts with a wide variety of artistic styles and colors, so the solution had to be simple and direct enough to stand up to almost any use situation. Early poster designs were featuring explosions of color over dark background, so I almost started thinking of this as stencil art - simple shapes layered over bright colors and textures.</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={workState.work.detail2}/>
-                <p>{workState.work.detailDesc2}</p>
+                <img id='contain' src={StepOne2}/>
+                <p>For the final logo, I created a custom type using simple shapes combined together with an overlay effect. My feeling was that this would be a logo that could be used at a variety of sizes and colors without losing its effectiveness.</p>
             </div>
-            <div id="workDetail" >
-                <img id='contain' src={workState.work.detail3}/>
-                <p>{workState.work.detailDesc3}</p>
-            </div>
-            <div id="workDetail" >
-                <img id='contain' src={workState.work.detail4}/>
-                <p>{workState.work.detailDesc4}</p>
-            </div>
-            <div id="workDetail" >
-                <img id='contain' src={workState.work.detail5}/>
-                <p>{workState.work.detailDesc5}</p>
-            </div>
-            <div id="workDetail" >
-                <img id='contain' src={workState.work.detail6}/>
-                <p>{workState.work.detailDesc6}</p>
-            </div>
+
 
             
 
