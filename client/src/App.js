@@ -23,6 +23,7 @@ import StepOneDetail from "./components/StepOneDetail.js"
 import ClubHalDetail from "./components/ClubHalDetail.js"
 import HollandAmericaDetail from "./components/HollandAmericaDetail.js"
 import WorkFooter from "./components/WorkFooter.js"
+import Test from "./components/Test.js"
 import ProjectFooter from "./components/ProjectFooter.js"
 import ContactMe from "./components/ContactMe.js"
 
@@ -92,6 +93,9 @@ function App() {
               <Head />
               <RallyDetail />
               <ContactMe />
+            </Route>
+            <Route exact path="/test">
+              <Test />
             </Route>
             <Route exact path="/">
               <Head />

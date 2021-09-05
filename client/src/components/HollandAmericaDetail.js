@@ -1,24 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import CardFull from './CardFull.js';
-import StepOne from '../assets/Images/StepOne-Poster-Woman - Large.png';
-import Gelato from '../assets/Images/gelato.png';
-import Circle from '../assets/Images/circle.png';
-import PawPair from '../assets/Images/pawpair.png';
-import StepOne1 from '../assets/Images/StepOneDetail1.png';
-import StepOne2 from '../assets/Images/StepOneDetail2.png';
-import StepOne3 from '../assets/Images/StepOneDetail3.png';
-import ClubHAL from '../assets/Images/ClubHAL.jpg';
-import ClubHAL1 from '../assets/Images/ClubHALDetail1.png';
-import ClubHAL2 from '../assets/Images/ClubHALDetail2.png';
-import ClubHAL3 from '../assets/Images/ClubHALDetail3.png';
-import Exc from '../assets/Images/Exc.png';
-import ExcDetail1 from '../assets/Images/ExcDetail1.png';
-import ExcDetail2 from '../assets/Images/ExcDetail2.png';
-import ExcDetail3 from '../assets/Images/ExcDetail3.png';
-import ExcDetail4 from '../assets/Images/ExcDetail4.png';
-import ExcDetail5 from '../assets/Images/ExcDetail5.png';
-import ExcDetail6 from '../assets/Images/ExcDetail6.png';
+
+
 import HAL from '../assets/Images/HAL.jpg';
 import HAL0 from '../assets/Images/HALDetail0.png';
 import HAL1 from '../assets/Images/HALDetail1.png';
@@ -73,23 +56,17 @@ export default function HollandAmericaDetail() {
 
             <div id="workCard">
                 <div className="card">
-                    {/* <div className="label" onClick={handleClick}>
-                        <h1>Back to work</h1>
-                    </div> */}
                     <img id='contain' src={HAL0}/>
                 </div>
             </div>
+
             <div id="workText" style={{background:'#1c2b57'}}>
-            {/* <h2>{workState.work.title}</h2> */}
-            {/* <ul>
-                <li>Blender 3D</li>
-                <li>Illustrator</li>
-                <li>Photoshop</li>
-            </ul> */}
-            <h3>ROLE</h3>
-            <p3>Print Designer</p3>
-            <p>Holland America Line is an iconic brand in the cruise ship industry, with over 140 years as a company. I was hired to assist a design agency in refreshing the brand. Specifically my role was in leading the effort to establish onboard brand standards.</p>
-                <div id="arrow"/>
+                <div id="role" >
+                    <div id="one" style={{width:"50%"}}><p2>Print Design</p2></div>
+                    <div id="two" style={{width:"30%"}}><p2>Production Design</p2></div>
+                    <div id="three" style={{width:"20%"}}><p2>Project Management</p2></div>
+                </div>
+                <p>Holland America Line is an iconic brand in the cruise ship industry, with over 140 years as a company. I was hired to assist a design agency in refreshing the brand. Specifically my role was in leading the effort to establish onboard brand standards.</p>
             </div>
 
 
@@ -121,78 +98,6 @@ export default function HollandAmericaDetail() {
 const work = 
     [
         {
-            title:'EXC',
-            color: '#00205c',
-            desc:'Holland America Line needed a simple logo to represent a growing program for port information and enrichment. Originally developed for the physical space called Explorations Cafe, the concept soon grew to encompass all of the ships port offerings under one umbrella.',
-            challenge: 'exc challenge text',
-            img: {Exc}.Exc,
-            tech: [
-                'Blender 3D',
-                'Photoshop',
-                'Illustrator'
-            ],
-            detail1: {ExcDetail1}.ExcDetail1,
-            detailDesc1: 'My role was to create a logo and guidelines for a growing design system. In the end, it included logo files, palettes, digital and printed templates and posters.',
-            detail2: {ExcDetail2}.ExcDetail2,
-            detailDesc2: 'With so many programs falling under the EXC umbrella, it was important to plan for this mark to be adaptable. While Explorations Central refers to the ship’s port information library - a physical space, the wider EXC program came to encompass much more than that. EXC tours, EXC talks and EXC channel were just a few of the ship programs that benefited from the connection to EXC identity.',
-            detail3: {ExcDetail3}.ExcDetail3,
-            detailDesc3: 'A wide palette of bright colors was needed to accent and bring balance to a library of location photography that would be used throughout the program to amplify a sense of place.',
-            detail4:  {ExcDetail4}.ExcDetail4,
-            detailDesc4: 'Once the logo family was created, we went about applying the identity to a variety of posters and products. We made sure the logo could be reproduced at a variety of sizes and media. This sample shows a few examples of digital posters that were created for the EXC Talks lecture series.',
-            detail5:  {ExcDetail5}.ExcDetail5,
-            detailDesc5: 'Part of role was to help architects and signage suppliers adapt the logo for custom signage. I also worked with suppliers to create things like custom hats, jackets, and other items for staff to wear.',
-            detail6: {ExcDetail6}.ExcDetail6,
-            detailDesc6: '',
-        },
-        {
-            title:'Step One',
-            color: '#0c0c0c',
-            desc:'Step One Dance Company is a modern dance group which combines exciting choreography with state-of-the-art stage technology. My role was to create an exciting logo and a set of posters that would match the energy of the performances. ',
-            challenge: 'Holland America Line was launching a new show, focusing on modern dance and supported by exciting stage design. They needed a new logo and brand to support the dance troupe. The challenge was to create a logo that could be used for low fidelity print advertisements as well as high definition digital screens. Not only that, the logo would appear primarily on digital posters advertising a variety of shows. Each show would have its own character, color-scheme, and design. Finally, the identity had to reflect a modern, exciting look that would appeal to a younger audience.',
-            img: {StepOne}.StepOne,
-            tech: [
-                'Blender 3D',
-                'Photoshop',
-                'Illustrator'
-            ],
-            detail1: {StepOne1}.StepOne1,
-            detailDesc1: 'Early experiments really featured a lot of concepts with simple shapes. I knew the final application of this logo was going to appear on a lot of creative layouts with a wide variety of artistic styles and colors, so the solution had to be simple and direct enough to stand up to almost any use situation. Early poster designs were featuring explosions of color over dark background, so I almost started thinking of this as stencil art - simple shapes layered over bright colors and textures.',
-            detail2: {StepOne2}.StepOne2,
-            detailDesc2: 'For the final logo, I created a custom type using simple shapes combined together with an overlay effect. My feeling was that this would be a logo that could be used at a variety of sizes and colors without losing its effectiveness.',
-            detail3: {StepOne3}.StepOne3,
-            detailDesc3: '',
-            detail4:  {Blank}.Blank,
-            detailDesc4: '',
-            detail5:  {Blank}.Blank,
-            detailDesc5: '',
-            detail6: {Blank}.Blank,
-            detailDesc6: '',
-        },
-        {
-            title:'Club HAL',
-            color: '#2e1547',
-            desc:'Step One Dance Company is a modern dance group which combines exciting choreography with state-of-the-art stage technology. My role was to create an exciting logo and a set of posters that would match the energy of the performances. ',
-            challenge: 'Holland America Line was launching a new show, focusing on modern dance and supported by exciting stage design. They needed a new logo and brand to support the dance troupe. The challenge was to create a logo that could be used for low fidelity print advertisements as well as high definition digital screens. Not only that, the logo would appear primarily on digital posters advertising a variety of shows. Each show would have its own character, color-scheme, and design. Finally, the identity had to reflect a modern, exciting look that would appeal to a younger audience.',
-            img: {ClubHAL}.ClubHAL,
-            tech: [
-                'Blender 3D',
-                'Photoshop',
-                'Illustrator'
-            ],
-            detail1: {ClubHAL1}.ClubHAL1,
-            detailDesc1: 'Early experiments really featured a lot of concepts with simple shapes. I knew the final application of this logo was going to appear on a lot of creative layouts with a wide variety of artistic styles and colors, so the solution had to be simple and direct enough to stand up to almost any use situation. Early poster designs were featuring explosions of color over dark background, so I almost started thinking of this as stencil art - simple shapes layered over bright colors and textures.',
-            detail2: {ClubHAL2}.ClubHAL2,
-            detailDesc2: '',
-            detail3: {ClubHAL3}.ClubHAL3,
-            detailDesc3: '',
-            detail4:  '',
-            detailDesc4: '',
-            detail5:  '',
-            detailDesc5: '',
-            detail6: '',
-            detailDesc6: '',
-        },
-        {
             title:'Holland America Line',
             color: '#1c2b57',
             desc:'Holland America Line is an iconic brand in the cruise ship industry, with over 140 years as a company. I was hired to assist a design agency in refreshing the brand. Specifically my role was in leading the effort to establish onboard brand standards.',
@@ -215,45 +120,6 @@ const work =
             detailDesc5: '',
             detail6: '',
             detailDesc6: '',
-        },
-        {
-            title:'Circle Community Bulletin',
-            color: 'white',
-            desc:'Circle Community Bulletin is a web application that can connect you to people in your community. Circle lets you create, edit and delete public announcements, and uses your geodata to show it to people in your area.',
-            challenge: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel odio eget metus molestie luctus et nec metus. In eget maximus lorem. Integer mollis pretium aliquet. Quisque convallis nec tellus consequat interdum. Praesent mattis eros in sapien facilisis pharetra. Aenean ac sem eget tortor laoreet condimentum. Donec vel maximus quam. Integer vulputate imperdiet nunc, ac mattis ipsum efficitur quis. Curabitur interdum leo eget est luctus, vitae tempor arcu semper. Nam consequat euismod metus vel gravida.',
-            img: {Circle}.Circle
-            
-
-        },
-        {
-            title:'Paw Pair',
-            color: 'white',
-            desc:'Paw Pair is a simple, fun tool for getting matched with your perfect pet companion. Skip the busy, hard to use pet finding websites and try this simple, delightful quiz tool instead.',
-            challenge: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel odio eget metus molestie luctus et nec metus. In eget maximus lorem. Integer mollis pretium aliquet. Quisque convallis nec tellus consequat interdum. Praesent mattis eros in sapien facilisis pharetra. Aenean ac sem eget tortor laoreet condimentum. Donec vel maximus quam. Integer vulputate imperdiet nunc, ac mattis ipsum efficitur quis. Curabitur interdum leo eget est luctus, vitae tempor arcu semper. Nam consequat euismod metus vel gravida.',
-            img: {PawPair}.PawPair,
-            tech: [
-                'Blender 3D',
-                'Photoshop',
-                'Illustrator'
-            ],
-            detail:[
-                {
-                    title:'detail title',
-                    desc:'detail description',
-                    img:''
-                },
-                {
-                    title:'detail title',
-                    desc:'detail description',
-                    img:''
-                },
-                {
-                    title:'detail title',
-                    desc:'detail description',
-                    img:''
-                },
-            ]
-
         }
     ]
 
