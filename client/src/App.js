@@ -24,6 +24,7 @@ import ClubHalDetail from "./components/ClubHalDetail.js"
 import HollandAmericaDetail from "./components/HollandAmericaDetail.js"
 import WorkFooter from "./components/WorkFooter.js"
 import Test from "./components/Test.js"
+import Test2 from "./components/Test2.js"
 import ProjectFooter from "./components/ProjectFooter.js"
 import ContactMe from "./components/ContactMe.js"
 
@@ -94,8 +95,8 @@ function App() {
               <RallyDetail />
               <ContactMe />
             </Route>
-            <Route exact path="/test">
-              <Test />
+            <Route exact path="/test2">
+              <Test2 />
             </Route>
             <Route exact path="/">
               <Head />
