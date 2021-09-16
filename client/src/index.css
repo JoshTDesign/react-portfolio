@@ -393,8 +393,37 @@ margin:0 auto 25px auto;
   mix-blend-mode: overlay;
   padding:3em;
   border: 1px solid pink;
-
 }
+
+/* #angle1 {
+  background: linear-gradient(52deg, rgba(27,27,27,0.6) 50%, rgba(255,255,255,0) 50%), 
+              linear-gradient(65deg, rgba(27,27,27,0.6) 50%, rgba(255,255,255,0) 50%);
+
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  transition: all 1s ease;
+  /* position: absolute; */
+
+
+
+#angle1 {
+  background: rgb(48,48,48);
+  background: radial-gradient(circle, rgba(48,48,48,1) 21%, rgba(61,61,61,1) 60%);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* position: absolute; */
+}
+
+#angle2 {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* position: absolute; */
+}
+
+
 
 #workText p {
   font-family: quicksand;
