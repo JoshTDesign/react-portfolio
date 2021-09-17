@@ -1,17 +1,18 @@
 import React, { useRef, useState, useEffect } from 'react'
 import Logosvg from '../assets/Images/JT_icon_circle.svg'
+import { motion } from "framer-motion"
 
 export default function Test2() {
 
     document.body.style.backgroundColor = "#444444" 
     
     const [ clickState, setClickState ] = useState({
-        click: "angle1",
+        click: "50%",
     })
 
     const handleClick = () => {
         setClickState ({
-            click: "angle2"
+            click: "20%"
         })
     }
 
@@ -32,35 +33,40 @@ export default function Test2() {
     <svg viewBox="0 0 180 180">
     <defs>
         <linearGradient id="MyGradient">
-            <stop offset="5%" stop-color="#F60" />
-            <stop offset="95%" stop-color="#FF6" />
+            <stop offset="5%" stop-color="#c233c6" />
+            <stop offset="95%" stop-color="#7851bb" />
         </linearGradient>
     </defs>
     <path  fill="url(#MyGradient)" class="st0" d="M90,0C40.3,0,0,40.3,0,90s40.3,90,90,90s90-40.3,90-90S139.7,0,90,0z M80.9,136.7c0,2.4-1.6,4.7-4,5.4
 	l-16.3,5.3V68.7h20.3V136.7z M80.9,56.7c0,3.1-2.5,5.7-5.7,5.7H60.6V48.1c0-3.4,2.7-6.1,6.1-6.1h14.2C80.9,42,80.9,56.7,80.9,56.7z
 	 M134.4,62.3h-26v68.8H88.1V62.3V42h20.3h19.9c3.4,0,6.1,2.7,6.1,6.1V62.3z"/>
     </svg>
-
     )
 
-
+        console.log(clickState.click)
+ 
     return (
         <>
             <div id="angle1"></div>
-            <div id="logoCircle" onClick={handleClick} style={{
+            <motion.div id="logoCircle" 
+                onClick={handleClick} 
+                transition={{ duration: 0.5 }} 
+                whileHover={{ scale: 1.1 }}
+                animate={{ x: 100 }}
+                style={{
                     width:'180px',
                     position:'absolute',
                     margin:'0 auto',
                     left:'50%',
-                    top:'50%',
+                    top:`${clickState.click}`,
                     marginLeft:'-90px',
-                    marginTop:'-90px'
-                }}>
+                    marginTop:'-90px',
+                    
+                }} >
 
-                <JTDIcon 
-                    />
-            </div>
-            {/* <div id="angle2"></div> */}
+                <JTDIcon /> 
+            </motion.div>
+            
         </>
     ) 
 }
