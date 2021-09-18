@@ -16,18 +16,44 @@ export default function Test2() {
         })
     }
 
+    const handleHover = () => {
+        const menuElement = document.createElement('h2');
+        const node = document.createTextNode("CODE");
+        const node2 = document.createTextNode("DESIGN");
+        menuElement.appendChild(node);
+        menuElement.appendChild(node2);
+
+        const element = document.getElementById=("logoCircle");
+        // element.appendChild(menuElement);
+        console.log(element)
+    }
+
+//Animations----------------------------------------------------------
+
+    const variants = {
+        open: { opacity: 1, x: 0 },
+        closed: { opacity: 0, x: "-100%" },
+      }
+
+//Styles for component elements----------------------------------------
+
     const svgStyle = {
         background: '#8A2387',
         background: 'linearGradient(to right, #F27121, #E94057, #8A2387)',
         background: 'linearGradient(to right, #F27121, #E94057, #8A2387)'
     }
 
-    const Icon = () => (
-        <svg viewBox="0 0 409.6 405.76" fill='#000000'>
-            <path d="M682.8,396.06c50.72,0,91.84-48.13,91.84-107.49,0-82.33-41.12-107.49-91.84-107.49S591,206.24,591,288.57c0,59.36,41.12,107.49,91.84,107.49Zm0,0" transform="translate(-478 -181.08)"/>
-            <path d="M885.6,554.28,839.27,449.9a23.3,23.3,0,0,0-10.48-11.15l-71.91-37.43a4.66,4.66,0,0,0-4.93.41,113.41,113.41,0,0,1-138.3,0,4.67,4.67,0,0,0-4.94-.41l-71.9,37.43a23.24,23.24,0,0,0-10.47,11.15L480,554.28a23.16,23.16,0,0,0,21.18,32.56H864.42a23.17,23.17,0,0,0,21.18-32.56Zm0,0" transform="translate(-478 -181.08)"/>
-        </svg>
-      );
+    const iconStyle = {
+        width:'180px',
+        position:'absolute',
+        margin:'0 auto',
+        left:'50%',
+        top:`50%`,
+        marginLeft:'-90px',
+        marginTop:'-90px'
+    }
+
+//SVG for icons--------------------------------------------------------
 
     const JTDIcon = () => (
     <svg viewBox="0 0 180 180">
@@ -43,27 +69,18 @@ export default function Test2() {
     </svg>
     )
 
-        console.log(clickState.click)
- 
+
+    
     return (
         <>
             <div id="angle1"></div>
             <motion.div id="logoCircle" 
-                onClick={handleClick} 
+                onClick={handleClick}
                 transition={{ duration: 0.5 }} 
-                whileHover={{ scale: 1.1 }}
-                animate={{ x: 100 }}
-                style={{
-                    width:'180px',
-                    position:'absolute',
-                    margin:'0 auto',
-                    left:'50%',
-                    top:`${clickState.click}`,
-                    marginLeft:'-90px',
-                    marginTop:'-90px',
-                    
-                }} >
-
+                whileHover={{ scale: 1.05 }}
+                animate={{ opacity: 100 }}
+                style={iconStyle}
+                onMouseEnter={handleHover} >
                 <JTDIcon /> 
             </motion.div>
             
