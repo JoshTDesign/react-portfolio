@@ -18,12 +18,10 @@ export default function Home() {
    
     return (
         <div id="home">
-            <div id="icons">
-                <img src={icon1} width="200"/>
-                <img src={icon2} width="200"/>
-                <img src={icon3} width="200"/>
-            </div>
-            <h1>Are you looking for a front-end designer who can connect the dots? I have 10+ years of experience in <span id='yellow'>graphic design</span> and <span id='purple'>brand management</span>. With the <span id='green'>coding skills</span> to bring your project to the next level.</h1>
+
+            <h1>Josh Taylor</h1>
+            <h2>GRAPHIC DESIGNer + developer</h2>
+            <p>I am a Seattle-based designer with years of experience building strong brands in variety of media. Currently, I am focusing on digital experiences and I am available for work.  If you have any questions, I would love to hear from you.</p>
             <div id="fileDownload">
                 <a href='/JoshTaylor_resume2021.pdf' download>Download Resum&eacute;</a>
             </div>

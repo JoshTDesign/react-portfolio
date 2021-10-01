@@ -11,23 +11,26 @@ export default function Head() {
 
     const history = useHistory();
 
-    const [tabIndex, setTabIndex] = useState(0);
+    const [tabIndex, setTabIndex] = useState(2);
 
 
 const testFunction = (n) => {
     console.log(n);
     switch(n) {
         case 0:
-          history.push(`/`)
+          history.push(`/work`)
           break;
         case 1:
-            history.push(`/work`)
-            break;
-        case 2:
             history.push(`/projects`)
             break;
+        case 2:
+            history.push(`/`)
+            break;
         case 3:
-            history.push(`/about`)
+            history.push(`/contact`)
+            break;
+        case 4:
+            history.push(`/resume`)
             break;
         default:
 
@@ -35,20 +38,24 @@ const testFunction = (n) => {
       }
       setTabIndex(n);
 }
+
+const style = {
+    display: 'flex', 
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: '100%'
+}
     return (
         // <div id="container">
-            <div id="head">
-                <a id="logo" href="/">
-                    <img src={Logosvg} style={{height:'90px'}}/>
-                </a>
-                <p>Josh Taylor is a designer and developer based in Seattle.</p>
+            <div id="head" >
                 
                 <Tabs selectedIndex={tabIndex} onSelect={testFunction}>
-                    <TabList>
-                    <Tab>Home</Tab>
+                    <TabList style={style}>
                     <Tab>Design</Tab>
                     <Tab>Web Apps</Tab>
-                    <Tab>About</Tab>
+                    <Tab><a id="logo" href="/"><img src={Logosvg} style={{height:'90px'}}/></a></Tab>
+                    <Tab>Contact</Tab>
+                    <Tab>Resume</Tab>
                     {/* <Tab>Resum&#xC9;</Tab> */}
                     </TabList>
                 </Tabs>
