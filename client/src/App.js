@@ -27,6 +27,7 @@ import Test from "./components/Test.js"
 import Test2 from "./components/Test2.js"
 import ProjectFooter from "./components/ProjectFooter.js"
 import ContactMe from "./components/ContactMe.js"
+import Footer from "./components/Footer.js"
 
 function App() {
   return (
@@ -101,7 +102,7 @@ function App() {
             <Route exact path="/">
               <Head />
               <Home />
-              <ContactMe />
+              <Footer />
             </Route>
             <Route exact path="*">
               <Head />

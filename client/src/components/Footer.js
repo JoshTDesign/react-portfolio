@@ -4,12 +4,11 @@ import Logosvg from '../assets/JT_Logo.svg'
 
 export default function Footer() {
     
-
     
     
     return (
             <div id="footer">
-                <p>test</p>
+                <p>designed and coded by Josh Taylor</p>
             </div>
     )
 }
