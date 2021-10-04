@@ -20,6 +20,7 @@ body {
   font-family: sans-serif;
   /* background-color:#e9edef; */
   background-color:var(--darker-blue);
+  height: 100%;
 }
 
 #head {
@@ -89,6 +90,8 @@ body {
   color: var(--dark-gray);
 }
 
+
+
 .react-tabs__tab-list {
   cursor: pointer;
   margin:0;
@@ -96,9 +99,15 @@ body {
 }
 
 .react-tabs__tab {
-  margin: 0px 20px 0px 20px;
-  padding: 5px 0px 0 0px;
-  /* transition: all ease 200ms; */
+  margin: 0px 5px 0px 5px;
+  padding: 8px 15px 5px 15px;
+  border-radius: 4px;
+  transition: all ease 200ms;
+}
+
+.react-tabs__tab:hover {
+  background-color: var(--darker-blue);
+  transition: all ease 200ms;
 }
 
 
@@ -578,7 +587,7 @@ margin:0 auto 25px auto;
   padding: 5px;
   width: 100%;
   height: 100%;
-  z-index:5;
+  z-index:1;
   position: absolute;
   transition: background-color ease .3s;
   display:flex;
@@ -591,6 +600,7 @@ margin:0 auto 25px auto;
   background-color: var(--dark-blue-trans);
   transition: background-color ease .3s;
   cursor: pointer;
+  z-index: 1;
 }
 
 .label h1 {
@@ -697,11 +707,12 @@ margin:0 auto 25px auto;
   align-items:center;
   flex-direction: column;
   background-color: var(--darker-blue);
-  position: absolute;
+  position: fixed;
   bottom: 0;
   height: 60px;
   text-align: center;
   width: 100%;
+  z-index: 2;
 }
 
 #footerLinkDiv {
