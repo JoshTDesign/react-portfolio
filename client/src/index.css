@@ -12,6 +12,7 @@
   --light-blue: #A8DAFF; /* logo color */
   --med-blue: #216699; 
   --dark-blue-trans: rgba(38, 45, 58, 0.9);
+  --darkest-blue: rgb(21, 28, 40);
 }
 
 body {
@@ -706,7 +707,7 @@ margin:0 auto 25px auto;
   justify-content: center;
   align-items:center;
   flex-direction: column;
-  background-color: var(--darker-blue);
+  background-color: var(--darkest-blue);
   position: fixed;
   bottom: 0;
   height: 60px;
