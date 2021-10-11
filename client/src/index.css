@@ -704,9 +704,9 @@ margin:0 auto 25px auto;
 #footer {
   text-align: center;
   display:flex;
-  justify-content: center;
+  /* align-content: stretch; */
+  justify-content: space-between;
   align-items:center;
-  flex-direction: column;
   background-color: var(--darkest-blue);
   position: fixed;
   bottom: 0;
@@ -714,6 +714,31 @@ margin:0 auto 25px auto;
   text-align: center;
   width: 100%;
   z-index: 2;
+}
+
+#tagline {
+  flex: 0 0 300px;
+}
+
+#line {
+  background-color: var(--med-blue);
+  /* width: 400px; */
+  height: 1px;
+  flex: 1 1 auto;
+}
+
+.iconContainer {
+  /* width: 300px; */
+  display:flex;
+  flex: 0 0 250px;
+  justify-content:center;
+}
+
+#icon {
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  margin: 5px;
 }
 
 #footerLinkDiv {
