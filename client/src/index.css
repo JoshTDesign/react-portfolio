@@ -39,12 +39,12 @@ body {
 }
 
 #head li a { 
-  color: var(--med-blue);
+  color: var(--light-blue);
   text-decoration:none;
   text-decoration: 'none';
 }
 #home a { 
-  color: var(--med-blue);
+  color: var(--light-blue);
   text-decoration:none;
   text-align: center;
   font-family: 'quicksand';
@@ -58,7 +58,7 @@ body {
   display: inline;
   font-family: 'quicksand';
   text-decoration: none;
-  color: var(--med-blue);
+  color: var(--light-blue);
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -104,6 +104,8 @@ body {
   padding: 8px 15px 5px 15px;
   border-radius: 4px;
   transition: all ease 200ms;
+  width: 150px;
+  text-align: center;
 }
 
 .react-tabs__tab:hover {
