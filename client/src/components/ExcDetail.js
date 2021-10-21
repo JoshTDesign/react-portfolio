@@ -13,6 +13,10 @@ import ClubHAL1 from '../assets/Images/ClubHALDetail1.png';
 import ClubHAL2 from '../assets/Images/ClubHALDetail2.png';
 import ClubHAL3 from '../assets/Images/ClubHALDetail3.png';
 import Exc from '../assets/Images/Exc.png';
+import ExcLogo from '../assets/Images/exc/EXC_sketchLogo.svg';
+import ExcLogoBreakdown from '../assets/Images/exc/EXC_logoBreakdown.svg';
+import SmIllustrator from '../assets/Images/icons/sm_illustrator.svg';
+import SmPhotoshop from '../assets/Images/icons/sm_photoshop.svg';
 import ExcDetail1 from '../assets/Images/ExcDetail1.png';
 import ExcDetail2 from '../assets/Images/ExcDetail2.png';
 import ExcDetail3 from '../assets/Images/ExcDetail3.png';
@@ -73,35 +77,35 @@ export default function ExcDetail() {
 
             <div id="workCard">
                 <div className="card">
-                    {/* <div className="label" onClick={handleClick}>
-                        <h1>Back to work</h1>
-                    </div> */}
                     <img id='contain' src={Exc}/>
                 </div>
             </div>
-            <div id="workText" style={{background:'#00173d'}}>
-            {/* <h2>{workState.work.title}</h2> */}
-            {/* <ul>
-                <li>Blender 3D</li>
-                <li>Illustrator</li>
-                <li>Photoshop</li>
-            </ul> */}
-            <h3>ROLE</h3>
-            <p3>Lead Designer</p3>
-            <p>Holland America Line needed a simple logo to represent a growing program for port information and enrichment. Originally developed for the physical space called Explorations Cafe, the concept soon grew to encompass all of the ships port offerings under one umbrella.</p>
+
+            <div id="workText">
+                <div id="skills">
+                    <img id="smallIcon" src={SmPhotoshop}/>
+                    <img id="smallIcon" src={SmIllustrator}/>
+                </div>
+                <p>Holland America Line needed a simple logo to represent a growing program for port information and enrichment. Originally developed for the physical space called Explorations Cafe, the concept soon grew to encompass all of the ships port offerings under one umbrella.</p>
+                <h3>ROLE</h3>
+                <p3>Lead Designer</p3>
+                <h3>APPLIED SKILLS</h3>
+                <p3>Typography, Logo Design</p3>
+            </div>
+            
+            <div id="detailContainer">
+                <img src={ExcLogo} style={{width: '60%'}}/>
             </div>
 
-
-
-            <div id="workDetail" >
-                <img id='contain' src={ExcDetail1}/>
-                <p>My role was to create a logo and guidelines for a growing design system. In the end, it included logo files, palettes, digital and printed templates and posters.</p>
+            <div id="workDetailCard" >
+                <img id='contain' src={ExcDetail5}/>
+                <p>The EXC icon itself needed to work in a wide variety of media and sizes. Everything from the venue signage, to digital screens, apps, printed maps, and more!</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={ExcDetail2}/>
-                <p>With so many programs falling under the EXC umbrella, it was important to plan for this mark to be adaptable. While Explorations Central refers to the ship’s port information library - a physical space, the wider EXC program came to encompass much more than that. EXC tours, EXC talks and EXC channel were just a few of the ship programs that benefited from the connection to EXC identity.</p>
+                <img id='contain' src={ExcLogoBreakdown} style={{width: '70%'}}/>
+                <p>The EXC program encompasses a lot of smaller products and services. So I designed the logo in a modular way. The pin icon and the exc mark can be extracted in used in different ways. As the program develops, the logo system can accommodate new additions.</p>
             </div>
-            <div id="workDetail" >
+            <div id="workDetailCard" >
                 <img id='contain' src={ExcDetail3}/>
                 <p>A wide palette of bright colors was needed to accent and bring balance to a library of location photography that would be used throughout the program to amplify a sense of place.</p>
             </div>
