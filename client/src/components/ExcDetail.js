@@ -20,7 +20,7 @@ import SmPhotoshop from '../assets/Images/icons/sm_photoshop.svg';
 import ExcDetail1 from '../assets/Images/ExcDetail1.png';
 import ExcDetail2 from '../assets/Images/ExcDetail2.png';
 import ExcDetail3 from '../assets/Images/ExcDetail3.png';
-import ExcDetail4 from '../assets/Images/ExcDetail4.png';
+import ExcDetail4 from '../assets/Images/exc/EXC_StageDesign.png';
 import ExcDetail5 from '../assets/Images/ExcDetail5.png';
 import ExcDetail6 from '../assets/Images/ExcDetail6.png';
 import HAL from '../assets/Images/HAL.jpg';
@@ -110,7 +110,7 @@ export default function ExcDetail() {
                 <p>A wide palette of bright colors was needed to accent and bring balance to a library of location photography that would be used throughout the program to amplify a sense of place.</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={ExcDetail4}/>
+                <img id='contain' src={ExcDetail4} style={{width:'80%'}}/>
                 <p>Once the logo family was created, we went about applying the identity to a variety of posters and products. We made sure the logo could be reproduced at a variety of sizes and media. This sample shows a few examples of digital posters that were created for the EXC Talks lecture series.</p>
             </div>
             <div id="workDetail" >

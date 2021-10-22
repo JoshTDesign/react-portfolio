@@ -53,7 +53,7 @@ const style = {
                     <TabList style={style}>
                     <Tab>Design</Tab>
                     <Tab>Web Apps</Tab>
-                    <Tab className='logo'><a id="logo" href="/"><img src={Logosvg} style={{height:'90px'}}/></a></Tab>
+                    <Tab className='logo'><a id="logo" href="/"><img src={Logosvg} style={{height:'90px', width:'140px'}}/></a></Tab>
                     <Tab>Contact</Tab>
                     <Tab>Resume</Tab>
                     {/* <Tab>Resum&#xC9;</Tab> */}

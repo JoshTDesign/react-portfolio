@@ -109,7 +109,9 @@ body {
   border-radius: 4px;
   transition: all ease 200ms;
   width: 125px;
+  height: 140px;
   text-align: center;
+  line-height: 140px;
 }
 
 .react-tabs__tab:hover {
