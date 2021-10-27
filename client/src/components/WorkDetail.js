@@ -19,11 +19,11 @@ import ExcDetail3 from '../assets/Images/ExcDetail3.png';
 import ExcDetail4 from '../assets/Images/ExcDetail4.png';
 import ExcDetail5 from '../assets/Images/ExcDetail5.png';
 import ExcDetail6 from '../assets/Images/ExcDetail6.png';
-import HAL from '../assets/Images/HAL.jpg';
-import HAL0 from '../assets/Images/HALDetail0.png';
-import HAL1 from '../assets/Images/HALDetail1.png';
-import HAL2 from '../assets/Images/HALDetail2.png';
-import HAL3 from '../assets/Images/HALDetail3.png';
+import HAL from '../assets/Images/HAL/HAL.jpg';
+import HAL0 from '../assets/Images/HAL/HALDetail0.png';
+import HAL1 from '../assets/Images/HAL/HALDetail1.png';
+import HAL2 from '../assets/Images/HAL/HALDetail2.png';
+import HAL3 from '../assets/Images/HAL/HALDetail3.png';
 import Blank from '../assets/Images/blank.gif';
 import { useHistory, useParams } from 'react-router-dom'
 
