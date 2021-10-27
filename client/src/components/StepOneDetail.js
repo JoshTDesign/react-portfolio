@@ -26,6 +26,8 @@ import HAL2 from '../assets/Images/HALDetail2.png';
 import HAL3 from '../assets/Images/HALDetail3.png';
 import Blank from '../assets/Images/blank.gif';
 import { useHistory, useParams } from 'react-router-dom'
+import SmIllustrator from '../assets/Images/icons/sm_illustrator.svg';
+import SmPhotoshop from '../assets/Images/icons/sm_photoshop.svg';
 
 
 export default function StepOneDetail() {
@@ -73,23 +75,20 @@ export default function StepOneDetail() {
 
             <div id="workCard">
                 <div className="card">
-                    {/* <div className="label" onClick={handleClick}>
-                        <h1>Back to work</h1>
-                    </div> */}
                     <img id='contain' src={StepOne}/>
                 </div>
             </div>
-            <div id="workText" style={{background:'#0c0c0c'}}>
-            {/* <h2>{workState.work.title}</h2> */}
-            {/* <ul>
-                <li>Blender 3D</li>
-                <li>Illustrator</li>
-                <li>Photoshop</li>
-            </ul> */}
-            <h3>ROLE</h3>
-            <p3>Lead Designer</p3>
-            <p>Step One Dance Company is a modern dance group which combines exciting choreography with state-of-the-art stage technology. My role was to create an exciting logo and a set of posters that would match the energy of the performances.</p>
-                <div id="arrow"/>
+
+            <div id="workText">
+                <div id="skills">
+                    <img id="smallIcon" src={SmPhotoshop}/>
+                    <img id="smallIcon" src={SmIllustrator}/>
+                </div>
+                <p>Step One Dance Company is a modern dance group which combines exciting choreography with state-of-the-art stage technology. My role was to create an exciting logo and a set of posters that would match the energy of the performances.</p>
+                <h3>ROLE</h3>
+                <p3>Lead Designer</p3>
+                <h3>APPLIED SKILLS</h3>
+                <p3>Typography, Logo Design, 3D Modelling</p3>
             </div>
 
 

@@ -1,5 +1,5 @@
 :root {
-  --dark-gray: #242D32;
+  --dark-gray: #2b3441;
   --med-gray: #9faab1;
   --light-gray: #E9EDEF;
   --white: #FAFAFA;
@@ -89,6 +89,8 @@ body {
 #head .react-tabs__tab--selected {
   /* border-bottom: 1px solid var(--med-blue); */
   color: var(--light-blue);
+  background-color: var(--dark-gray);
+
 }
 
 .react-tabs__tab--selected li {
@@ -106,16 +108,15 @@ body {
 .react-tabs__tab {
   margin: 0px 5px 0px 5px;
   padding: 8px 15px 5px 15px;
-  border-radius: 4px;
   transition: all ease 200ms;
   width: 125px;
-  height: 140px;
+  height: 137px;
   text-align: center;
   line-height: 140px;
 }
 
 .react-tabs__tab:hover {
-  background-color: var(--darker-blue);
+  background-color: var(--lighter-blue);
   transition: all ease 200ms;
 }
 
