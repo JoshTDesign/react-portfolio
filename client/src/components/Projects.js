@@ -6,7 +6,7 @@ import Circle from '../assets/Images/circle.png';
 import PawPair from '../assets/Images/pawpair.png';
 import Rally from '../assets/Images/rally.png';
 import ClubHAL from '../assets/Images/ClubHAL.jpg';
-import HAL from '../assets/Images/HAL.jpg';
+import HAL from '../assets/Images/HAL/HAL.jpg';
 
 export default function Projects() {
     return (

@@ -22,7 +22,7 @@ export default function Footer() {
     return (
             <div id="footer">
                 <div id="tagline">
-                    <p>designed and coded by Josh Taylor</p>
+                    <p>Designed and coded by Josh Taylor</p>
                 </div>
                 <div id="line"/>
 

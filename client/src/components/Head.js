@@ -12,6 +12,14 @@ export default function Head() {
     const history = useHistory();
 
     const [tabIndex, setTabIndex] = useState(2);
+    const [small, setSmall] = useState(false);
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.addEventListener("scroll", () => setSmall(window.pageYOffset > 200)
+            );
+        }
+    }, []);
 
 
 const testFunction = (n) => {
@@ -47,7 +55,7 @@ const style = {
 }
     return (
         // <div id="container">
-            <div id="head" >
+            <div id="head" className={'header ${small ? "small" : ""}'} >
                 
                 <Tabs selectedIndex={tabIndex} onSelect={testFunction}>
                     <TabList style={style}>

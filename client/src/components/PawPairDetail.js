@@ -12,11 +12,11 @@ import ClubHAL from '../assets/Images/ClubHAL.jpg';
 import ClubHAL1 from '../assets/Images/ClubHALDetail1.png';
 import ClubHAL2 from '../assets/Images/ClubHALDetail2.png';
 import ClubHAL3 from '../assets/Images/ClubHALDetail3.png';
-import HAL from '../assets/Images/HAL.jpg';
-import HAL0 from '../assets/Images/HALDetail0.png';
-import HAL1 from '../assets/Images/HALDetail1.png';
-import HAL2 from '../assets/Images/HALDetail2.png';
-import HAL3 from '../assets/Images/HALDetail3.png';
+import HAL from '../assets/Images/HAL/HAL.jpg';
+import HAL0 from '../assets/Images/HAL/HALDetail0.png';
+import HAL1 from '../assets/Images/HAL/HALDetail1.png';
+import HAL2 from '../assets/Images/HAL/HALDetail2.png';
+import HAL3 from '../assets/Images/HAL/HALDetail3.png';
 import { useHistory, useParams } from 'react-router-dom'
 
 
