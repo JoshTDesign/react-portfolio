@@ -1,9 +1,5 @@
 :root {
-<<<<<<< HEAD
-  --dark-gray: #2b3441;
-=======
   --dark-gray: #4f5f67;
->>>>>>> fa42b2c4a3786b9b1302868992012a723d72e35f
   --med-gray: #9faab1;
   --light-gray: #E9EDEF;
   --white: #FAFAFA;
@@ -39,11 +35,19 @@ body {
   background-color:var(--dark-blue);
   height: 150px;
   padding: 0 10% 0 10%;
+  position: sticky;
+  top: 0;
+  transition: all 0.25s;
+  z-index: 5;
 }
 
-.small {
-  border: 1px solid red;
+#head.small {
+  height: 50px;
+  position: sticky;
+  top: 0;
+  transition: all 0.25s;
 }
+
 
 #logo {
   /* height: 50%; */

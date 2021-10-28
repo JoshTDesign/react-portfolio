@@ -30,10 +30,7 @@ import Blank from '../assets/Images/blank.gif';
 import { useHistory, useParams } from 'react-router-dom'
 import SmIllustrator from '../assets/Images/icons/sm_illustrator.svg';
 import SmPhotoshop from '../assets/Images/icons/sm_photoshop.svg';
-<<<<<<< HEAD
-=======
 import jtdLogo from '../assets/Images/JT_icon_small.svg'
->>>>>>> fa42b2c4a3786b9b1302868992012a723d72e35f
 
 
 export default function StepOneDetail() {
@@ -75,11 +72,7 @@ export default function StepOneDetail() {
                 <h3>ROLE</h3>
                 <p3>Lead Designer</p3>
                 <h3>APPLIED SKILLS</h3>
-<<<<<<< HEAD
-                <p3>Typography, Logo Design, 3D Modelling</p3>
-=======
                 <p3>Typography, Logo Design, 3D Modeling</p3>
->>>>>>> fa42b2c4a3786b9b1302868992012a723d72e35f
             </div>
 
             <div id="detailContainer">

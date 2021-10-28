@@ -16,7 +16,7 @@ export default function Head() {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            window.addEventListener("scroll", () => setSmall(window.pageYOffset > 200)
+            window.addEventListener("scroll", () => setSmall(window.pageYOffset > 0)
             );
         }
     }, []);
@@ -47,6 +47,12 @@ const testFunction = (n) => {
       setTabIndex(n);
 }
 
+const classChange = () => {
+    let test = "test";
+    return test;
+}
+
+
 const style = {
     display: 'flex', 
     flexDirection: 'row',
@@ -55,7 +61,7 @@ const style = {
 }
     return (
         // <div id="container">
-            <div id="head" className={'header ${small ? "small" : ""}'} >
+            <div id="head" className={`${ small ? "small" : ""}`} >
                 
                 <Tabs selectedIndex={tabIndex} onSelect={testFunction}>
                     <TabList style={style}>
