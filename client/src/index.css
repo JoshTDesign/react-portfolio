@@ -23,14 +23,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  /* background-color:#e9edef; */
   background-color:var(--darker-blue);
   height: 100%;
 }
 
 #head {
   display:flex; 
-  align-items:center;
+  align-items:space-between;
   justify-content: center;
   background-color:var(--dark-blue);
   height: 150px;
@@ -48,9 +47,20 @@ body {
   transition: all 0.25s;
 }
 
+#head.small img {
+  height: 45px;
+}
+
+#head img {
+  height:90px; 
+  width:140px;
+  transition: all 0.25s;
+}
 
 #logo {
-  /* height: 50%; */
+  width:140px; 
+  display: inline-block;
+  min-width: 140px;
   color: var(--light-blue);
 }
 
@@ -59,6 +69,7 @@ body {
   text-decoration:none;
   text-decoration: 'none';
 }
+
 #home a { 
   color: var(--light-blue);
   text-decoration:none;
@@ -75,7 +86,7 @@ body {
   font-family: 'quicksand';
   text-decoration: none;
   color: var(--light-blue);
-  font-size: 1em;
+  font-size: .9em;
   text-transform: uppercase;
   letter-spacing: .1em;
 }
@@ -101,13 +112,10 @@ body {
 #head .react-tabs__tab--selected {
   /* border-bottom: 1px solid var(--med-blue); */
   color: var(--light-blue);
-  background-color: var(--dark-gray);
-
+  border-bottom: 2px solid var(--light-blue);
 }
 
-.react-tabs__tab--selected li {
-  color: var(--dark-gray);
-}
+
 
 
 
@@ -115,17 +123,21 @@ body {
   cursor: pointer;
   margin:0;
   padding:0;
+  height:100%;
+  display:flex;
+  align-items:center;
 }
 
 .react-tabs__tab {
   margin: 0px 5px 0px 5px;
-  padding: 8px 15px 5px 15px;
+  padding: 5px 15px 5px 15px;
   transition: all ease 200ms;
-  width: 125px;
-  height: 137px;
+  width: 100px;
+  /* height: 100%; */
   text-align: center;
-  line-height: 140px;
+  transition: all ease 200ms;
 }
+
 
 .react-tabs__tab:hover {
   background-color: var(--lighter-blue);
@@ -564,6 +576,7 @@ body {
   z-index: 0;
 }
 
+
 #workLink:first-child {
   border-radius: 12px 12px 0 0;
   overflow: hidden;
@@ -967,30 +980,12 @@ body {
 }
 
 
-@media only screen and (max-width: 1200px) {
-  #head {
-    justify-content: center;
-    flex-direction: column;
+@media only screen and (max-width: 800px) {
+
+
+  .head {
+    display: none;
   }
-  #logoContainer {
-    justify-content: center;
-    flex-direction: column;
-  }
-  /* #workContainer {
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-  } */
-
-  /* #workCard {
-    width: calc(100%); 
-  } */
-
-
-
-  /* #workDetail {
-    width: 100%;
-  } */
 
   #projectContainer {
     display:flex;
