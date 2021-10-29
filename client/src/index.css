@@ -40,6 +40,25 @@ body {
   z-index: 5;
 }
 
+#compact {
+  display:none; 
+  align-items:flex-start;
+  justify-content: center;
+  background-color:var(--dark-blue);
+  height: 50px;
+  padding: 0 10% 0 10%;
+  position: sticky;
+  top: 0;
+  transition: all 0.25s;
+  z-index: 5;
+}
+
+#compact img {
+  height:40px; 
+  transition: all 0.25s;
+  border: 1px solid green;
+}
+
 #head.small {
   height: 50px;
   position: sticky;
@@ -983,8 +1002,14 @@ body {
 @media only screen and (max-width: 800px) {
 
 
-  .head {
+  #head {
     display: none;
+  }
+
+  #compact {
+    display: flex;
+    border: 1px solid red;
+    position: sticky;
   }
 
   #projectContainer {

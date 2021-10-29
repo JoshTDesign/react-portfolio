@@ -1,13 +1,11 @@
 import React from 'react'
 import { useEffect, useState, createRef } from "react";
-import { Link, useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom';
 import Logo from '../assets/JT_Logo.js'
-import Logosvg from '../assets/JT_Logo.svg'
-// import Tab from './Tab.js'
+import Logosvg from '../assets/JT_Logo.svg';
+import MenuIcon from '../assets/menuIcon.svg';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-// import 'react-tabs/style/react-tabs.css';
-import Lottie from 'react-lottie';
-import lottie from 'lottie-web';
+
 
 import animationData from '../assets/jtd_menu.json';
 
@@ -100,6 +98,7 @@ const style = {
 
     return (
         // <div id="container">
+        <div id="headContainer">
             <div id="head" className={`${ small ? "small" : ""}`} >
                 
                 <Tabs selectedIndex={tabIndex} onSelect={testFunction}>
@@ -116,6 +115,15 @@ const style = {
                     </TabList>
                 </Tabs>
             </div>
-        // </div>
+            <div id="compact" className='compact' className={`${ small ? "small" : ""}`} >
+                    <div className='logo'>
+                        <a id="logo" href="/"><img src={Logosvg}/></a>
+                    </div>
+                    <div>
+                        <img src={MenuIcon} />
+                    </div>
+                
+            </div>
+        </div>
     )
 }
