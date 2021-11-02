@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@300&family=montserrat&display=swap');
+
+
 :root {
   --dark-gray: #4f5f67;
   --med-gray: #9faab1;
@@ -13,6 +17,8 @@
   --med-blue: #216699; 
   --dark-blue-trans: rgba(38, 45, 58, 0.9);
   --darkest-blue: rgb(21, 28, 40);
+  --font-size-text: .9em;
+  --line-height-text: 1.7em;
 }
 
 html {
@@ -93,7 +99,7 @@ body {
   color: var(--light-blue);
   text-decoration:none;
   text-align: center;
-  font-family: 'quicksand';
+  font-family: 'montserrat';
 }
 #home a:hover { 
   text-decoration:underline;
@@ -102,7 +108,7 @@ body {
 
 #head li {
   display: inline;
-  font-family: 'quicksand';
+  font-family: 'montserrat';
   text-decoration: none;
   color: var(--light-blue);
   font-size: .9em;
@@ -117,7 +123,7 @@ body {
 
 /*--------Header Page-----------*/
 #head p {
-  font-family: 'quicksand', sans-serif;
+  font-family: 'montserrat', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.15em;
@@ -182,7 +188,7 @@ body {
 }
 
 .about li {
-  font-family: 'quicksand', sans-serif;
+  font-family: 'montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.3em;
   background-color:  var(--white);
@@ -193,15 +199,15 @@ body {
   padding: 13px 20px 10px 20px;
   margin: 5px;
   border-radius: 20px;
-  line-height: 1.5em;
+  line-height: var(--line-height-text);
 }
 
 #profile p {
-  font-family: 'quicksand', sans-serif;
+  font-family: 'montserrat', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.2em;
-  line-height: 1.4em;
+  font-size: var(--font-size-text);
+  line-height: var(--line-height-text);
 }
 
 #techStack {
@@ -219,7 +225,7 @@ body {
 }
 
 .about h3 {
-  font-family:'Quicksand';
+  font-family:'montserrat';
   font-weight: 400;
   font-size:2em;
   margin-top:0;
@@ -246,7 +252,7 @@ body {
 
 /*----------Home Page----------*/
 #home {
-  font-family: 'Quicksand';
+  font-family: 'montserrat';
   margin: 125px auto 50px auto;
   width: 100%;
   max-width: 600px;
@@ -255,7 +261,7 @@ body {
 
 #home h1 {
   font-weight: 400;
-  line-height: 1.4em;
+  line-height: var(--line-height-text);
   text-align: center;
   font-family: 'bebas neue';
   font-size: 3.5em;
@@ -277,10 +283,10 @@ body {
 
 #home p {
   text-align: center;
-  font-family: 'quicksand';
-  font-size: 1.2em;
+  font-family: 'montserrat';
+  font-size: var(--font-size-text);
   color: var(--med-blue);
-  line-height: 1.4em;
+  line-height: var(--line-height-text);
 }
 
 #home div {
@@ -366,6 +372,29 @@ body {
   position:relative;
 }
 
+#backLink {
+  position: absolute;
+  left:-100px;
+  top: 70px;
+  transform: rotate(-90deg);
+  color: var(--med-blue);
+  font-family: 'montserrat', sans-serif;
+  letter-spacing: .1em;
+  font-size: .9em;
+  text-transform: uppercase;
+  font-weight: 200;
+  transition: all 0.25s;
+}
+
+#backLink a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#backLink:hover {
+  color: var(--light-blue);
+  cursor: default;
+}
 
 /* #workText::after {
   position: fixed;
@@ -385,8 +414,8 @@ body {
 #workFooter p {
   text-align: center;
   color: var(--med-gray);
-  line-height: 1.4em;
-  font-family: freight-big-pro, serif;
+  line-height: var(--line-height-text);
+  font-family: montserrat, serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -471,21 +500,23 @@ body {
 }
 
 #workDetailCard p {
-  font-family: freight-big-pro, serif;
+  font-family: 'montserrat', serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.1em;
-  line-height: 1.5em;
+  font-size: 1em;
+  line-height: var(--line-height-text);
   color:var(--dark-gray);
 }
 
 #workDetail h1 {
-  font-family:'quicksand';
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 400;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color:var(--dark-gray);
   width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
+  /* letter-spacing: .1em; */
+
 }
 
 #workDetail h2 {
@@ -513,11 +544,11 @@ body {
 }
 
 #workDetail p {
-  font-family: freight-big-pro, serif;
+  font-family: 'montserrat', serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.1em;
-  line-height: 1.5em;
+  line-height: var(--line-height-text);
   color:var(--dark-gray);
   mix-blend-mode: multiply;
   width: 100%;
@@ -539,7 +570,7 @@ body {
 
 
 #workText h2 {
-  font-family: quicksand;
+  font-family: montserrat;
   text-transform: uppercase;
   letter-spacing: .04em;
   color:var(--dark-gray);
@@ -547,17 +578,17 @@ body {
 }
 
 #workText p {
-  font-family: freight-big-pro, serif;
+  font-family: montserrat, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.1em;
-  line-height: 1.5em;
+  line-height: var(--line-height-text);
   color:var(--dark-gray);
 }
 
 #workText h3 {
   color: var(--med-blue);
-  font-family: quicksand;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1em;
   letter-spacing: .1em;
   margin:0;
@@ -567,10 +598,10 @@ body {
 
 #workText p3 {
   color: var(--dark-gray);
-  font-family: quicksand;
+  font-family: montserrat;
   font-size: 1em;
-  font-family: quicksand;
-  line-height: 1.6em; 
+  font-family: montserrat;
+  line-height: var(--line-height-text);
   width: 100%;
 }
 
@@ -666,7 +697,7 @@ body {
 }
 
 #projectDetail h2 {
-  font-family: quicksand;
+  font-family: montserrat;
   text-transform: uppercase;
   letter-spacing: .04em;
   color:rgba(0, 0, 0, .75);
@@ -675,11 +706,11 @@ body {
 }
 
 #projectDetail p {
-  font-family: freight-big-pro, serif;
+  font-family: montserrat, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.1em;
-  line-height: 1.5em;
+  line-height: var(--line-height-text);
   color:var(--dark-gray);
   mix-blend-mode: multiply;
   width: calc(100% - 100px);
@@ -697,7 +728,7 @@ body {
 }
 
 #projectText h2 {
-  font-family: quicksand;
+  font-family: montserrat;
   text-transform: uppercase;
   letter-spacing: .04em;
   color:rgba(0, 0, 0, .75);
@@ -706,11 +737,11 @@ body {
 }
 
 #projectText p {
-  font-family: freight-big-pro, serif;
+  font-family: montserrat, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.1em;
-  line-height: 1.5em;
+  line-height: var(--line-height-text);
   color:#cccbcb;
   padding:3em;
 }
@@ -803,7 +834,7 @@ body {
 
 .label p {
   color: rgba(255, 255, 255, 0);
-  font-family:'quicksand';
+  font-family:'montserrat';
   font-size:.8em;
   text-align: center;
   font-weight: 300;
@@ -832,7 +863,7 @@ body {
   margin: 20px;
   border-radius: 8px;
   text-decoration: none;
-  font-family: quicksand;
+  font-family: montserrat;
   color:rgb(125, 125, 125);
   transition: all ease .7s;
 }
@@ -852,17 +883,17 @@ body {
 }
 
 .resume h3 {
-  font-family:'Quicksand';
+  font-family:'montserrat';
   font-weight: 400;
   font-size:2em;
   margin-top:0;
 }
 
 .resume p {
-  font-family:'Quicksand';
+  font-family:'montserrat';
   font-weight: 400;
   font-size:1em;
-  line-height:1.4em;
+  line-height: var(--line-height-text);
 }
 
 .resume div {
@@ -870,7 +901,7 @@ body {
 }
 
 .resume li {
-  font-family:'Quicksand';
+  font-family:'montserrat';
   font-weight: 400;
   font-size:1em;
   line-height:1.2em;
@@ -912,15 +943,15 @@ body {
 .iconContainer {
   /* width: 300px; */
   display:flex;
-  flex: 0 0 250px;
+  flex: 0 0 200px;
   justify-content:center;
 }
 
-#icon {
+#icon img {
   width: 40px;
   height: 40px;
-  background-color: green;
   margin: 5px;
+  z-index: 100;
 }
 
 #footerLinkDiv {
@@ -939,7 +970,7 @@ body {
   margin: 20px;
   border-radius: 8px;
   text-decoration: none;
-  font-family: quicksand;
+  font-family: montserrat;
   color:var(--med-gray);
   transition: all ease .7s;
 }
@@ -947,18 +978,18 @@ body {
 
 
 #footer img {
-  transition: all ease .7s;
+  transition: all ease .2s;
 }
 
 #footer img:hover {
   color: purple;
-  filter: brightness(.5); 
+  filter: brightness(.2); 
 }
 
 #footer a {
   color: var(--med-gray);
   text-decoration: none;
-  transition: all ease .7s;
+  transition: all ease .2s;
 }
 
 #footer a:hover {
@@ -972,7 +1003,7 @@ body {
   text-align: center;
   letter-spacing:.1em;
   font-weight: 500;
-  transition: color ease .3s;
+  transition: color ease .2s;
 }
 
 #footer ul {
@@ -986,7 +1017,7 @@ body {
   list-style: none;
   display: inline-block;
   color: rgba(208, 208, 208);
-  font-family:'quicksand';
+  font-family:'montserrat';
   font-size:1.25em;
   text-align: center;
   font-weight: 300;

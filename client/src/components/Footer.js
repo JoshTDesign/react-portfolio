@@ -1,6 +1,9 @@
-import React from 'react'
-import Logo from '../assets/JT_Logo.js'
-import Logosvg from '../assets/JT_Logo.svg'
+import React from 'react';
+import Logo from '../assets/JT_Logo.js';
+import Logosvg from '../assets/JT_Logo.svg';
+import GithubIcon from '../assets/Images/GitHubIcon.svg';
+import LinkedInIcon from '../assets/Images/LinkedInIcon.svg';
+import TwitterIcon from '../assets/Images/TwitterIcon.svg';
 
 export default function Footer() {
     
@@ -27,10 +30,9 @@ export default function Footer() {
                 <div id="line"/>
 
                 <div className="iconContainer">
-                    <div id="icon"/>
-                    <div id="icon"/>
-                    <div id="icon"/>
-                    <div id="icon"/>
+                    <div id="icon"><img src={GithubIcon}/></div>
+                    <div id="icon"><img src={LinkedInIcon}/></div>
+                    <div id="icon"><img src={TwitterIcon}/></div>
                 </div>
             </div>
     )

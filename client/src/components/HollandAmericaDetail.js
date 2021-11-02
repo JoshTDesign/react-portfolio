@@ -7,6 +7,7 @@ import HAL0 from '../assets/Images/HAL/SP19_HAL-Glacier-Bay-1392_Rtchd.png';
 import HAL1 from '../assets/Images/HAL/HALDetail1.png';
 import HAL2 from '../assets/Images/HAL/HALDetail2.png';
 import HAL3 from '../assets/Images/HAL/HALDetail3.png';
+import HALPostcard1 from '../assets/Images/HAL/HALPostcard1.png';
 import Blank from '../assets/Images/blank.gif';
 import { useHistory, useParams } from 'react-router-dom';
 import SmIllustrator from '../assets/Images/icons/sm_illustrator.svg';
@@ -46,16 +47,29 @@ export default function HollandAmericaDetail() {
                 <h3>ROLE</h3>
                 <p3>Lead Designer</p3>
                 <h3>APPLIED SKILLS</h3>
-                <p3>Typography, Logo Design, 3D Modeling</p3>
+                <p3>Typography, Production Design, Brand Management</p3>
             </div>
 
-            <div id="detailContainer">
+            <div id="workDetail" style={{flexDirection: 'column', alignItems: 'center'}}>
                 <img src={HALLogo} style={{width: '60%'}}/>
             </div>
 
+            <div id="workDetail">
+                <h1>Printed Matter</h1>
+                <p>The firm responsible for the brand update did a beautiful job updating the logo. The mark retains its classic beauty and charm, but now feels more current and flexible.</p>
+            </div>
+
+
+
+
             <div id="workDetailCard" >
-                <img id='contain' src={HAL1}/>
-                <p>Going into this project, I knew that simplicity was going to be important. It would be featured on many posters, for a variety of shows, so I didn’t want it to ever overshadow the title of the show. </p>
+                <img id='contain' src={HAL2}/>
+                <p>I immediately felt this was an opportunity to design communication which is minimalist and wall-balanced, which would stand-out from the clutter. We picked a beautiful and tactile paper stock. The result was simple but effective and evoked the clean, freshly-painted aesthetic of the ships themselves.</p>
+            </div>
+
+            <div id="workDetail">
+                <img src={HALPostcard1} style={{width:'75%'}}/>
+                <p>Of course many printed pieces would require an approach with more color. White, deep blue, and light gray are the primary colors used throughout the onboard printed materials. A limited number of bright evocative colors were used to tie-in brand imagery.</p>
             </div>
 
 

@@ -29,7 +29,10 @@ import HAL1 from '../assets/Images/HAL/HALDetail1.png';
 import HAL2 from '../assets/Images/HAL/HALDetail2.png';
 import HAL3 from '../assets/Images/HAL/HALDetail3.png';
 import Blank from '../assets/Images/blank.gif';
-import { useHistory, useParams } from 'react-router-dom'
+import { useHistory, useParams } from 'react-router-dom';
+import jtdLogo from '../assets/Images/JT_icon_small.svg'
+
+
 
 
 export default function ExcDetail() {
@@ -113,13 +116,13 @@ export default function ExcDetail() {
                 <img id='contain' src={ExcDetail4} style={{width:'80%'}}/>
                 <p>Once the logo family was created, we went about applying the identity to a variety of posters and products. We made sure the logo could be reproduced at a variety of sizes and media. This sample shows a few examples of digital posters that were created for the EXC Talks lecture series.</p>
             </div>
-            <div id="workDetail" >
+            <div id="workDetailCard" >
                 <img id='contain' src={ExcDetail5}/>
                 <p>Part of role was to help architects and signage suppliers adapt the logo for custom signage. I also worked with suppliers to create things like custom hats, jackets, and other items for staff to wear.</p>
             </div>
-            <div id="workDetail" >
-                <img id='contain' src={ExcDetail6}/>
-                <p>{workState.work.detailDesc6}</p>
+            <div id="workFooter" >
+                    <img src={jtdLogo} style={{width:'40px'}}/>
+                    <p>Thank you for viewing this project!</p>
             </div>
 
             

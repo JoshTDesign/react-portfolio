@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import CardFull from './CardFull.js';
-import StepOne from '../assets/Images/StepOne-Poster-Woman - Large.png';
+import StepOne from '../assets/Images/StepOneCover.png';
 import Gelato from '../assets/Images/gelato.png';
 import Circle from '../assets/Images/circle.png';
 import PawPair from '../assets/Images/pawpair.png';
@@ -49,6 +49,10 @@ export default function StepOneDetail() {
 
     console.log(workState.work.tech);
 
+    const handleLink = () => {
+        console.log('test clicked');
+    }
+
     const handleClick = (e) => {
             console.log('clicked');
             history.push('/work');
@@ -56,7 +60,7 @@ export default function StepOneDetail() {
 
     return (
         <div id="workContainer">
-
+            <h3 id="backLink"><a href="#" onClick={handleClick}>Back to projects</a></h3>
             <div id="workCard">
                 <div className="card">
                     <img id='contain' src={StepOne}/>
