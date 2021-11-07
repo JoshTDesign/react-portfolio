@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@300&family=montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat&display=swap');
 
 
 :root {
@@ -17,7 +16,7 @@
   --med-blue: #216699; 
   --dark-blue-trans: rgba(38, 45, 58, 0.9);
   --darkest-blue: rgb(21, 28, 40);
-  --font-size-text: .9em;
+  --font-size-text: 1em;
   --line-height-text: 1.7em;
 }
 
@@ -503,7 +502,7 @@ body {
   font-family: 'montserrat', serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1em;
+  font-size: var(--font-size-text);
   line-height: var(--line-height-text);
   color:var(--dark-gray);
 }
@@ -547,7 +546,7 @@ body {
   font-family: 'montserrat', serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.1em;
+  font-size: var(--font-size-text);
   line-height: var(--line-height-text);
   color:var(--dark-gray);
   mix-blend-mode: multiply;
@@ -581,7 +580,7 @@ body {
   font-family: montserrat, serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.1em;
+  font-size: var(--font-size-text);
   line-height: var(--line-height-text);
   color:var(--dark-gray);
 }
@@ -597,10 +596,9 @@ body {
 }
 
 #workText p3 {
+  font-family: montserrat;
   color: var(--dark-gray);
-  font-family: montserrat;
-  font-size: 1em;
-  font-family: montserrat;
+  font-size: var(--font-size-text);
   line-height: var(--line-height-text);
   width: 100%;
 }
@@ -982,8 +980,7 @@ body {
 }
 
 #footer img:hover {
-  color: purple;
-  filter: brightness(.2); 
+  filter: brightness(1.4); 
 }
 
 #footer a {

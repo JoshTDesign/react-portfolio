@@ -23,6 +23,11 @@ import ExcDetail3 from '../assets/Images/ExcDetail3.png';
 import ExcDetail4 from '../assets/Images/exc/EXC_StageDesign.png';
 import ExcDetail5 from '../assets/Images/ExcDetail5.png';
 import ExcDetail6 from '../assets/Images/ExcDetail6.png';
+import ExcDetail7 from '../assets/Images/exc/EXC_StateDesign2.png';
+import ExcDetail8 from '../assets/Images/exc/EXC_posters1.png';
+import ExcDetail9 from '../assets/Images/exc/EXC_printedmatter1.png';
+import ExcDetail10 from '../assets/Images/exc/EXC_printedmatter2.png';
+import ExcDetail11 from '../assets/Images/exc/EXC_Logos-render.png';
 import HAL from '../assets/Images/HAL/HAL.jpg';
 import HAL0 from '../assets/Images/HAL/HALDetail0.png';
 import HAL1 from '../assets/Images/HAL/HALDetail1.png';
@@ -107,18 +112,28 @@ export default function ExcDetail() {
             <div id="workDetail" >
                 <img id='contain' src={ExcLogoBreakdown} style={{width: '70%'}}/>
                 <p>The EXC program encompasses a lot of smaller products and services. So I designed the logo in a modular way. The pin icon and the exc mark can be extracted in used in different ways. As the program develops, the logo system can accommodate new additions.</p>
+                <img id='contain' src={ExcDetail11} style={{width: '90%'}}/>
             </div>
             <div id="workDetailCard" >
                 <img id='contain' src={ExcDetail3}/>
                 <p>A wide palette of bright colors was needed to accent and bring balance to a library of location photography that would be used throughout the program to amplify a sense of place.</p>
             </div>
             <div id="workDetail" >
-                <img id='contain' src={ExcDetail4} style={{width:'80%'}}/>
-                <p>Once the logo family was created, we went about applying the identity to a variety of posters and products. We made sure the logo could be reproduced at a variety of sizes and media. This sample shows a few examples of digital posters that were created for the EXC Talks lecture series.</p>
+                <h1>Digital Screens</h1>
+                <img id='contain' src={ExcDetail4} style={{width:'100%'}}/>
+
+                <p>Once the logo family was created, we went about applying the identity to a variety of posters and products. We made sure the logo could be reproduced at a variety of sizes and media. This sample shows an example of the video wall backgrounds created for the <i>exc talks</i> lecture series.</p>
+                <img id='contain' src={ExcDetail8} style={{width:'100%'}}/>
+            </div>
+            <div id="workDetail">
+                <h1>Printed Matter</h1>
+                <p>This project had a wide scope and often required working with different departments to consistently deliver pieces that would convey the same message across different media. This was both the challenge and the value in this branding effort.</p>
             </div>
             <div id="workDetailCard" >
-                <img id='contain' src={ExcDetail5}/>
-                <p>Part of role was to help architects and signage suppliers adapt the logo for custom signage. I also worked with suppliers to create things like custom hats, jackets, and other items for staff to wear.</p>
+                <img id='contain' src={ExcDetail9}/>
+                <br />
+                <img id='contain' src={ExcDetail10}/>
+                
             </div>
             <div id="workFooter" >
                     <img src={jtdLogo} style={{width:'40px'}}/>

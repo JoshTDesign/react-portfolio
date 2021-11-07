@@ -12,6 +12,7 @@ import ClubHAL from '../assets/Images/ClubHAL.jpg';
 import ClubHAL1 from '../assets/Images/ClubHALDetail1.png';
 import ClubHAL2 from '../assets/Images/ClubHALDetail2.png';
 import ClubHAL3 from '../assets/Images/ClubHALDetail3.png';
+import ClubHAL4 from '../assets/Images/ClubHAL/ClubHAL_process.png';
 import Exc from '../assets/Images/Exc.png';
 import ExcDetail1 from '../assets/Images/ExcDetail1.png';
 import ExcDetail2 from '../assets/Images/ExcDetail2.png';
@@ -25,7 +26,11 @@ import HAL1 from '../assets/Images/HAL/HALDetail1.png';
 import HAL2 from '../assets/Images/HAL/HALDetail2.png';
 import HAL3 from '../assets/Images/HAL/HALDetail3.png';
 import Blank from '../assets/Images/blank.gif';
-import { useHistory, useParams } from 'react-router-dom'
+import SmIllustrator from '../assets/Images/icons/sm_illustrator.svg';
+import SmPhotoshop from '../assets/Images/icons/sm_photoshop.svg';
+import { useHistory, useParams } from 'react-router-dom';
+import jtdLogo from '../assets/Images/JT_icon_small.svg';
+
 
 
 export default function ClubHalDetail() {
@@ -73,34 +78,37 @@ export default function ClubHalDetail() {
 
             <div id="workCard">
                 <div className="card">
-                    {/* <div className="label" onClick={handleClick}>
-                        <h1>Back to work</h1>
-                    </div> */}
                     <img id='contain' src={ClubHAL}/>
                 </div>
             </div>
-            <div id="workText" style={{background:'#2e1547'}}>
-            {/* <h2>{workState.work.title}</h2> */}
-            {/* <ul>
-                <li>Blender 3D</li>
-                <li>Illustrator</li>
-                <li>Photoshop</li>
-            </ul> */}
-            <h3>ROLE</h3>
-            <p3>Lead Designer</p3>
-            <p>Step One Dance Company is a modern dance group which combines exciting choreography with state-of-the-art stage technology. My role was to create an exciting logo and a set of posters that would match the energy of the performances.</p>
-                <div id="arrow"/>
+
+            <div id="workText">
+                <div id="skills">
+                    <img id="smallIcon" src={SmPhotoshop}/>
+                    <img id="smallIcon" src={SmIllustrator}/>
+                </div>
+                <p>Club HAL is a kids-only space and activity program on Holland America Line ships. With newly redesigned spaces being created, HAL needed a completely new logo and branding guidelines to breath new life into the program.</p>
+                <h3>ROLE</h3>
+                <p3>Lead Designer</p3>
+                <h3>APPLIED SKILLS</h3>
+                <p3>Typography, Logo Design, Branding</p3>
             </div>
 
 
+            <div id="workDetail">
+                <h1>The Logo</h1>
+                <p>I wanted to start off with a bright, up-to-date palette and friendly, blocky letters. One goal of the logo was that it should appeal to kids and teenages of all ages. The interior design of the space they were creating was really experimental and played a lot with organic shapes and light. So I immediately decided that I wanted to experiment with negative space in the logo.</p>
+                <img src={ClubHAL4} style={{ mixBlendMode: 'multiply', width: '80%' }}/>
+            </div>
+
+            <div id="workDetailCard" >
+                <img id='contain' src={ClubHAL2}/>
+                <p>I wanted to start off with a bright, up-to-date palette and friendly, blocky letters. One goal of the logo was that it should appeal to kids and teenages of all ages.</p>
+            </div>
 
             <div id="workDetail" >
                 <img id='contain' src={ClubHAL1}/>
                 <p>{workState.work.detailDesc1}</p>
-            </div>
-            <div id="workDetail" >
-                <img id='contain' src={ClubHAL2}/>
-                <p>{workState.work.detailDesc2}</p>
             </div>
             <div id="workDetail" >
                 <img id='contain' src={ClubHAL3}/>
@@ -108,7 +116,10 @@ export default function ClubHalDetail() {
             </div>
             
 
-            
+            <div id="workFooter" >
+                    <img src={jtdLogo} style={{width:'40px'}}/>
+                    <p>Thank you for viewing this project!</p>
+            </div>
 
         </div>
     );

@@ -32,13 +32,13 @@ export default function Home() {
             <h1>Josh Taylor</h1>
             <h2>GRAPHIC DESIGNer + developer</h2>
             <p>I am a Seattle-based designer with years of experience building strong brands in variety of media. Currently, I am focusing on digital experiences and I am available for work.  If you have any questions, I would love to hear from you.</p>
-            <p>253.653.7120</p>
+            <p><a href="tel:253-653-7120">253.653.7120</a></p>
             <p><a href="mailto:josh@joshtaylordesign.com?subject=Hey Josh!">josh@joshtaylordesign.com</a></p>
             
             {/* <div id="fileDownload">
                 <a href='/JoshTaylor_resume2021.pdf' download>Download Resum&eacute;</a>
             </div> */}
-            <div className="skills">
+            {/* <div className="skills">
                 <img src={html}/>
                 <img src={css}/>
                 <img src={javascript}/>
@@ -51,7 +51,7 @@ export default function Home() {
                 <img src={ps}/>
                 <img src={xd}/>
                 <img src={figma}/>
-            </div>
+            </div> */}
         </div>
         
     )
