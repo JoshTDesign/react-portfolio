@@ -30,7 +30,7 @@ export default function Footer() {
                 <div id="line"/>
 
                 <div className="iconContainer">
-                    <div id="icon"><img src={GithubIcon}/></div>
+                    <div id="icon"><a href="https://github.com/JoshTDesign" target="_blank"><img src={GithubIcon}/></a></div>
                     <div id="icon"><img src={LinkedInIcon}/></div>
                     <div id="icon"><img src={TwitterIcon}/></div>
                 </div>
