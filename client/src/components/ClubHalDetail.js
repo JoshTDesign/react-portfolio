@@ -97,20 +97,21 @@ export default function ClubHalDetail() {
 
             <div id="workDetail">
                 <h1>The Logo</h1>
-                <p>I wanted to start off with a bright, up-to-date palette and friendly, blocky letters. One goal of the logo was that it should appeal to kids and teenages of all ages. The interior design of the space they were creating was really experimental and played a lot with organic shapes and light. So I immediately decided that I wanted to experiment with negative space in the logo.</p>
+                <p>I wanted to start off with a bright, up-to-date palette and friendly, blocky letters. One goal of the logo was that it should appeal to both kids and younger teenagers. The interior design of the space they were creating was really experimental and played a lot with organic shapes and light. So I immediately decided that I wanted to experiment with negative space in the logo.</p>
                 <img src={ClubHAL4} style={{ mixBlendMode: 'multiply', width: '80%' }}/>
             </div>
+                <div id="workDetailCard">
+                    <img id='contain' src={ClubHAL1}/>
+                    <p>After the first round of drafts. I had several workable alternatives. In the end, the top version seemed to be the most versatile, minus the interior grass texture.</p>
+                </div>
 
             <div id="workDetailCard" >
                 <img id='contain' src={ClubHAL2}/>
-                <p>I wanted to start off with a bright, up-to-date palette and friendly, blocky letters. One goal of the logo was that it should appeal to kids and teenages of all ages.</p>
+                <p>The next step was to work on the shape of the letters. I wanted the logo to feel balanced, but off-kilter at the same time. I tried set all the letterforms on angles so nothing was straight, but the angles themselves were consisent with each other.</p>
             </div>
 
-            <div id="workDetail" >
-                <img id='contain' src={ClubHAL1}/>
-                <p>{workState.work.detailDesc1}</p>
-            </div>
-            <div id="workDetail" >
+
+            <div id="workDetailCard" >
                 <img id='contain' src={ClubHAL3}/>
                 <p>{workState.work.detailDesc3}</p>
             </div>

@@ -27,7 +27,7 @@ import ExcDetail7 from '../assets/Images/exc/EXC_StateDesign2.png';
 import ExcDetail8 from '../assets/Images/exc/EXC_posters1.png';
 import ExcDetail9 from '../assets/Images/exc/EXC_printedmatter1.png';
 import ExcDetail10 from '../assets/Images/exc/EXC_printedmatter2.png';
-import ExcDetail11 from '../assets/Images/exc/EXC_Logos-render.png';
+import ExcDetail11 from '../assets/Images/exc/EXC_logos1.png';
 import HAL from '../assets/Images/HAL/HAL.jpg';
 import HAL0 from '../assets/Images/HAL/HALDetail0.png';
 import HAL1 from '../assets/Images/HAL/HALDetail1.png';

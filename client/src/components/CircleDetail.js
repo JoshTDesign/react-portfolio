@@ -12,7 +12,12 @@ import ClubHAL from '../assets/Images/ClubHAL.jpg';
 import ClubHAL1 from '../assets/Images/ClubHALDetail1.png';
 import ClubHAL2 from '../assets/Images/ClubHALDetail2.png';
 import ClubHAL3 from '../assets/Images/ClubHALDetail3.png';
-
+import SmIllustrator from '../assets/Images/icons/sm_illustrator.svg';
+import SmPhotoshop from '../assets/Images/icons/sm_photoshop.svg';
+import SmHtml from '../assets/Images/icons/html.svg';
+import SmCss from '../assets/Images/icons/css.svg';
+import SmJavascript from '../assets/Images/icons/javascript.svg';
+import jtdLogo from '../assets/Images/JT_icon_small.svg';
 import { useHistory, useParams } from 'react-router-dom'
 
 
@@ -44,31 +49,37 @@ export default function CircleDetail() {
                     <img id='contain' src={Circle}/>
                 </div>
             </div>
-            
-            <div id="workText" style={{background:`#5b1212`}}>
-            <p>Circle is a web application that uses your geospatial properties to view and create local events and ask/offer services within your general area, or community.</p>
-                <div id="arrow"/>
-            </div>
 
-
+            <div id="workText">
+                <div id="skills">
+                    <img id="smallIcon" src={SmPhotoshop}/>
+                    <img id="smallIcon" src={SmIllustrator}/>
+                    <img id="smallIcon" src={SmHtml}/>
+                    <img id="smallIcon" src={SmCss}/>
+                    <img id="smallIcon" src={SmJavascript}/>
+                </div>
+                <p>Circle is a web application that uses your geospatial properties to view and create local events and ask/offer services within your general area, or community.</p>
+                <h3>ROLE</h3>
+                <p3>Project Manager, Lead UX/UI Developer</p3>
+                <h3>APPLIED SKILLS</h3>
+                <p3>UX/UI Design, User-Centered Problem Solving, Git, Agile Process</p3>
+                <h3>TECHNOLOGIES</h3>
+                <p3>HTML, CSS, Javascript, MySQL, Express.js, Sequelize, Node.js, geoip-lite, bcrypt</p3>
             <div id="projectLinkDiv" >
                 <a className="link" target="blank" href="https://github.com/JoshTDesign/Circle-Community-Bulletin">Project on GitHub</a>
                 <a className="link" target="blank" href="http://oui-circle-app.herokuapp.com/">Deployed project</a>
             </div>
-            <div id="workDetail">
-                <div id="projectRole" >
-                    <h3>My Role</h3>
-                    <p>Project Manager, Front-End Lead Developer</p>
-                </div>
-            </div>
-            <div id="workDetail">
-                <div id="technology" >
-                    <h3>Technology Used</h3>
-                    <p>Express.js, Sequelize, mysql2, Node.js, cloudinary, geoip-lite, bcrypt</p>
-                </div>
             </div>
 
 
+
+
+
+
+            <div id="workFooter" >
+                    <img src={jtdLogo} style={{width:'40px'}}/>
+                    <p>Thank you for viewing this project!</p>
+            </div>
 
 
             
