@@ -647,6 +647,11 @@ body {
   z-index: 1; 
 }
 
+#smallIcon {
+  height: 76px;
+  width: 76px;
+}
+
 #workCard img:hover {
   filter: opacity(100%);
   transition: filter ease .5s;

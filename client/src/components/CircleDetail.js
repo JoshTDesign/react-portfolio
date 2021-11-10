@@ -12,13 +12,13 @@ import ClubHAL from '../assets/Images/ClubHAL.jpg';
 import ClubHAL1 from '../assets/Images/ClubHALDetail1.png';
 import ClubHAL2 from '../assets/Images/ClubHALDetail2.png';
 import ClubHAL3 from '../assets/Images/ClubHALDetail3.png';
-import SmIllustrator from '../assets/Images/icons/sm_illustrator.svg';
-import SmPhotoshop from '../assets/Images/icons/sm_photoshop.svg';
-import SmHtml from '../assets/Images/icons/html.svg';
-import SmCss from '../assets/Images/icons/css.svg';
-import SmJavascript from '../assets/Images/icons/javascript.svg';
+import SmHtml from '../assets/Images/icons/sm_html.svg';
+import SmCss from '../assets/Images/icons/sm_css.svg';
+import SmJavascript from '../assets/Images/icons/sm_javascript.svg';
+import SmNode from '../assets/Images/icons/sm_node.svg';
+import SmMysql from '../assets/Images/icons/sm_mysql.svg';
 import jtdLogo from '../assets/Images/JT_icon_small.svg';
-import { useHistory, useParams } from 'react-router-dom'
+import { useHistory, useParams } from 'react-router-dom';
 
 
 export default function CircleDetail() {
@@ -52,11 +52,11 @@ export default function CircleDetail() {
 
             <div id="workText">
                 <div id="skills">
-                    <img id="smallIcon" src={SmPhotoshop}/>
-                    <img id="smallIcon" src={SmIllustrator}/>
                     <img id="smallIcon" src={SmHtml}/>
                     <img id="smallIcon" src={SmCss}/>
                     <img id="smallIcon" src={SmJavascript}/>
+                    <img id="smallIcon" src={SmNode}/>
+                    <img id="smallIcon" src={SmMysql}/>
                 </div>
                 <p>Circle is a web application that uses your geospatial properties to view and create local events and ask/offer services within your general area, or community.</p>
                 <h3>ROLE</h3>
