@@ -18,7 +18,14 @@ import HAL0 from '../assets/Images/HAL/HALDetail0.png';
 import HAL1 from '../assets/Images/HAL/HALDetail1.png';
 import HAL2 from '../assets/Images/HAL/HALDetail2.png';
 import HAL3 from '../assets/Images/HAL/HALDetail3.png';
-import { useHistory, useParams } from 'react-router-dom'
+import { useHistory, useParams } from 'react-router-dom';
+import SmHtml from '../assets/Images/icons/sm_html.svg';
+import SmCss from '../assets/Images/icons/sm_css.svg';
+import SmJavascript from '../assets/Images/icons/sm_javascript.svg';
+import SmNode from '../assets/Images/icons/sm_node.svg';
+import SmMysql from '../assets/Images/icons/sm_mysql.svg';
+import jtdLogo from '../assets/Images/JT_icon_small.svg';
+
 
 
 export default function RallyDetail() {
@@ -63,7 +70,6 @@ export default function RallyDetail() {
 
     return (
         <div id="workContainer">
-
             <div id="workCard">
                 <div className="card">
                     {/* <div className="label" onClick={handleClick}>
@@ -72,28 +78,31 @@ export default function RallyDetail() {
                     <img id='contain' src={Rally}/>
                 </div>
             </div>
-            
-            <div id="workText" style={{background:`#20484e`}}>
-            <p>Rally provides users and friends an all-in-one application where you are able to track your travel group's itinerary, find new activities to add to an agenda, and keep track of your budget.</p>
-                <div id="arrow"/>
-            </div>
-
+             <div id="workText">
+                <div id="skills">
+                    <img id="smallIcon" src={SmHtml}/>
+                    <img id="smallIcon" src={SmCss}/>
+                    <img id="smallIcon" src={SmJavascript}/>
+                    <img id="smallIcon" src={SmNode}/>
+                </div>
+                <p>Rally provides users and friends an all-in-one application where you are able to track your travel group's itinerary, find new activities to add to an agenda, and keep track of your budget.</p>
+                <h3>ROLE</h3>
+                <p3>Lead UX/UI Developer</p3>
+                <h3>APPLIED SKILLS</h3>
+                <p3>UX/UI Design, User-Centered Problem Solving, Git, Agile Process</p3>
+                <h3>TECHNOLOGIES</h3>
+                <p3>HTML, CSS, React.js, Javascript, Node.js, MySQL, bcrypt, mapbox</p3>
 
             <div id="projectLinkDiv" >
                 <a className="link" target="blank" href="https://github.com/JoshTDesign/Project-3">Project on GitHub</a>
                 <a className="link" target="blank" href="https://rally-travel.herokuapp.com/">Deployed project</a>
             </div>
-            <div id="workDetail">
-                <div id="projectRole" >
-                    <h3>My Role</h3>
-                    <p>Gitmaster, Front-End Lead Developer</p>
-                </div>
-                <div id="technology" >
-                    <h3>Technology Used</h3>
-                    <p>Reactjs, Express.js, Sequelize, mysql2, Node.js, cloudinary, geoip-lite, bcrypt, Material.ui, Mapbox, Amadeus API</p>
-                </div>
             </div>
 
+            <div id="workFooter" >
+                    <img src={jtdLogo} style={{width:'40px'}}/>
+                    <p>Thank you for viewing this project!</p>
+            </div>
 
 
 

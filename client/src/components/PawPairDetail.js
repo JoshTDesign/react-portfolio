@@ -13,6 +13,12 @@ import ClubHAL1 from '../assets/Images/ClubHALDetail1.png';
 import ClubHAL2 from '../assets/Images/ClubHALDetail2.png';
 import ClubHAL3 from '../assets/Images/ClubHALDetail3.png';
 import HAL from '../assets/Images/HAL/HAL.jpg';
+import SmHtml from '../assets/Images/icons/sm_html.svg';
+import SmCss from '../assets/Images/icons/sm_css.svg';
+import SmJavascript from '../assets/Images/icons/sm_javascript.svg';
+import SmNode from '../assets/Images/icons/sm_node.svg';
+import SmMysql from '../assets/Images/icons/sm_mysql.svg';
+import jtdLogo from '../assets/Images/JT_icon_small.svg';
 import HAL0 from '../assets/Images/HAL/HALDetail0.png';
 import HAL1 from '../assets/Images/HAL/HALDetail1.png';
 import HAL2 from '../assets/Images/HAL/HALDetail2.png';
@@ -63,7 +69,7 @@ export default function PawPairDetail() {
     return (
         <div id="workContainer">
 
-            <div id="workCard">
+<div id="workCard">
                 <div className="card">
                     {/* <div className="label" onClick={handleClick}>
                         <h1>Back to work</h1>
@@ -71,26 +77,32 @@ export default function PawPairDetail() {
                     <img id='contain' src={PawPair}/>
                 </div>
             </div>
-            
-            <div id="workText" style={{background:`#333333`}}>
-            <p>Paw Pair is a simple, fun tool for getting matched with your perfect pet companion. Skip the busy, hard to use pet finding websites and try this simple, delightful quiz tool instead.</p>
-                <div id="arrow"/>
-            </div>
 
-
+            <div id="workText">
+                <div id="skills">
+                    <img id="smallIcon" src={SmHtml}/>
+                    <img id="smallIcon" src={SmCss}/>
+                    <img id="smallIcon" src={SmJavascript}/>
+                    <img id="smallIcon" src={SmNode}/>
+                </div>
+                <p>Paw Pair is a simple, fun tool for getting matched with your perfect pet companion. Skip the busy, hard to use pet finding websites and try this simple, delightful quiz tool instead.</p>
+                <h3>ROLE</h3>
+                <p3>Project Manager, Lead UX/UI Developer</p3>
+                <h3>APPLIED SKILLS</h3>
+                <p3>UX/UI Design, User-Centered Problem Solving, Git, Agile Process</p3>
+                <h3>TECHNOLOGIES</h3>
+                <p3>HTML, CSS, Javascript, Node.js</p3>
             <div id="projectLinkDiv" >
                 <a className="link" target="blank" href="https://github.com/JoshTDesign/Paw-Pair">Project on GitHub</a>
                 <a className="link" target="blank" href="https://joshtdesign.github.io/Paw-Pair/">Deployed project</a>
             </div>
-            <div id="workDetail">
-                <div id="projectRole" >
-                    <h3>My Role</h3>
-                    <p>Project Manager, Front-End Lead Developer</p>
-                </div>
-                <div id="technology" >
-                    <h3>Technology Used</h3>
-                    <p>Express.js, Sequelize, mysql2, Node.js, cloudinary, geoip-lite, bcrypt</p>
-                </div>
+            </div>
+
+
+
+            <div id="workFooter" >
+                    <img src={jtdLogo} style={{width:'40px'}}/>
+                    <p>Thank you for viewing this project!</p>
             </div>
 
 
