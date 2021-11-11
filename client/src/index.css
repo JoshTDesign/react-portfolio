@@ -587,11 +587,11 @@ body {
 
 #workText h3 {
   color: var(--med-blue);
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'montserrat', serif;
   font-size: 1em;
   letter-spacing: .1em;
   margin:0;
-  margin-top: 15px;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -1036,7 +1036,11 @@ body {
 
 
   #head {
-    display: none;
+    /* display: none; */
+  }
+
+  #logo {
+    border: 1px red solid;
   }
 
   #compact {
@@ -1084,8 +1088,19 @@ body {
     height: 0;
   }
 
+  .react-tabs__tab-list {
+    /* display: flex;
+    flex-direction: column; */
+    border: 1px solid red;
+  }
 
-  
+  .react-tabs__tab {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid pink;
+
+  }
+
   #head ul {
     display: flex;
     flex-direction: column;
@@ -1096,6 +1111,11 @@ body {
 
   #head img {
     margin: 20px;
+  }
+
+  #react-tabs-4 {
+    border: 1px solid green;
+    display: none;
   }
 
   #head li {
