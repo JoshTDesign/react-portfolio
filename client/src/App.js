@@ -14,6 +14,7 @@ import About from "./components/About.js"
 import Writing from "./components/Writing.js"
 import Resume from "./components/Resume.js"
 import Head from "./components/Head.js"
+import Head2 from "./components/Head2.js"
 import WorkDetail from "./components/WorkDetail.js"
 import CircleDetail from "./components/CircleDetail.js"
 import PawPairDetail from "./components/PawPairDetail.js"
@@ -101,7 +102,7 @@ function App() {
               <Test2 />
             </Route>
             <Route exact path="/">
-              <Head />
+              <Head2 />
               <Home />
               <Footer />
             </Route>

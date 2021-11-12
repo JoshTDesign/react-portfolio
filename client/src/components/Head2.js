@@ -9,16 +9,14 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import animationData from '../assets/jtd_menu.json';
 
-export default function Head() {
+export default function Head2() {
 
     const history = useHistory();
 
-    const [tabIndex, setTabIndex] = useState(2);
+    const [tabIndex, setTabIndex] = useState(0);
     const [small, setSmall] = useState(false);
 
-    let smallStyle = {
-        lineHeight: '150px'
-    }
+    const smallStyle = {};
 
     const scrollHandler = () => {
         window.addEventListener("scroll", () => {
@@ -27,12 +25,6 @@ export default function Head() {
                 lineHeight: '50px',
                 color: 'red'
             };
-            console.log(smallStyle);
-            // if (small === true) {
-            //     console.log('true')
-            // } else {
-            //     console.log('false')
-            // }
         });
     }
 
@@ -44,14 +36,7 @@ export default function Head() {
     }, []);
 
 
-    const defaultOptions = {
-        loop: true,
-        autoplay: false,
-        animationData: animationData,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
-        }
-      };
+
 
 const testFunction = (n) => {
     console.log(n);
@@ -86,35 +71,41 @@ const classChange = () => {
 
 
 
-const style = {
-    display: 'flex', 
-    flexDirection: 'row',
-    alignItems: 'center',
-    width: '100%'
-}
-
-
 
 
     return (
-        // <div id="container">
-        // <div id="headContainer">
-            <div id="head" className={`${ small ? "small" : ""}`} >
-                
-                <Tabs selectedIndex={tabIndex} onSelect={testFunction}>
-                    <TabList style={style}>
 
-                    <Tab>Design</Tab>
-                    <Tab>Web Apps</Tab>
-                    <Tab className='logo'>
-                        <a id="logo" href="/"><img src={Logosvg}/></a>
-                    </Tab>
-                    <Tab>Contact</Tab>
-                    <Tab>Resume</Tab>
-                    {/* <Tab>Resum&#xC9;</Tab> */}
-                    </TabList>
-                </Tabs>
-            </div>
+            <nav>
+
+                <ul id="navbar">
+                    <li id="navButton"><a href="#">Design</a></li>
+                    <li id="navButton"><a href="#">Web Apps</a></li>
+                    <li id="navLogo"><a href="#"><img src={Logosvg}/></a></li>
+                    <li id="navButton"><a href="#">Contact</a></li>
+                    <li id="navButton"><a href="#">Resume</a></li>
+                </ul>
+
+            </nav>
+
+        )
+    }
+                
+            //     <Tabs selectedIndex={tabIndex} onSelect={testFunction}>
+
+
+            //         <TabList style={style}>
+
+            //         <Tab>Design</Tab>
+            //         <Tab>Web Apps</Tab>
+            //         <Tab className='logo'>
+            //             <a id="logo" href="/"><img src={Logosvg}/></a>
+            //         </Tab>
+            //         <Tab>Contact</Tab>
+            //         <Tab>Resume</Tab>
+            //         {/* <Tab>Resum&#xC9;</Tab> */}
+            //         </TabList>
+            //     </Tabs>
+            // </div>
             /* <div id="compact" className='compact' className={`${ small ? "small" : ""}`} >
                     <div className='logo'>
                         <a id="logo" href="/"><img src={Logosvg}/></a>
@@ -125,5 +116,3 @@ const style = {
                 
             </div> */
         // </div>
-    )
-}
