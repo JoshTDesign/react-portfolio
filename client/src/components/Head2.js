@@ -15,6 +15,7 @@ export default function Head2() {
 
     const [tabIndex, setTabIndex] = useState(0);
     const [small, setSmall] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const smallStyle = {};
 
@@ -29,13 +30,21 @@ export default function Head2() {
     }
 
 
+    const handleClick = () => {
+        // let btn = document.getElementById('menuIcon');
+        // console.log('btn pushed');
+        if (menuOpen === false) {
+            setMenuOpen(true);
+        } else {
+            setMenuOpen(false);
+        }
+    }
+
     useEffect(() => {
         if (typeof window !== "undefined") {
             scrollHandler();
         }
     }, []);
-
-
 
 
 const testFunction = (n) => {
@@ -76,8 +85,8 @@ const classChange = () => {
     return (
 
             <nav>
-
-                <ul id="navbar">
+                <div id="menuIcon" onClick={handleClick}/>
+                <ul id="navbar" className={menuOpen ? "show" : "hide"}>
                     <li id="navButton"><a href="#">Design</a></li>
                     <li id="navButton"><a href="#">Web Apps</a></li>
                     <li id="navLogo"><a href="#"><img src={Logosvg}/></a></li>

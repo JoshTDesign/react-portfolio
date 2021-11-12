@@ -1011,7 +1011,6 @@ body {
 
 
 #navbar {
-  display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
@@ -1019,6 +1018,16 @@ body {
   border: 1px solid blue;
   padding: 0px;
   margin: 0px;
+}
+
+.show {
+  display: flex;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 #navLogo {
@@ -1034,20 +1043,43 @@ body {
   text-align: center;
 }
 
+#menuIcon {
+  display: none;
+  background-color: red;
+  height: 40px;
+  width: 40px;
+}
+
 
 @media only screen and (max-width: 800px) {
 
-
-  #navButton {
-    display:none;
+  /* #navLogo {
+    display: none;
   }
 
-  #navLogo {
+  #menuIcon {
+    display: block;
   }
 
   #navbar {
     justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+  } */
+
+  /* .hide {
+    display: none;
+    background-color: pink;
+    height: 0px;
+    transition: all 0.5s ease;
   }
+
+  .show {
+    position: absolute;
+    display: flex;
+    background-color: blue;
+    transition: all 0.5s ease;
+  } */
 
   #head {
     /* display: none; */
@@ -1152,8 +1184,6 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
-
-
 
   #homeArt {
     /* width:600px; */
