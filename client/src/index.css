@@ -121,6 +121,49 @@ body {
 
 
 /*--------Header Page-----------*/
+
+#menuIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: var(--med-blue);
+  z-index:1;
+}
+
+#menuIcon > div {
+  width: 50%;
+  height: 2px;
+  top:20px;
+  background-color: #fff;
+  position:absolute;
+  z-index: 2;
+  transform: rotate(0deg);
+  transition: all .4s ease;
+}
+
+#menuIcon > div:last-child {
+  top:30px;
+}
+
+/* #menuIcon > div:before, #menuIcon > div:after {
+  content:"";
+  width: 100%;
+  height: 2px;
+  top: -8px;
+  background-color:white;
+  position:absolute;
+  z-index: 3;
+  background-color: inherit;
+}
+
+#menuIcon > div:after {
+  top: 8px;
+} */
+
 #head p {
   font-family: 'montserrat', sans-serif;
   font-weight: 400;
@@ -1011,6 +1054,7 @@ body {
 
 
 #navbar {
+  display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
@@ -1018,16 +1062,6 @@ body {
   border: 1px solid blue;
   padding: 0px;
   margin: 0px;
-}
-
-.show {
-  display: flex;
-}
-
-#nav {
-  display: flex;
-  justify-content: center;
-  width: 100%;
 }
 
 #navLogo {
@@ -1043,42 +1077,22 @@ body {
   text-align: center;
 }
 
-#menuIcon {
-  display: none;
-  background-color: red;
-  height: 40px;
-  width: 40px;
+nav {
+  display: flex;
+  justify-content: space-between;
 }
-
 
 @media only screen and (max-width: 800px) {
 
-  /* #navLogo {
-    display: none;
-  }
 
-  #menuIcon {
-    display: block;
-  }
-
-  #navbar {
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 100%;
+  /* #navButton {
+    display:none;
   } */
 
-  /* .hide {
-    display: none;
-    background-color: pink;
-    height: 0px;
-    transition: all 0.5s ease;
-  }
 
-  .show {
-    position: absolute;
-    display: flex;
-    background-color: blue;
-    transition: all 0.5s ease;
+  /* #navbar {
+    justify-content: flex-start;
+
   } */
 
   #head {
@@ -1184,6 +1198,8 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
+
+
 
   #homeArt {
     /* width:600px; */

@@ -16,23 +16,49 @@ export default function Head2() {
     const [tabIndex, setTabIndex] = useState(0);
     const [small, setSmall] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const [width, setWidth] = useState(window.innerWidth);
+    const breakpoint = 800;
+
 
     const smallStyle = {};
 
     const scrollHandler = () => {
         window.addEventListener("scroll", () => {
-            setSmall(window.pageYOffset > 0)
-            smallStyle = {
-                lineHeight: '50px',
-                color: 'red'
-            };
+            setSmall(window.pageYOffset > 0);
+            // smallStyle = {
+            //     lineHeight: '50px',
+            //     color: 'red'
+            // };
         });
     }
 
-
     const handleClick = () => {
-        // let btn = document.getElementById('menuIcon');
-        // console.log('btn pushed');
+
+        let btn = document.getElementById('menuIcon');
+        let iconTop = document.getElementById('menuIcon').firstElementChild;
+        let iconBottom = document.getElementById('menuIcon').lastElementChild;
+        let openDeg = 45;
+        let closedDeg = 0;
+
+        if (!menuOpen) {
+            //code to open menu
+            iconTop.style.transform = 'rotate('+openDeg+'deg)';
+            iconTop.style.top = '25px';
+            iconBottom.style.transform = 'rotate('+(openDeg-90)+'deg)';
+            iconBottom.style.top = '25px';
+        } else {
+            //code to close menu
+            iconTop.style.transform = 'rotate('+closedDeg+'deg)';
+            iconTop.style.top = '20px';
+            iconBottom.style.transform = 'rotate('+closedDeg+'deg)';
+            iconBottom.style.top = '30px';
+        }
+
+
+
+        iconTop.style.transform = 'rotate('+menuOpen ? closedDeg : openDeg+'deg)';
+        // btn.style.transform = 'rotate:(30deg)';
+        
         if (menuOpen === false) {
             setMenuOpen(true);
         } else {
@@ -44,6 +70,13 @@ export default function Head2() {
         if (typeof window !== "undefined") {
             scrollHandler();
         }
+        const handleResizeWindow = () => setWidth(window.innerWidth);
+        // subscribe to window resize event "onComponentDidMount"
+        window.addEventListener("resize", handleResizeWindow);
+        return () => {
+          // unsubscribe "onComponentDestroy"
+          window.removeEventListener("resize", handleResizeWindow);
+        };
     }, []);
 
 
@@ -80,12 +113,11 @@ const classChange = () => {
 
 
 
-
+if (width > breakpoint) {
 
     return (
-
+            //standard layout for wider screens
             <nav>
-                <div id="menuIcon" onClick={handleClick}/>
                 <ul id="navbar" className={menuOpen ? "show" : "hide"}>
                     <li id="navButton"><a href="#">Design</a></li>
                     <li id="navButton"><a href="#">Web Apps</a></li>
@@ -93,10 +125,25 @@ const classChange = () => {
                     <li id="navButton"><a href="#">Contact</a></li>
                     <li id="navButton"><a href="#">Resume</a></li>
                 </ul>
-
+    
             </nav>
-
         )
+}
+
+    return (
+        // alternate menu layout for smaller screens
+        <nav>
+            <div id="menuIcon" onClick={handleClick}><div/><div/></div>
+            <ul id="menu" className={menuOpen ? "show" : "hide"}>
+                <li id="menuButton"><a href="#">Design</a></li>
+                <li id="menuButton"><a href="#">Web Apps</a></li>
+                <li id="menuButton"><a href="#">Contact</a></li>
+                <li id="menuButton"><a href="#">Resume</a></li>
+            </ul>
+            <div id="navLogo"><a><img src={Logosvg}/></a></div>
+        </nav>
+    )
+
     }
                 
             //     <Tabs selectedIndex={tabIndex} onSelect={testFunction}>
