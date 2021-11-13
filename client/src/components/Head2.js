@@ -112,9 +112,8 @@ const classChange = () => {
 
 
 
-
+//conditional formatting for the navigation bar based on screen width
 if (width > breakpoint) {
-
     return (
             //standard layout for wider screens
             <nav>
@@ -125,11 +124,9 @@ if (width > breakpoint) {
                     <li id="navButton"><a href="#">Contact</a></li>
                     <li id="navButton"><a href="#">Resume</a></li>
                 </ul>
-    
             </nav>
         )
 }
-
     return (
         // alternate menu layout for smaller screens
         <nav>
