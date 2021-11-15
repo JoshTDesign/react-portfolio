@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect, useState } from "react";
 import CardFull from './CardFull.js';
 import StepOne from '../assets/Images/StepOneCover.png';
-import Gelato from '../assets/Images/gelato.png';
 import Circle from '../assets/Images/circle.png';
 import PawPair from '../assets/Images/pawpair.png';
 import StepOne1 from '../assets/Images/StepOneDetail1.png';

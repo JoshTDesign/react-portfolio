@@ -130,23 +130,24 @@ body {
   position: relative;
   width: 50px;
   height: 50px;
-  background-color: var(--med-blue);
-  z-index:1;
+  z-index: 4;
 }
 
 #menuIcon > div {
   width: 50%;
-  height: 2px;
-  top:20px;
-  background-color: #fff;
+  height: 3px;
+  top:18px;
+  background-color: var(--light-blue);
   position:absolute;
-  z-index: 2;
+  z-index: 4;
   transform: rotate(0deg);
   transition: all .4s ease;
+  border-radius: 3px;
+
 }
 
 #menuIcon > div:last-child {
-  top:30px;
+  top:28px;
 }
 
 /* #menuIcon > div:before, #menuIcon > div:after {
@@ -408,7 +409,7 @@ body {
 /*----------Work Page----------*/
 #workContainer {
   width: 800px;
-  margin: 30px auto 100px auto;
+  margin: 6em auto 100px auto;
   border-radius: 14px;
   background-color: #EFF2F6;
   position:relative;
@@ -695,7 +696,6 @@ body {
 #projectContainer {
   display:flex;
   flex-wrap: wrap;
-  /* font-size:0; */
 }
 
 #projectCard {
@@ -950,7 +950,7 @@ body {
   height: 60px;
   text-align: center;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
 }
 
 #tagline {
@@ -1052,20 +1052,76 @@ body {
   color: var(--med-blue);
 }
 
+#menu {
+  display: flex;
+  flex-direction: column;
+  /* height: calc(100% - 6.3em); */
+  height: calc(100vh - 6.3em);
+  background-color: var(--darkest-blue);
+  position: absolute;
+  top: -18px;
+  left: -40px;
+  padding-top: 100px;
+  list-style: none;
+  width: 15em;
+  transition: all 0.4s ease;
+  z-index: 2;
+  transform: translate(-22.5em);
+  /* padding: 0, 5px, 0, 0; */
+}
+
+#menu li {
+  padding: 1em 10px 1em 10px;
+  text-align: center;
+}
+
+#menu a {
+  font-family: 'montserrat';
+  color: var(--light-blue);
+  transition: all .4s ease;
+}
+
+#menu a:hover {
+  color: var(--white);
+}
+
+#navbar li {
+  padding: 1em 10px 1em 10px;
+  text-align: center;
+  width:100px;
+}
+
+#navbar img {
+  width: 60px;
+}
+
+#navbar a {
+  font-family: 'montserrat';
+  color: var(--light-blue);
+  transition: all .4s ease;
+}
+
+#navbar {
+  list-style: none;
+}
+
+
+#menu a {
+  text-decoration: none;
+}
 
 #navbar {
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  border: 1px solid blue;
+  width: calc(100% - 2em);
   padding: 0px;
   margin: 0px;
+  z-index: 3;
 }
 
 #navLogo {
-  color: red;
   list-style-type: none;
   width: 50px;
 }
@@ -1080,6 +1136,15 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 3em;
+  width: 100%;
+  padding: 1em;
+  background: var(--dark-blue);
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 3;
 }
 
 @media only screen and (max-width: 800px) {
@@ -1095,18 +1160,40 @@ nav {
 
   } */
 
+  nav { 
+    width: calc(100% - 2em);
+  }
+
+  #workContainer {
+    width: 100%;
+    border-radius: 0px;
+    margin-top:5em;
+  }
+
+  #workCard img {
+    border-radius: 0px;
+  }
+
+  #workDetailCard {
+    margin-left: .5em;
+    margin-right: .5em;
+  }
+
   #head {
     /* display: none; */
   }
 
   #logo {
-    border: 1px red solid;
   }
 
   #compact {
     display: flex;
     border: 1px solid red;
     position: sticky;
+  }
+
+  #home p {
+    padding: 20px;
   }
 
   #projectContainer {
@@ -1189,6 +1276,18 @@ nav {
     border-bottom: none;
     /* padding:0; */
     color: black;
+  }
+
+  #tagline {
+    display: none;
+  }
+
+  #line {
+    display: none;
+  }
+
+  #footer {
+    justify-content: center;
   }
 
   #head {

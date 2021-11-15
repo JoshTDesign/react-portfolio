@@ -38,68 +38,65 @@ function App() {
         <div>
           <Switch>
             <Route exact path="/work">
-              <Head />
+              <Head2 />
               <Work />
               <Footer />
             </Route>
             <Route exact path="/projects">
-              <Head />
+              <Head2 />
               <Projects />
               <Footer />
             </Route>
             <Route exact path="/about">
-              <Head />
+              <Head2 />
               <About />
               {/* <Resume /> */}
               <Footer />
             </Route>
 
             <Route exact path="/resume">
-              <Head />
+              <Head2 />
               <Resume />
               <Footer />
             </Route>
             <Route exact path="/work/exc">
-              <Head />
+              <Head2 />
               <ExcDetail />
               <WorkFooter />
               <Footer />
             </Route>
             <Route exact path="/work/stepone">
-              <Head />
+              <Head2 />
               <StepOneDetail />
               <WorkFooter />
               <Footer />
             </Route>
             <Route exact path="/work/clubhal">
-              <Head />
+              <Head2 />
               <ClubHalDetail />
               <WorkFooter />
               <Footer />
             </Route>
             <Route exact path="/work/hollandamerica">
-              <Head />
+              <Head2 />
               <HollandAmericaDetail />
               <WorkFooter />
               <Footer />
             </Route>
             <Route exact path="/projects/circle">
-              <Head />
+              <Head2 />
               <CircleDetail />
               <Footer />
             </Route>
             <Route exact path="/projects/pawpair">
-              <Head />
+              <Head2 />
               <PawPairDetail />
               <Footer />
             </Route>
             <Route exact path="/projects/rally">
-              <Head />
+              <Head2 />
               <RallyDetail />
               <Footer />
-            </Route>
-            <Route exact path="/test2">
-              <Test2 />
             </Route>
             <Route exact path="/">
               <Head2 />
@@ -107,7 +104,7 @@ function App() {
               <Footer />
             </Route>
             <Route exact path="*">
-              <Head />
+              <Head2 />
               <Home />
               <Footer />
             </Route>

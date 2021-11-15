@@ -1,12 +1,9 @@
 import React from 'react';
 import CardFull from './CardFull.js';
 import StepOne from '../assets/Images/StepOneCover.png';
-import Gelato from '../assets/Images/gelato.png';
-import Circle from '../assets/Images/circle.png';
-import PawPair from '../assets/Images/pawpair.png';
 import ClubHAL from '../assets/Images/ClubHAL.jpg';
 import HAL from '../assets/Images/HAL/HAL.jpg';
-import Exc from '../assets/Images/Exc.png';
+import Exc from '../assets/Images/exc/Exc.png';
 
 export default function Work() {
     return (

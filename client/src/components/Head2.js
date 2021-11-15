@@ -1,13 +1,7 @@
 import React from 'react'
 import { useEffect, useState, createRef } from "react";
 import { Link, useHistory } from 'react-router-dom';
-import Logo from '../assets/JT_Logo.js'
 import Logosvg from '../assets/JT_Logo.svg';
-import MenuIcon from '../assets/menuIcon.svg';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-
-
-import animationData from '../assets/jtd_menu.json';
 
 export default function Head2() {
 
@@ -25,10 +19,6 @@ export default function Head2() {
     const scrollHandler = () => {
         window.addEventListener("scroll", () => {
             setSmall(window.pageYOffset > 0);
-            // smallStyle = {
-            //     lineHeight: '50px',
-            //     color: 'red'
-            // };
         });
     }
 
@@ -37,8 +27,10 @@ export default function Head2() {
         let btn = document.getElementById('menuIcon');
         let iconTop = document.getElementById('menuIcon').firstElementChild;
         let iconBottom = document.getElementById('menuIcon').lastElementChild;
+        let menu = document.getElementById('menu');
         let openDeg = 45;
         let closedDeg = 0;
+        let closedMenu = 0;
 
         if (!menuOpen) {
             //code to open menu
@@ -46,19 +38,18 @@ export default function Head2() {
             iconTop.style.top = '25px';
             iconBottom.style.transform = 'rotate('+(openDeg-90)+'deg)';
             iconBottom.style.top = '25px';
+            menu.style.transform = 'translate(0em, 0)';
         } else {
             //code to close menu
             iconTop.style.transform = 'rotate('+closedDeg+'deg)';
             iconTop.style.top = '20px';
             iconBottom.style.transform = 'rotate('+closedDeg+'deg)';
             iconBottom.style.top = '30px';
+            menu.style.transform = 'translate(-22.5em, 0)';
         }
-
-
 
         iconTop.style.transform = 'rotate('+menuOpen ? closedDeg : openDeg+'deg)';
         // btn.style.transform = 'rotate:(30deg)';
-        
         if (menuOpen === false) {
             setMenuOpen(true);
         } else {
@@ -66,11 +57,19 @@ export default function Head2() {
         }
     }
 
+
+
     useEffect(() => {
         if (typeof window !== "undefined") {
             scrollHandler();
         }
-        const handleResizeWindow = () => setWidth(window.innerWidth);
+        const handleResizeWindow = () => {
+            setWidth(window.innerWidth);
+            //reset menu to closed when window resized to +800
+            if (window.innerWidth > 800) {
+                setMenuOpen(false);
+            }
+        };
         // subscribe to window resize event "onComponentDidMount"
         window.addEventListener("resize", handleResizeWindow);
         return () => {
@@ -105,6 +104,20 @@ const testFunction = (n) => {
       setTabIndex(n);
 }
 
+document.addEventListener('click', (event) => {
+    const flyoutElement = document.getElementById("menu");
+    let targetElement = event.target;
+
+    do {
+        //if clicked inside menu
+        if (targetElement == flyoutElement) {
+            return;
+        }
+        targetElement = targetElement.parentNode;
+    } while (targetElement);
+        return;
+})
+
 const classChange = () => {
     let test = "test";
     return test;
@@ -118,11 +131,19 @@ if (width > breakpoint) {
             //standard layout for wider screens
             <nav>
                 <ul id="navbar" className={menuOpen ? "show" : "hide"}>
-                    <li id="navButton"><a href="#">Design</a></li>
-                    <li id="navButton"><a href="#">Web Apps</a></li>
+                <li id="menuButton"><a onClick={() => {
+                    history.push('/work');
+                }}>Design</a></li>
+                <li id="menuButton"><a onClick={() => {
+                    history.push('/projects');
+                }}>Web Apps</a></li>
                     <li id="navLogo"><a href="#"><img src={Logosvg}/></a></li>
-                    <li id="navButton"><a href="#">Contact</a></li>
-                    <li id="navButton"><a href="#">Resume</a></li>
+                <li id="menuButton"><a onClick={() => {
+                    history.push('/contact');
+                }}>Contact</a></li>
+                <li id="menuButton"><a onClick={() => {
+                    history.push('/resume');
+                }}>Resume</a></li>
                 </ul>
             </nav>
         )
@@ -132,10 +153,22 @@ if (width > breakpoint) {
         <nav>
             <div id="menuIcon" onClick={handleClick}><div/><div/></div>
             <ul id="menu" className={menuOpen ? "show" : "hide"}>
-                <li id="menuButton"><a href="#">Design</a></li>
-                <li id="menuButton"><a href="#">Web Apps</a></li>
-                <li id="menuButton"><a href="#">Contact</a></li>
-                <li id="menuButton"><a href="#">Resume</a></li>
+                <li id="menuButton"><a onClick={() => {
+                    history.push('/work');
+                    handleClick();
+                }}>Design</a></li>
+                <li id="menuButton"><a onClick={() => {
+                    history.push('/projects');
+                    handleClick();
+                }}>Web Apps</a></li>
+                <li id="menuButton"><a onClick={() => {
+                    history.push('/contact');
+                    handleClick();
+                }}>Contact</a></li>
+                <li id="menuButton"><a onClick={() => {
+                    history.push('/resume');
+                    handleClick();
+                }}>Resume</a></li>
             </ul>
             <div id="navLogo"><a><img src={Logosvg}/></a></div>
         </nav>
