@@ -27,7 +27,7 @@ import WorkFooter from "./components/WorkFooter.js"
 import Test from "./components/Test.js"
 import Test2 from "./components/Test2.js"
 import ProjectFooter from "./components/ProjectFooter.js"
-import ContactMe from "./components/ContactMe.js"
+import Contact from "./components/Contact.js"
 import Footer from "./components/Footer.js"
 
 
@@ -47,10 +47,9 @@ function App() {
               <Projects />
               <Footer />
             </Route>
-            <Route exact path="/about">
+            <Route exact path="/contact">
               <Head2 />
-              <About />
-              {/* <Resume /> */}
+              <Contact />
               <Footer />
             </Route>
 

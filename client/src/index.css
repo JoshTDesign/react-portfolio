@@ -99,6 +99,7 @@ body {
   text-decoration:none;
   text-align: center;
   font-family: 'montserrat';
+  margin: 0 10px 0 10px;
 }
 #home a:hover { 
   text-decoration:underline;
@@ -148,6 +149,10 @@ body {
 
 #menuIcon > div:last-child {
   top:28px;
+}
+
+#menuButton {
+  cursor: pointer;
 }
 
 /* #menuIcon > div:before, #menuIcon > div:after {
@@ -299,14 +304,20 @@ body {
   margin: 125px auto 50px auto;
   width: 100%;
   max-width: 600px;
-  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home img {
 }
 
 #home h1 {
   font-weight: 400;
   line-height: var(--line-height-text);
   text-align: center;
-  font-family: 'bebas neue';
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
   font-size: 3.5em;
   color: var(--light-blue);
   margin:0;
@@ -314,10 +325,10 @@ body {
 }
 
 #home h2 {
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
-  font-family: 'bebas neue';
-  font-size: 2em;
+  font-family: 'montserrat', sans-serif;
+  font-size: 1em;
   color: var(--med-blue);
   text-transform: uppercase;
   margin:0;
@@ -327,14 +338,9 @@ body {
 #home p {
   text-align: center;
   font-family: 'montserrat';
-  font-size: var(--font-size-text);
+  font-size: 1em;
   color: var(--med-blue);
   line-height: var(--line-height-text);
-}
-
-#home div {
-  /* height: 100%; */
-  /* margin-bottom: 200px; */
 }
 
 #icons {
@@ -696,6 +702,8 @@ body {
 #projectContainer {
   display:flex;
   flex-wrap: wrap;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 #projectCard {
@@ -703,6 +711,16 @@ body {
   overflow: hidden;
   position: relative;
   line-height:0;
+}
+
+#back {
+  position: relative;
+  left: -200px;
+  background-color: red;
+}
+
+#back {
+
 }
 
 #projectText {
@@ -904,6 +922,7 @@ body {
 .resume {
   padding: 80px 10% 80px 10%;
   background-color: white;
+  margin-top: 4em;
 }
 
 .resume h3 {
@@ -936,6 +955,60 @@ body {
 .resume ul {
   padding-left:15px;
 }
+
+/*------------Contact------------*/
+
+#contact {
+  font-family: 'montserrat';
+  margin: 125px auto 50px auto;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  border: 1px solid green;
+}
+
+#contact img {
+  width: 200px;
+}
+
+#contact h1 {
+  font-weight: 400;
+  line-height: var(--line-height-text);
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: 3.5em;
+  color: var(--light-blue);
+  margin:0;
+  padding: 0;
+}
+
+#contact h2 {
+  font-weight: 600;
+  text-align: center;
+  font-family: 'montserrat', sans-serif;
+  font-size: 1em;
+  color: var(--med-blue);
+  text-transform: uppercase;
+  margin:0;
+  padding: 0;
+}
+
+#contact p {
+  text-align: left;
+  font-family: 'montserrat';
+  font-size: 1.25em;
+  color: var(--med-blue);
+  line-height: var(--line-height-text);
+  /* padding-top: 50px; */
+  position: relative;
+  top: 130px;
+  left: -80px;
+  border: 1px solid pink;
+  width: 600px;
+}
+
 
 /*-------------Footer-----------*/
 #footer {
@@ -1101,6 +1174,10 @@ body {
   transition: all .4s ease;
 }
 
+#navbar a:hover {
+  color: var(--white);
+}
+
 #navbar {
   list-style: none;
 }
@@ -1193,7 +1270,7 @@ nav {
   }
 
   #home p {
-    padding: 20px;
+    /* padding: 20px; */
   }
 
   #projectContainer {

@@ -62,13 +62,15 @@ export default function PawPairDetail() {
 
     const handleClick = (e) => {
             console.log('clicked');
-            history.push('/work');
+            history.push('/projects');
         }
 
     return (
         <div id="workContainer">
+            <h3 id="backLink"><a href="#" onClick={handleClick}>Back to web apps</a></h3>
 
-<div id="workCard">
+
+            <div id="workCard">
                 <div className="card">
                     {/* <div className="label" onClick={handleClick}>
                         <h1>Back to work</h1>

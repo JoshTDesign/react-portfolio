@@ -97,8 +97,6 @@ const style = {
 
 
     return (
-        // <div id="container">
-        // <div id="headContainer">
             <div id="head" className={`${ small ? "small" : ""}`} >
                 
                 <Tabs selectedIndex={tabIndex} onSelect={testFunction}>
@@ -115,15 +113,5 @@ const style = {
                     </TabList>
                 </Tabs>
             </div>
-            /* <div id="compact" className='compact' className={`${ small ? "small" : ""}`} >
-                    <div className='logo'>
-                        <a id="logo" href="/"><img src={Logosvg}/></a>
-                    </div>
-                    <div>
-                        <img src={MenuIcon} />
-                    </div>
-                
-            </div> */
-        // </div>
     )
 }

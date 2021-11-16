@@ -72,8 +72,6 @@ export default function ExcDetail() {
         })
     },[]);
 
-    console.log(workState.work.tech);
-
     const handleClick = (e) => {
             console.log('clicked');
             history.push('/work');
@@ -81,6 +79,7 @@ export default function ExcDetail() {
 
     return (
         <div id="workContainer">
+            <h3 id="backLink"><a href="#" onClick={handleClick}>Back to projects</a></h3>
 
             <div id="workCard">
                 <div className="card">

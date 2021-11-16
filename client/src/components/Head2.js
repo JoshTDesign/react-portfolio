@@ -137,7 +137,9 @@ if (width > breakpoint) {
                 <li id="menuButton"><a onClick={() => {
                     history.push('/projects');
                 }}>Web Apps</a></li>
-                    <li id="navLogo"><a href="#"><img src={Logosvg}/></a></li>
+                    <li id="navLogo"><a onClick={() => {
+                        history.push('/');
+                    }}><img src={Logosvg}/></a></li>
                 <li id="menuButton"><a onClick={() => {
                     history.push('/contact');
                 }}>Contact</a></li>
@@ -154,6 +156,10 @@ if (width > breakpoint) {
             <div id="menuIcon" onClick={handleClick}><div/><div/></div>
             <ul id="menu" className={menuOpen ? "show" : "hide"}>
                 <li id="menuButton"><a onClick={() => {
+                    history.push('/');
+                    handleClick();
+                }}>Home</a></li>
+                <li id="menuButton"><a onClick={() => {
                     history.push('/work');
                     handleClick();
                 }}>Design</a></li>
@@ -168,7 +174,7 @@ if (width > breakpoint) {
                 <li id="menuButton"><a onClick={() => {
                     history.push('/resume');
                     handleClick();
-                }}>Resume</a></li>
+                }}>Resum&‌eacute;</a></li>
             </ul>
             <div id="navLogo"><a><img src={Logosvg}/></a></div>
         </nav>
@@ -176,29 +182,3 @@ if (width > breakpoint) {
 
     }
                 
-            //     <Tabs selectedIndex={tabIndex} onSelect={testFunction}>
-
-
-            //         <TabList style={style}>
-
-            //         <Tab>Design</Tab>
-            //         <Tab>Web Apps</Tab>
-            //         <Tab className='logo'>
-            //             <a id="logo" href="/"><img src={Logosvg}/></a>
-            //         </Tab>
-            //         <Tab>Contact</Tab>
-            //         <Tab>Resume</Tab>
-            //         {/* <Tab>Resum&#xC9;</Tab> */}
-            //         </TabList>
-            //     </Tabs>
-            // </div>
-            /* <div id="compact" className='compact' className={`${ small ? "small" : ""}`} >
-                    <div className='logo'>
-                        <a id="logo" href="/"><img src={Logosvg}/></a>
-                    </div>
-                    <div>
-                        <img src={MenuIcon} />
-                    </div>
-                
-            </div> */
-        // </div>

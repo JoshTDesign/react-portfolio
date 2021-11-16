@@ -74,6 +74,7 @@ export default function ClubHalDetail() {
 
     return (
         <div id="workContainer">
+            <h3 id="backLink"><a href="#" onClick={handleClick}>Back to projects</a></h3>
 
             <div id="workCard">
                 <div className="card">
