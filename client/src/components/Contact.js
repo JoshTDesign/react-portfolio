@@ -16,7 +16,11 @@ export default function Home() {
                     <li>Node.js</li>
                     <li>MySQL</li>
                 </ul>
+                <div>
                 <p id='intro'>I am a Seattle-based designer with years of experience building strong brands in variety of media. Currently, I am focusing on digital experiences and I am available for work.  If you have any questions, I would love to hear from you.</p>
+                <a href="tel:253-653-7120">253.653.7120</a>
+                <a href="mailto:josh@joshtaylordesign.com?subject=Hey Josh!">josh@joshtaylordesign.com</a>
+                </div>
             </div>
         </div>
     )
